@@ -1,11 +1,11 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Object = "{8E515444-86DF-11D3-A630-444553540001}#1.0#0"; "barcodex.ocx"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form etudiants 
    BackColor       =   &H00000000&
    BorderStyle     =   4  'Fixed ToolWindow
@@ -51,8 +51,8 @@ Begin VB.Form etudiants
       TabCaption(1)   =   "ﬁ”„ „⁄Ì‰"
       TabPicture(1)   =   "etudiants.frx":001C
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Picture15"
-      Tab(1).Control(1)=   "Picture16"
+      Tab(1).Control(0)=   "Picture16"
+      Tab(1).Control(1)=   "Picture15"
       Tab(1).ControlCount=   2
       TabCaption(2)   =   " ·„Ì– „⁄Ì‰"
       TabPicture(2)   =   "etudiants.frx":0038
@@ -461,7 +461,7 @@ Begin VB.Form etudiants
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   124321793
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin VB.Label Label111 
@@ -605,9 +605,9 @@ Begin VB.Form etudiants
             TabCaption(0)   =   "‰ﬁ«ÿ  ·«„Ì– «·ﬁ”„"
             TabPicture(0)   =   "etudiants.frx":0054
             Tab(0).ControlEnabled=   0   'False
-            Tab(0).Control(0)=   "grd8"
+            Tab(0).Control(0)=   "Picture20"
             Tab(0).Control(1)=   "Picture19"
-            Tab(0).Control(2)=   "Picture20"
+            Tab(0).Control(2)=   "grd8"
             Tab(0).ControlCount=   3
             TabCaption(1)   =   "»Ì«‰«   ·«„Ì– «·ﬁ”„"
             TabPicture(1)   =   "etudiants.frx":0070
@@ -1362,13 +1362,13 @@ Begin VB.Form etudiants
             TabCaption(1)   =   "‰ﬁ«ÿ «· ·„Ì–"
             TabPicture(1)   =   "etudiants.frx":00A8
             Tab(1).ControlEnabled=   0   'False
-            Tab(1).Control(0)=   "Line1"
-            Tab(1).Control(1)=   "Line2"
-            Tab(1).Control(2)=   "grd1"
+            Tab(1).Control(0)=   "Picture11"
+            Tab(1).Control(1)=   "Picture10"
+            Tab(1).Control(2)=   "Picture9"
             Tab(1).Control(3)=   "Picture8"
-            Tab(1).Control(4)=   "Picture9"
-            Tab(1).Control(5)=   "Picture10"
-            Tab(1).Control(6)=   "Picture11"
+            Tab(1).Control(4)=   "grd1"
+            Tab(1).Control(5)=   "Line2"
+            Tab(1).Control(6)=   "Line1"
             Tab(1).ControlCount=   7
             TabCaption(2)   =   "»Ì«‰«  «· ·„Ì–"
             TabPicture(2)   =   "etudiants.frx":00C4
@@ -1542,7 +1542,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   124321793
+                     Format          =   123928577
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar4 
@@ -4461,7 +4461,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   124321793
+                     Format          =   123928577
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar1 
@@ -5099,7 +5099,7 @@ Begin VB.Form etudiants
                   Italic          =   0   'False
                   Strikethrough   =   0   'False
                EndProperty
-               Format          =   124321793
+               Format          =   123928577
                CurrentDate     =   41154
             End
             Begin MSComctlLib.ProgressBar ProgressBar2 

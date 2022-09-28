@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Begin VB.Form classes 
    BackColor       =   &H00000000&
@@ -46,17 +46,21 @@ Begin VB.Form classes
       Tab(0).ControlEnabled=   0   'False
       Tab(0).Control(0)=   "Picture10"
       Tab(0).ControlCount=   1
-      TabCaption(1)   =   "Emploi du temps"
+      TabCaption(1)   =   "ÇáÌÏæá ÇáÒãäí"
       TabPicture(1)   =   "classes.frx":001C
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "Picture11"
+      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).ControlCount=   1
       TabCaption(2)   =   "ÇáãæÇÏ"
       TabPicture(2)   =   "classes.frx":0038
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "Picture8"
+      Tab(2).Control(0)=   "Skin1"
+      Tab(2).Control(0).Enabled=   0   'False
       Tab(2).Control(1)=   "Picture3"
-      Tab(2).Control(2)=   "Skin1"
+      Tab(2).Control(1).Enabled=   0   'False
+      Tab(2).Control(2)=   "Picture8"
+      Tab(2).Control(2).Enabled=   0   'False
       Tab(2).ControlCount=   3
       TabCaption(3)   =   "ÇáÃÞÓÇã"
       TabPicture(3)   =   "classes.frx":0054
@@ -76,8 +80,8 @@ Begin VB.Form classes
          TabIndex        =   57
          Top             =   360
          Width           =   14295
-         Begin VB.CommandButton Command14 
-            Caption         =   "Enregistrer les modifications"
+         Begin VB.CommandButton Command16 
+            Caption         =   "ÍÝÙ ÇáÈíÇäÇÊ"
             BeginProperty Font 
                Name            =   "Times New Roman"
                Size            =   12
@@ -88,33 +92,13 @@ Begin VB.Form classes
                Strikethrough   =   0   'False
             EndProperty
             Height          =   375
-            Left            =   5280
-            TabIndex        =   64
-            Top             =   8280
-            Width           =   3735
-         End
-         Begin VB.TextBox Text6 
-            Alignment       =   1  'Right Justify
-            BackColor       =   &H00000000&
-            BeginProperty Font 
-               Name            =   "Times New Roman"
-               Size            =   12
-               Charset         =   178
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            ForeColor       =   &H00FFFFFF&
-            Height          =   375
-            Left            =   12120
+            Left            =   120
             TabIndex        =   63
             Top             =   120
-            Width           =   2055
+            Width           =   2655
          End
-         Begin VB.TextBox Text5 
-            Alignment       =   1  'Right Justify
-            BackColor       =   &H00000000&
+         Begin VB.CommandButton Command15 
+            Caption         =   "ÓÍÈ ÇáÌÏæá"
             BeginProperty Font 
                Name            =   "Times New Roman"
                Size            =   12
@@ -124,21 +108,38 @@ Begin VB.Form classes
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            ForeColor       =   &H00FFFFFF&
             Height          =   375
-            Left            =   5400
-            TabIndex        =   61
+            Left            =   11520
+            TabIndex        =   62
             Top             =   120
-            Width           =   5295
+            Width           =   2655
+         End
+         Begin VB.CommandButton Command14 
+            Caption         =   "ÚÑÖ ÇáÌÏæá"
+            BeginProperty Font 
+               Name            =   "Times New Roman"
+               Size            =   12
+               Charset         =   178
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   375
+            Left            =   5880
+            TabIndex        =   59
+            Top             =   120
+            Visible         =   0   'False
+            Width           =   2655
          End
          Begin MSFlexGridLib.MSFlexGrid grd8 
-            Height          =   7575
+            Height          =   8295
             Left            =   120
             TabIndex        =   58
-            Top             =   600
+            Top             =   480
             Width           =   14055
             _ExtentX        =   24791
-            _ExtentY        =   13361
+            _ExtentY        =   14631
             _Version        =   393216
             Cols            =   3
             FixedCols       =   2
@@ -157,66 +158,6 @@ Begin VB.Form classes
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-         End
-         Begin VB.Label Label24 
-            Alignment       =   2  'Center
-            BackStyle       =   0  'Transparent
-            Caption         =   "Téléphone"
-            BeginProperty Font 
-               Name            =   "Times New Roman"
-               Size            =   12
-               Charset         =   178
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            ForeColor       =   &H00FFFFFF&
-            Height          =   375
-            Left            =   10680
-            TabIndex        =   62
-            Top             =   120
-            Width           =   1455
-         End
-         Begin VB.Label Label23 
-            Alignment       =   2  'Center
-            BackStyle       =   0  'Transparent
-            Caption         =   "Etablissement"
-            BeginProperty Font 
-               Name            =   "Times New Roman"
-               Size            =   12
-               Charset         =   178
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            ForeColor       =   &H00FFFFFF&
-            Height          =   375
-            Left            =   3600
-            TabIndex        =   60
-            Top             =   120
-            Width           =   1815
-         End
-         Begin VB.Label Label22 
-            Alignment       =   2  'Center
-            BackStyle       =   0  'Transparent
-            Caption         =   "Emploi du temps"
-            BeginProperty Font 
-               Name            =   "Times New Roman"
-               Size            =   12
-               Charset         =   178
-               Weight          =   700
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            ForeColor       =   &H00FFFFFF&
-            Height          =   375
-            Left            =   120
-            TabIndex        =   59
-            Top             =   120
-            Width           =   3255
          End
       End
       Begin VB.PictureBox Picture10 
@@ -1016,7 +957,7 @@ Begin VB.Form classes
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   2400
-            TabIndex        =   66
+            TabIndex        =   61
             Top             =   120
             Width           =   1575
          End
@@ -1080,7 +1021,7 @@ Begin VB.Form classes
                Left            =   120
                List            =   "classes.frx":0086
                Style           =   2  'Dropdown List
-               TabIndex        =   65
+               TabIndex        =   60
                Top             =   1320
                Width           =   1575
             End
@@ -1269,7 +1210,7 @@ Combo3.AddItem "7C"
 Combo3.AddItem "7D"
 End Sub
 Private Sub Command1_Click()
-On Error Resume Next
+'On Error Resume Next
 Dim tx1 As String
 Dim tx2 As String
 Dim a As Double
@@ -1548,21 +1489,125 @@ kb.Workbooks("NomEtudiants").Close savechanges:=False
 End Sub
 
 Private Sub Command14_Click()
-On Error Resume Next
+'On Error Resume Next
+Dim c As Double
+Dim r As Double
 Dim i As Double
+Dim nr As Double
+Dim nc As Double
+Dim cl1 As String
+Dim cl2 As String
+nr = grd8.Rows
+nc = grd8.Cols
+c = 2
+Call cont
+Do While Not em.EOF
+cl1 = em!cla
+For i = 2 To nc - 1
+grd8.Col = i
+grd8.row = 0
+cl2 = grd8.Text
+If cl1 = cl2 Then
+grd8.Col = i
+grd8.row = 1
+grd8.Text = em!col11
+grd8.row = 2
+grd8.Text = em!col12
+grd8.row = 3
+grd8.Text = em!col13
+grd8.row = 4
+grd8.Text = em!col14
+grd8.row = 5
+grd8.Text = em!col21
+grd8.row = 6
+grd8.Text = em!col22
+grd8.row = 7
+grd8.Text = em!col23
+grd8.row = 8
+grd8.Text = em!col24
+grd8.row = 9
+grd8.Text = em!col31
+grd8.row = 10
+grd8.Text = em!col32
+grd8.row = 11
+grd8.Text = em!col33
+grd8.row = 12
+grd8.Text = em!col34
+grd8.row = 13
+grd8.Text = em!col41
+grd8.row = 14
+grd8.Text = em!col42
+grd8.row = 15
+grd8.Text = em!col43
+grd8.row = 16
+grd8.Text = em!col44
+grd8.row = 17
+grd8.Text = em!col51
+grd8.row = 18
+grd8.Text = em!col52
+grd8.row = 19
+grd8.Text = em!col53
+grd8.row = 20
+grd8.Text = em!col54
+grd8.row = 21
+grd8.Text = em!col61
+grd8.row = 22
+grd8.Text = em!col62
+grd8.row = 23
+grd8.Text = em!col63
+grd8.row = 24
+grd8.Text = em!col64
+grd8.row = 25
+grd8.Text = em!col71
+grd8.row = 26
+grd8.Text = em!col72
+grd8.row = 27
+grd8.Text = em!col73
+grd8.row = 28
+grd8.Text = em!col74
+i = nc
+End If
+Next i
+em.MoveNext
+Loop
+End Sub
+
+Private Sub Command15_Click()
+'On Error GoTo u
+Dim i As Double
+Dim j As Double
 Dim n As Double
-Text5.Text = Trim(Text5.Text)
-Text6.Text = Trim(Text6.Text)
-If Text5.Text = "" Then
-MsgBox "ÇÏÎá ÇÓã ÇáãÄÓÓÉ", vbCritical
-Text5.SetFocus
+Dim k As Double
+Dim d As Double
+Dim sd As Double
+FileCopy App.Path & "\emplois010.xls", App.Path & "\Emplois de Temps.xls"
+Command15.Enabled = False
+n = grd8.Cols
+Set kb = CreateObject("Excel.application")
+kb.Workbooks.Open (App.Path & "\Emplois de Temps.xls")
+kb.Visible = True
+For i = 0 To 28
+For j = 0 To n - 1
+grd8.row = i
+grd8.Col = j
+kb.Workbooks("Emplois de Temps").Sheets(1).Cells(i + 3, j + 1).Value = grd8.Text
+Next j
+Next i
+'kb.Workbooks("ReportAnuelle").Sheets(1).Range("L3").Value = Combo5.Text
+'kb.Workbooks("fiche de presences").Sheets(1).Range("B5").Value = DT11.Value
+'Workbooks("Etudiants").Close savechanges:=False
+'Worksheets(1).Activate
+Command15.Enabled = True
 Exit Sub
-End If
-If Text6.Text = "" Then
-MsgBox "ÇÏÎá ÑÞã ÇáåÇÊÝ", vbCritical
-Text6.SetFocus
-Exit Sub
-End If
+u:
+MsgBox "íÌÈ ÇÛáÇÞ ÕÝÍÉ ÇßÓá Çä ßÇäÊ ãÝÊæÍÉ", vbExclamation
+Command10.Enabled = True
+End Sub
+
+Private Sub Command16_Click()
+Dim n As Double
+Dim i As Double
+Command16.Enabled = False
 Call cont
 Do While Not em.EOF
 em.Delete
@@ -1571,53 +1616,69 @@ Loop
 n = grd8.Cols
 For i = 2 To n - 1
 em.AddNew
-em!eta = Text5.Text
-em!tel = Text6.Text
 grd8.Col = i
 grd8.row = 0
 em!cla = grd8.Text
 grd8.row = 1
-em!sa1 = grd8.Text
+em!col11 = grd8.Text
 grd8.row = 2
-em!sa2 = grd8.Text
+em!col12 = grd8.Text
 grd8.row = 3
-em!sa3 = grd8.Text
+em!col13 = grd8.Text
 grd8.row = 4
-em!di1 = grd8.Text
+em!col14 = grd8.Text
 grd8.row = 5
-em!di2 = grd8.Text
+em!col21 = grd8.Text
 grd8.row = 6
-em!di3 = grd8.Text
+em!col22 = grd8.Text
 grd8.row = 7
-em!lu1 = grd8.Text
+em!col23 = grd8.Text
 grd8.row = 8
-em!lu2 = grd8.Text
+em!col24 = grd8.Text
 grd8.row = 9
-em!lu3 = grd8.Text
+em!col31 = grd8.Text
 grd8.row = 10
-em!ma1 = grd8.Text
+em!col32 = grd8.Text
 grd8.row = 11
-em!ma2 = grd8.Text
+em!col33 = grd8.Text
 grd8.row = 12
-em!ma3 = grd8.Text
+em!col34 = grd8.Text
 grd8.row = 13
-em!me1 = grd8.Text
+em!col41 = grd8.Text
 grd8.row = 14
-em!me2 = grd8.Text
+em!col42 = grd8.Text
 grd8.row = 15
-em!me3 = grd8.Text
+em!col43 = grd8.Text
 grd8.row = 16
-em!je1 = grd8.Text
+em!col44 = grd8.Text
 grd8.row = 17
-em!je2 = grd8.Text
+em!col51 = grd8.Text
 grd8.row = 18
-em!je3 = grd8.Text
+em!col52 = grd8.Text
 grd8.row = 19
-em!num = grd8.Text
-em!dat = Date
+em!col53 = grd8.Text
+grd8.row = 20
+em!col54 = grd8.Text
+grd8.row = 21
+em!col61 = grd8.Text
+grd8.row = 22
+em!col62 = grd8.Text
+grd8.row = 23
+em!col63 = grd8.Text
+grd8.row = 24
+em!col64 = grd8.Text
+grd8.row = 25
+em!col71 = grd8.Text
+grd8.row = 26
+em!col72 = grd8.Text
+grd8.row = 27
+em!col73 = grd8.Text
+grd8.row = 28
+em!col74 = grd8.Text
 em.Update
 Next i
 MsgBox "Êã ÍÝÙ ÇáÈíÇäÇÊ ÈäÌÇÍ", vbInformation
+Command16.Enabled = True
 End Sub
 
 Private Sub Command2_Click()
@@ -2017,7 +2078,6 @@ grd2.ColWidth(2) = 1000
 Call chargegrd8
 End Sub
 Private Sub chargegrd1()
-On Error Resume Next
 'On Error Resume Next
 Dim i As Double
 Dim tx As String
@@ -2037,13 +2097,13 @@ grd6.Col = 0
 grd6.Text = "ÇáÃÞÓÇã"
 grd8.Clear
 grd8.Cols = 2
-grd8.Rows = 21
+grd8.Rows = 29
 grd8.ColWidth(0) = 1200
 grd8.ColWidth(1) = 800
-'**** Samdi
+'**** ÇáÅËäíä
 grd8.row = 1
 grd8.Col = 0
-grd8.Text = "Samedi"
+grd8.Text = "Lundi"
 grd8.Col = 1
 grd8.Text = "08-10"
 grd8.CellBackColor = &H80FF&
@@ -2059,67 +2119,66 @@ grd8.Text = """"
 grd8.Col = 1
 grd8.Text = "12-14"
 grd8.CellBackColor = &HFF80FF
-'**** Dimanche
 grd8.row = 4
 grd8.Col = 0
-grd8.Text = "Dimanche"
+grd8.Text = """"
 grd8.Col = 1
-grd8.Text = "08-10"
-grd8.CellBackColor = &H80FF&
+grd8.Text = "14-16"
+grd8.CellBackColor = &HC000&
+'**** ÇáËáÇËÇÁ
 grd8.row = 5
-grd8.Col = 0
-grd8.Text = """"
-grd8.Col = 1
-grd8.Text = "10-12"
-grd8.CellBackColor = &HC000&
-grd8.row = 6
-grd8.Col = 0
-grd8.Text = """"
-grd8.Col = 1
-grd8.Text = "12-14"
-grd8.CellBackColor = &HFF80FF
-'**** Lundi
-grd8.row = 7
-grd8.Col = 0
-grd8.Text = "Lundi"
-grd8.Col = 1
-grd8.Text = "08-10"
-grd8.CellBackColor = &H80FF&
-grd8.row = 8
-grd8.Col = 0
-grd8.Text = """"
-grd8.Col = 1
-grd8.Text = "10-12"
-grd8.CellBackColor = &HC000&
-grd8.row = 9
-grd8.Col = 0
-grd8.Text = """"
-grd8.Col = 1
-grd8.Text = "12-14"
-grd8.CellBackColor = &HFF80FF
-'**** Mardi
-grd8.row = 10
 grd8.Col = 0
 grd8.Text = "Mardi"
 grd8.Col = 1
 grd8.Text = "08-10"
 grd8.CellBackColor = &H80FF&
-grd8.row = 11
+grd8.row = 6
 grd8.Col = 0
 grd8.Text = """"
 grd8.Col = 1
 grd8.Text = "10-12"
 grd8.CellBackColor = &HC000&
-grd8.row = 12
+grd8.row = 7
 grd8.Col = 0
 grd8.Text = """"
 grd8.Col = 1
 grd8.Text = "12-14"
 grd8.CellBackColor = &HFF80FF
-'**** Mercredi
-grd8.row = 13
+grd8.row = 8
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "14-16"
+grd8.CellBackColor = &HC000&
+'**** ÇáÃÑÈÚÇÁ
+grd8.row = 9
 grd8.Col = 0
 grd8.Text = "Mercredi"
+grd8.Col = 1
+grd8.Text = "08-10"
+grd8.CellBackColor = &H80FF&
+grd8.row = 10
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "10-12"
+grd8.CellBackColor = &HC000&
+grd8.row = 11
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "12-14"
+grd8.CellBackColor = &HFF80FF
+grd8.row = 12
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "14-16"
+grd8.CellBackColor = &HC000&
+'**** ÇáÎãíÓ
+grd8.row = 13
+grd8.Col = 0
+grd8.Text = "Jeudi"
 grd8.Col = 1
 grd8.Text = "08-10"
 grd8.CellBackColor = &H80FF&
@@ -2135,25 +2194,87 @@ grd8.Text = """"
 grd8.Col = 1
 grd8.Text = "12-14"
 grd8.CellBackColor = &HFF80FF
-'**** Jeudi
 grd8.row = 16
 grd8.Col = 0
-grd8.Text = "Jeudi"
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "14-16"
+grd8.CellBackColor = &HC000&
+'**** ÇáÌãÚÉ
+grd8.row = 17
+grd8.Col = 0
+grd8.Text = "Vendredi"
 grd8.Col = 1
 grd8.Text = "08-10"
 grd8.CellBackColor = &H80FF&
-grd8.row = 17
+grd8.row = 18
 grd8.Col = 0
 grd8.Text = """"
 grd8.Col = 1
 grd8.Text = "10-12"
 grd8.CellBackColor = &HC000&
-grd8.row = 18
+grd8.row = 19
 grd8.Col = 0
 grd8.Text = """"
 grd8.Col = 1
 grd8.Text = "12-14"
 grd8.CellBackColor = &HFF80FF
+grd8.row = 20
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "14-16"
+grd8.CellBackColor = &HC000&
+'**** ÇáÓÈÊ
+grd8.row = 21
+grd8.Col = 0
+grd8.Text = "Samedi"
+grd8.Col = 1
+grd8.Text = "08-10"
+grd8.CellBackColor = &H80FF&
+grd8.row = 22
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "10-12"
+grd8.CellBackColor = &HC000&
+grd8.row = 23
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "12-14"
+grd8.CellBackColor = &HFF80FF
+grd8.row = 24
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "14-16"
+grd8.CellBackColor = &HC000&
+'**** ÇáÃÍÏ
+grd8.row = 25
+grd8.Col = 0
+grd8.Text = "Dimanche"
+grd8.Col = 1
+grd8.Text = "08-10"
+grd8.CellBackColor = &H80FF&
+grd8.row = 26
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "10-12"
+grd8.CellBackColor = &HC000&
+grd8.row = 27
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "12-14"
+grd8.CellBackColor = &HFF80FF
+grd8.row = 28
+grd8.Col = 0
+grd8.Text = """"
+grd8.Col = 1
+grd8.Text = "14-16"
+grd8.CellBackColor = &HC000&
 'For j = 1 To 4
 Call cont
 grd1.Rows = cl.RecordCount + 2
@@ -2179,12 +2300,7 @@ grd8.Col = i + 1
 grd8.ColWidth(i + 1) = 700
 grd8.row = 0
 grd8.Text = cl!cla
-grd8.row = 19
-grd8.Text = i
-grd8.row = 20
-grd8.Text = "IMP"
-grd8.CellBackColor = &HFFFFFF
-For j = 1 To 18
+For j = 1 To 28
 grd8.row = j
 grd8.Col = i
 tx = grd8.CellBackColor
@@ -2195,6 +2311,7 @@ Next j
 i = i + 1
 cl.MoveNext
 Loop
+Command14_Click
 'Next j
 grd1.Rows = i
 grd1.ColAlignment(1) = 1
@@ -2834,12 +2951,9 @@ Private Sub grd8_Click()
 'On Error Resume Next
 Dim c As Double
 Dim r As Double
-Dim n As Double
-Dim a As Double
-Dim ane As String
 c = grd8.Col
 r = grd8.row
-If c > 1 And r > 0 And r < 19 Then
+If c > 1 And r > 0 And r < 29 Then
 g = InputBox("ÇÏÎá ÇáãÇÏÉ", "ÇÏÎÇá ÇáãÇÏÉ")
 If g = Cancel Then
 Exit Sub
@@ -2847,28 +2961,6 @@ End If
 grd8.Col = c
 grd8.row = r
 grd8.Text = g
-Exit Sub
-End If
-If c > 1 And r = 20 Then
-grd8.Col = c
-grd8.row = 19
-a = grd8.Text
-Call cont
-Do While Not em.EOF
-If em!num = a Then
-em!dat = Date
-em.Update
-em.MoveLast
-End If
-em.MoveNext
-Loop
-Call cont
-ane = face.SBB1.Panels(9).Text
-data.OpenCurrentDatabase App.Path & "\" & ane & ".mdb", False, "7346804"
-data.DoCmd.Maximize
-data.DoCmd.OpenReport "Emploi", acViewPreview, , "num =" & a, acWindowNormal, OpenArgs
-data.Visible = True
-Set data = Nothing
 End If
 End Sub
 
@@ -2976,7 +3068,7 @@ End If
 
 End Sub
 Private Sub chargetimes()
-On Error Resume Next
+'On Error Resume Next
 grd3.Clear
 grd3.Rows = 17
 grd3.Cols = 8
@@ -3324,8 +3416,6 @@ Dim tx2 As String
 n = grd8.Cols
 Call cont
 Do While Not em.EOF
-Text5.Text = em!eta
-Text6.Text = em!tel
 tx1 = em!cla
 For i = 2 To n - 1
 grd8.Col = i

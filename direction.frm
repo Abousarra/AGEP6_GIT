@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
@@ -45,6 +45,7 @@ Begin VB.Form direction
       TabPicture(0)   =   "direction.frx":0000
       Tab(0).ControlEnabled=   0   'False
       Tab(0).Control(0)=   "Picture5"
+      Tab(0).Control(0).Enabled=   0   'False
       Tab(0).ControlCount=   1
       TabCaption(1)   =   "»Ì«‰«  «·„” Œœ„Ì‰"
       TabPicture(1)   =   "direction.frx":001C
@@ -378,7 +379,7 @@ Begin VB.Form direction
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123338753
+            Format          =   123928577
             CurrentDate     =   41183
          End
          Begin MSFlexGridLib.MSFlexGrid grd12 
@@ -902,7 +903,7 @@ Begin VB.Form direction
                _ExtentX        =   3201
                _ExtentY        =   661
                _Version        =   393216
-               Format          =   123338753
+               Format          =   123928577
                CurrentDate     =   71615
             End
             Begin VB.Label Label6 
@@ -1060,7 +1061,7 @@ Begin VB.Form direction
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123338753
+            Format          =   123928577
             CurrentDate     =   41183
          End
          Begin MSComCtl2.DTPicker DT2 
@@ -1081,7 +1082,7 @@ Begin VB.Form direction
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123338753
+            Format          =   123928577
             CurrentDate     =   41547
          End
          Begin VB.Label Label331 
