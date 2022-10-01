@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
-Begin VB.Form Rosso3 
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
+Begin VB.Form Al_Baqie 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   5775
    ClientLeft      =   15
@@ -425,7 +425,7 @@ Begin VB.Form Rosso3
       Width           =   1200
    End
 End
-Attribute VB_Name = "Rosso3"
+Attribute VB_Name = "Al_Baqie"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True

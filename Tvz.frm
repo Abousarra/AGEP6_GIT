@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
-Begin VB.Form TVZ 
+Begin VB.Form El_Emel 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   5790
    ClientLeft      =   15
@@ -416,7 +416,7 @@ Begin VB.Form TVZ
       Top             =   1560
    End
 End
-Attribute VB_Name = "TVZ"
+Attribute VB_Name = "El_Emel"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
