@@ -103,7 +103,7 @@ Begin VB.MDIForm face
          _ExtentX        =   4260
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   115671041
+         Format          =   119013377
          CurrentDate     =   40612
       End
    End
