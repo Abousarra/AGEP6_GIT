@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
 Begin VB.Form Taghwa 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   5790
