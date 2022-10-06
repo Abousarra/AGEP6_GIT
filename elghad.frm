@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
 Begin VB.Form Tlamid 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   5745
@@ -27,10 +27,10 @@ Begin VB.Form Tlamid
       Width           =   7575
       Begin VB.PictureBox Picture2 
          BorderStyle     =   0  'None
-         Height          =   885
-         Left            =   480
+         Height          =   930
+         Left            =   360
          Picture         =   "elghad.frx":0000
-         ScaleHeight     =   885
+         ScaleHeight     =   930
          ScaleWidth      =   6855
          TabIndex        =   24
          Top             =   1800
@@ -38,7 +38,7 @@ Begin VB.Form Tlamid
       End
       Begin ACTIVESKINLibCtl.Skin Skin2 
          Left            =   480
-         OleObjectBlob   =   "elghad.frx":143B2
+         OleObjectBlob   =   "elghad.frx":1825A
          Top             =   3480
       End
       Begin VB.PictureBox Picture3 
@@ -302,7 +302,7 @@ Begin VB.Form Tlamid
       Begin VB.Label Label3 
          Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
-         Caption         =   "«· ﬁÊÏ «·Œ«’…"
+         Caption         =   "ÿÂ «·Õ—…"
          BeginProperty Font 
             Name            =   "Times New Roman"
             Size            =   11.25
@@ -322,7 +322,7 @@ Begin VB.Form Tlamid
       Begin VB.Label Label2 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "Ettaghwa"
+         Caption         =   "Taha"
          BeginProperty Font 
             Name            =   "Times New Roman"
             Size            =   11.25

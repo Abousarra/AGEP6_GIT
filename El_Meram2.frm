@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
-Begin VB.Form El_Meram2 
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
+Begin VB.Form Taha 
    BorderStyle     =   0  'None
    Caption         =   "Form1"
    ClientHeight    =   5835
@@ -293,7 +293,7 @@ Begin VB.Form El_Meram2
       End
       Begin ACTIVESKINLibCtl.Skin Skin2 
          Left            =   0
-         OleObjectBlob   =   "El_Meram2.frx":3CB2
+         OleObjectBlob   =   "El_Meram2.frx":1825A
          Top             =   0
       End
       Begin VB.Label Label2 
@@ -413,7 +413,7 @@ Begin VB.Form El_Meram2
       End
    End
 End
-Attribute VB_Name = "El_Meram2"
+Attribute VB_Name = "Taha"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
