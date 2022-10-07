@@ -38,7 +38,7 @@ Begin VB.Form Tlamid
       End
       Begin ACTIVESKINLibCtl.Skin Skin2 
          Left            =   480
-         OleObjectBlob   =   "elghad.frx":1825A
+         OleObjectBlob   =   "elghad.frx":14772
          Top             =   3480
       End
       Begin VB.PictureBox Picture3 
@@ -302,7 +302,7 @@ Begin VB.Form Tlamid
       Begin VB.Label Label3 
          Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
-         Caption         =   "ÿÂ «·Õ—…"
+         Caption         =   "«·ﬁÌ«œ… «·Õ—…"
          BeginProperty Font 
             Name            =   "Times New Roman"
             Size            =   11.25
@@ -322,7 +322,7 @@ Begin VB.Form Tlamid
       Begin VB.Label Label2 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "Taha"
+         Caption         =   "El Ghiyada"
          BeginProperty Font 
             Name            =   "Times New Roman"
             Size            =   11.25

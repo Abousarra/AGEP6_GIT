@@ -44,8 +44,8 @@ Begin VB.Form caisse
       TabCaption(0)   =   "«·√ﬂÊ«œ"
       TabPicture(0)   =   "caisse.frx":0000
       Tab(0).ControlEnabled=   0   'False
-      Tab(0).Control(0)=   "Picture1"
-      Tab(0).Control(1)=   "grd6"
+      Tab(0).Control(0)=   "grd6"
+      Tab(0).Control(1)=   "Picture1"
       Tab(0).ControlCount=   2
       TabCaption(1)   =   "Õ—ﬂ… «·’‰œÊﬁ"
       TabPicture(1)   =   "caisse.frx":001C
@@ -55,14 +55,14 @@ Begin VB.Form caisse
       TabCaption(2)   =   "Õ”«» «·»‰ﬂ"
       TabPicture(2)   =   "caisse.frx":0038
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "Picture18"
-      Tab(2).Control(1)=   "Picture19"
+      Tab(2).Control(0)=   "Picture19"
+      Tab(2).Control(1)=   "Picture18"
       Tab(2).ControlCount=   2
       TabCaption(3)   =   "Õ”«» «·„’—Ê›« "
       TabPicture(3)   =   "caisse.frx":0054
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "Picture16"
-      Tab(3).Control(1)=   "Picture15"
+      Tab(3).Control(0)=   "Picture15"
+      Tab(3).Control(1)=   "Picture16"
       Tab(3).ControlCount=   2
       TabCaption(4)   =   "Õ”«» «·‘—ﬂ«¡"
       TabPicture(4)   =   "caisse.frx":0070
@@ -87,7 +87,7 @@ Begin VB.Form caisse
          Left            =   -74880
          ScaleHeight     =   8895
          ScaleWidth      =   14295
-         TabIndex        =   238
+         TabIndex        =   233
          Top             =   360
          Width           =   14295
          Begin VB.CommandButton Command33 
@@ -103,7 +103,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   7560
-            TabIndex        =   267
+            TabIndex        =   262
             Top             =   120
             Width           =   3015
          End
@@ -120,7 +120,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   5880
-            TabIndex        =   266
+            TabIndex        =   261
             Top             =   120
             Width           =   1695
          End
@@ -137,7 +137,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   3480
-            TabIndex        =   265
+            TabIndex        =   260
             Top             =   120
             Width           =   2415
          End
@@ -154,7 +154,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   960
-            TabIndex        =   264
+            TabIndex        =   259
             Top             =   120
             Width           =   2535
          End
@@ -171,14 +171,14 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   120
-            TabIndex        =   239
+            TabIndex        =   234
             Top             =   120
             Width           =   735
          End
          Begin MSFlexGridLib.MSFlexGrid grd23 
             Height          =   3135
             Left            =   120
-            TabIndex        =   240
+            TabIndex        =   235
             Top             =   5640
             Width           =   14055
             _ExtentX        =   24791
@@ -207,7 +207,7 @@ Begin VB.Form caisse
          Begin MSComCtl2.DTPicker DT21 
             Height          =   375
             Left            =   12480
-            TabIndex        =   241
+            TabIndex        =   236
             Top             =   120
             Width           =   1335
             _ExtentX        =   2355
@@ -222,13 +222,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT22 
             Height          =   375
             Left            =   10680
-            TabIndex        =   242
+            TabIndex        =   237
             Top             =   120
             Width           =   1335
             _ExtentX        =   2355
@@ -243,13 +243,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSFlexGridLib.MSFlexGrid grd22 
             Height          =   3975
             Left            =   120
-            TabIndex        =   243
+            TabIndex        =   238
             Top             =   1320
             Width           =   14055
             _ExtentX        =   24791
@@ -278,7 +278,7 @@ Begin VB.Form caisse
          Begin MSComctlLib.ProgressBar ProgressBar8 
             Height          =   375
             Left            =   120
-            TabIndex        =   261
+            TabIndex        =   256
             Top             =   960
             Width           =   4815
             _ExtentX        =   8493
@@ -302,7 +302,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   3840
-            TabIndex        =   275
+            TabIndex        =   270
             Top             =   600
             Width           =   1455
          End
@@ -323,7 +323,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   26
             Left            =   5040
-            TabIndex        =   274
+            TabIndex        =   269
             Top             =   600
             Width           =   1455
          End
@@ -343,7 +343,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   11520
-            TabIndex        =   260
+            TabIndex        =   255
             Top             =   600
             Width           =   1455
          End
@@ -364,7 +364,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   25
             Left            =   12000
-            TabIndex        =   259
+            TabIndex        =   254
             Top             =   600
             Width           =   2175
          End
@@ -385,7 +385,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   19
             Left            =   4440
-            TabIndex        =   253
+            TabIndex        =   248
             Top             =   5280
             Width           =   5415
          End
@@ -406,7 +406,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   18
             Left            =   4680
-            TabIndex        =   252
+            TabIndex        =   247
             Top             =   960
             Width           =   4935
          End
@@ -427,7 +427,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   24
             Left            =   11040
-            TabIndex        =   251
+            TabIndex        =   246
             Top             =   120
             Width           =   1335
          End
@@ -448,7 +448,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   23
             Left            =   12840
-            TabIndex        =   250
+            TabIndex        =   245
             Top             =   120
             Width           =   1335
          End
@@ -469,7 +469,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   22
             Left            =   10440
-            TabIndex        =   249
+            TabIndex        =   244
             Top             =   600
             Width           =   855
          End
@@ -490,7 +490,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   21
             Left            =   8160
-            TabIndex        =   248
+            TabIndex        =   243
             Top             =   600
             Width           =   855
          End
@@ -511,7 +511,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   20
             Left            =   1440
-            TabIndex        =   247
+            TabIndex        =   242
             Top             =   600
             Width           =   2055
          End
@@ -531,7 +531,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   120
-            TabIndex        =   246
+            TabIndex        =   241
             Top             =   600
             Width           =   1455
          End
@@ -551,7 +551,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   6720
-            TabIndex        =   245
+            TabIndex        =   240
             Top             =   600
             Width           =   1455
          End
@@ -571,7 +571,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   9120
-            TabIndex        =   244
+            TabIndex        =   239
             Top             =   600
             Width           =   1575
          End
@@ -583,7 +583,7 @@ Begin VB.Form caisse
          Left            =   -74880
          ScaleHeight     =   615
          ScaleWidth      =   14295
-         TabIndex        =   215
+         TabIndex        =   210
          Top             =   360
          Width           =   14295
          Begin VB.ComboBox Combo11 
@@ -603,7 +603,7 @@ Begin VB.Form caisse
             Left            =   11280
             List            =   "caisse.frx":00DA
             Style           =   2  'Dropdown List
-            TabIndex        =   219
+            TabIndex        =   214
             Top             =   120
             Width           =   2295
          End
@@ -622,7 +622,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   6960
-            TabIndex        =   218
+            TabIndex        =   213
             Top             =   120
             Width           =   3135
          End
@@ -639,7 +639,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   120
-            TabIndex        =   217
+            TabIndex        =   212
             Top             =   120
             Width           =   1575
          End
@@ -658,14 +658,14 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   1800
-            TabIndex        =   216
+            TabIndex        =   211
             Top             =   120
             Width           =   1455
          End
          Begin MSComCtl2.DTPicker DT18 
             Height          =   375
             Left            =   4920
-            TabIndex        =   220
+            TabIndex        =   215
             Top             =   120
             Width           =   1335
             _ExtentX        =   2355
@@ -680,7 +680,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin VB.Label Label31 
@@ -700,7 +700,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   56
             Left            =   12720
-            TabIndex        =   224
+            TabIndex        =   219
             Top             =   120
             Width           =   1455
          End
@@ -721,7 +721,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   55
             Left            =   9120
-            TabIndex        =   223
+            TabIndex        =   218
             Top             =   120
             Width           =   2055
          End
@@ -742,7 +742,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   54
             Left            =   4800
-            TabIndex        =   222
+            TabIndex        =   217
             Top             =   120
             Width           =   2055
          End
@@ -763,7 +763,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   53
             Left            =   2640
-            TabIndex        =   221
+            TabIndex        =   216
             Top             =   120
             Width           =   2175
          End
@@ -775,7 +775,7 @@ Begin VB.Form caisse
          Left            =   -74880
          ScaleHeight     =   8175
          ScaleWidth      =   14295
-         TabIndex        =   206
+         TabIndex        =   201
          Top             =   1080
          Width           =   14295
          Begin VB.CommandButton Command30 
@@ -792,7 +792,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   3960
-            TabIndex        =   208
+            TabIndex        =   203
             Top             =   600
             Width           =   975
          End
@@ -809,14 +809,14 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   5040
-            TabIndex        =   207
+            TabIndex        =   202
             Top             =   600
             Width           =   1215
          End
          Begin MSFlexGridLib.MSFlexGrid grd20 
             Height          =   6375
             Left            =   120
-            TabIndex        =   209
+            TabIndex        =   204
             Top             =   1560
             Width           =   6975
             _ExtentX        =   12303
@@ -845,7 +845,7 @@ Begin VB.Form caisse
          Begin MSComCtl2.DTPicker DT19 
             Height          =   375
             Left            =   8160
-            TabIndex        =   210
+            TabIndex        =   205
             Top             =   600
             Width           =   1335
             _ExtentX        =   2355
@@ -860,13 +860,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT20 
             Height          =   375
             Left            =   6360
-            TabIndex        =   211
+            TabIndex        =   206
             Top             =   600
             Width           =   1335
             _ExtentX        =   2355
@@ -881,13 +881,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar7 
             Height          =   255
             Left            =   3960
-            TabIndex        =   212
+            TabIndex        =   207
             Top             =   1080
             Width           =   6375
             _ExtentX        =   11245
@@ -898,7 +898,7 @@ Begin VB.Form caisse
          Begin MSFlexGridLib.MSFlexGrid grd21 
             Height          =   6375
             Left            =   7200
-            TabIndex        =   226
+            TabIndex        =   221
             Top             =   1560
             Width           =   6975
             _ExtentX        =   12303
@@ -941,7 +941,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   17
             Left            =   120
-            TabIndex        =   234
+            TabIndex        =   229
             Top             =   1080
             Width           =   4215
          End
@@ -962,7 +962,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   16
             Left            =   9960
-            TabIndex        =   233
+            TabIndex        =   228
             Top             =   1200
             Width           =   4215
          End
@@ -982,7 +982,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   9480
-            TabIndex        =   232
+            TabIndex        =   227
             Top             =   120
             Width           =   2775
          End
@@ -1002,7 +1002,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   4440
-            TabIndex        =   231
+            TabIndex        =   226
             Top             =   120
             Width           =   2775
          End
@@ -1022,7 +1022,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   120
-            TabIndex        =   230
+            TabIndex        =   225
             Top             =   120
             Width           =   2775
          End
@@ -1043,7 +1043,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   15
             Left            =   2280
-            TabIndex        =   229
+            TabIndex        =   224
             Top             =   120
             Width           =   2055
          End
@@ -1064,7 +1064,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   14
             Left            =   6840
-            TabIndex        =   228
+            TabIndex        =   223
             Top             =   120
             Width           =   2415
          End
@@ -1085,7 +1085,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   13
             Left            =   12000
-            TabIndex        =   227
+            TabIndex        =   222
             Top             =   120
             Width           =   2175
          End
@@ -1106,7 +1106,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   12
             Left            =   9000
-            TabIndex        =   214
+            TabIndex        =   209
             Top             =   600
             Width           =   1335
          End
@@ -1127,7 +1127,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   11
             Left            =   6720
-            TabIndex        =   213
+            TabIndex        =   208
             Top             =   600
             Width           =   1335
          End
@@ -1139,7 +1139,7 @@ Begin VB.Form caisse
          Left            =   -74880
          ScaleHeight     =   8895
          ScaleWidth      =   14295
-         TabIndex        =   167
+         TabIndex        =   162
          Top             =   360
          Width           =   14295
          Begin VB.CommandButton Command28 
@@ -1156,7 +1156,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   2040
-            TabIndex        =   196
+            TabIndex        =   191
             Top             =   2760
             Width           =   1095
          End
@@ -1173,7 +1173,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   3240
-            TabIndex        =   195
+            TabIndex        =   190
             Top             =   2760
             Width           =   1215
          End
@@ -1190,7 +1190,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   240
-            TabIndex        =   192
+            TabIndex        =   187
             Top             =   2160
             Width           =   1695
          End
@@ -1207,7 +1207,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   2040
-            TabIndex        =   184
+            TabIndex        =   179
             Top             =   2160
             Width           =   2535
          End
@@ -1226,7 +1226,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   6840
-            TabIndex        =   178
+            TabIndex        =   173
             Top             =   1680
             Width           =   1455
          End
@@ -1247,7 +1247,7 @@ Begin VB.Form caisse
             Left            =   4680
             List            =   "caisse.frx":013A
             Style           =   2  'Dropdown List
-            TabIndex        =   177
+            TabIndex        =   172
             Top             =   1680
             Width           =   1455
          End
@@ -1268,14 +1268,14 @@ Begin VB.Form caisse
             Left            =   4680
             List            =   "caisse.frx":019A
             Style           =   2  'Dropdown List
-            TabIndex        =   174
+            TabIndex        =   169
             Top             =   1200
             Width           =   3615
          End
          Begin MSFlexGridLib.MSFlexGrid grd16 
             Height          =   8295
             Left            =   9240
-            TabIndex        =   168
+            TabIndex        =   163
             Top             =   480
             Width           =   4935
             _ExtentX        =   8705
@@ -1304,7 +1304,7 @@ Begin VB.Form caisse
          Begin MSComCtl2.DTPicker DT12 
             Height          =   375
             Left            =   240
-            TabIndex        =   182
+            TabIndex        =   177
             Top             =   1680
             Width           =   1695
             _ExtentX        =   2990
@@ -1319,13 +1319,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar4 
             Height          =   375
             Left            =   4680
-            TabIndex        =   185
+            TabIndex        =   180
             Top             =   2160
             Width           =   4215
             _ExtentX        =   7435
@@ -1336,7 +1336,7 @@ Begin VB.Form caisse
          Begin MSFlexGridLib.MSFlexGrid grd17 
             Height          =   5175
             Left            =   120
-            TabIndex        =   193
+            TabIndex        =   188
             Top             =   3600
             Width           =   4335
             _ExtentX        =   7646
@@ -1365,7 +1365,7 @@ Begin VB.Form caisse
          Begin MSFlexGridLib.MSFlexGrid grd18 
             Height          =   5175
             Left            =   4680
-            TabIndex        =   194
+            TabIndex        =   189
             Top             =   3600
             Width           =   4335
             _ExtentX        =   7646
@@ -1394,7 +1394,7 @@ Begin VB.Form caisse
          Begin MSComCtl2.DTPicker DT13 
             Height          =   375
             Left            =   6840
-            TabIndex        =   197
+            TabIndex        =   192
             Top             =   2760
             Width           =   1335
             _ExtentX        =   2355
@@ -1409,13 +1409,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT14 
             Height          =   375
             Left            =   4560
-            TabIndex        =   198
+            TabIndex        =   193
             Top             =   2760
             Width           =   1335
             _ExtentX        =   2355
@@ -1430,7 +1430,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin VB.Label Label5 
@@ -1450,7 +1450,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   10
             Left            =   120
-            TabIndex        =   204
+            TabIndex        =   199
             Top             =   3240
             Width           =   4335
          End
@@ -1471,7 +1471,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   9
             Left            =   4680
-            TabIndex        =   203
+            TabIndex        =   198
             Top             =   3240
             Width           =   4335
          End
@@ -1492,7 +1492,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   8
             Left            =   7680
-            TabIndex        =   200
+            TabIndex        =   195
             Top             =   2760
             Width           =   1335
          End
@@ -1513,7 +1513,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   7
             Left            =   5400
-            TabIndex        =   199
+            TabIndex        =   194
             Top             =   2760
             Width           =   1335
          End
@@ -1534,7 +1534,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   52
             Left            =   720
-            TabIndex        =   191
+            TabIndex        =   186
             Top             =   240
             Width           =   1815
          End
@@ -1553,7 +1553,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   240
-            TabIndex        =   190
+            TabIndex        =   185
             Top             =   240
             Width           =   1575
          End
@@ -1573,7 +1573,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   240
-            TabIndex        =   189
+            TabIndex        =   184
             Top             =   600
             Width           =   2055
          End
@@ -1593,7 +1593,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   4800
-            TabIndex        =   188
+            TabIndex        =   183
             Top             =   600
             Width           =   2055
          End
@@ -1614,7 +1614,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   51
             Left            =   2280
-            TabIndex        =   187
+            TabIndex        =   182
             Top             =   600
             Width           =   2295
          End
@@ -1635,7 +1635,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   50
             Left            =   6720
-            TabIndex        =   186
+            TabIndex        =   181
             Top             =   600
             Width           =   2175
          End
@@ -1656,7 +1656,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   49
             Left            =   600
-            TabIndex        =   183
+            TabIndex        =   178
             Top             =   1680
             Width           =   2055
          End
@@ -1676,7 +1676,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   48
             Left            =   2760
-            TabIndex        =   181
+            TabIndex        =   176
             Top             =   1680
             Width           =   1095
          End
@@ -1697,7 +1697,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   47
             Left            =   3120
-            TabIndex        =   180
+            TabIndex        =   175
             Top             =   1680
             Width           =   1455
          End
@@ -1718,7 +1718,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   46
             Left            =   5280
-            TabIndex        =   179
+            TabIndex        =   174
             Top             =   1680
             Width           =   1455
          End
@@ -1755,7 +1755,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   45
             Left            =   9840
-            TabIndex        =   176
+            TabIndex        =   171
             Top             =   120
             Width           =   3735
          End
@@ -1776,7 +1776,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   44
             Left            =   7440
-            TabIndex        =   175
+            TabIndex        =   170
             Top             =   1200
             Width           =   1455
          End
@@ -1797,7 +1797,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   43
             Left            =   6840
-            TabIndex        =   173
+            TabIndex        =   168
             Top             =   1680
             Width           =   2055
          End
@@ -1817,7 +1817,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   3480
-            TabIndex        =   172
+            TabIndex        =   167
             Top             =   240
             Width           =   1095
          End
@@ -1837,7 +1837,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   6960
-            TabIndex        =   171
+            TabIndex        =   166
             Top             =   240
             Width           =   1935
          End
@@ -1856,7 +1856,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   2520
-            TabIndex        =   170
+            TabIndex        =   165
             Top             =   240
             Width           =   1095
          End
@@ -1875,7 +1875,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   4680
-            TabIndex        =   169
+            TabIndex        =   164
             Top             =   240
             Width           =   3615
          End
@@ -1887,7 +1887,7 @@ Begin VB.Form caisse
          Left            =   -74880
          ScaleHeight     =   8175
          ScaleWidth      =   14295
-         TabIndex        =   159
+         TabIndex        =   154
          Top             =   1080
          Width           =   14295
          Begin VB.CommandButton Command20 
@@ -1903,7 +1903,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   5160
-            TabIndex        =   161
+            TabIndex        =   156
             Top             =   600
             Width           =   975
          End
@@ -1921,14 +1921,14 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   4080
-            TabIndex        =   160
+            TabIndex        =   155
             Top             =   600
             Width           =   975
          End
          Begin MSFlexGridLib.MSFlexGrid grd19 
             Height          =   6975
             Left            =   120
-            TabIndex        =   162
+            TabIndex        =   157
             Top             =   1080
             Width           =   14055
             _ExtentX        =   24791
@@ -1957,7 +1957,7 @@ Begin VB.Form caisse
          Begin MSComCtl2.DTPicker DT16 
             Height          =   375
             Left            =   8040
-            TabIndex        =   163
+            TabIndex        =   158
             Top             =   600
             Width           =   1335
             _ExtentX        =   2355
@@ -1972,13 +1972,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT17 
             Height          =   375
             Left            =   6240
-            TabIndex        =   164
+            TabIndex        =   159
             Top             =   600
             Width           =   1335
             _ExtentX        =   2355
@@ -1993,13 +1993,13 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar6 
             Height          =   375
             Left            =   4080
-            TabIndex        =   205
+            TabIndex        =   200
             Top             =   120
             Width           =   6135
             _ExtentX        =   10821
@@ -2023,7 +2023,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   120
-            TabIndex        =   271
+            TabIndex        =   266
             Top             =   600
             Width           =   2055
          End
@@ -2044,7 +2044,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   57
             Left            =   1800
-            TabIndex        =   270
+            TabIndex        =   265
             Top             =   600
             Width           =   2175
          End
@@ -2065,7 +2065,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   6
             Left            =   6600
-            TabIndex        =   166
+            TabIndex        =   161
             Top             =   600
             Width           =   1335
          End
@@ -2086,7 +2086,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   5
             Left            =   8880
-            TabIndex        =   165
+            TabIndex        =   160
             Top             =   600
             Width           =   1335
          End
@@ -2098,7 +2098,7 @@ Begin VB.Form caisse
          Left            =   -74880
          ScaleHeight     =   615
          ScaleWidth      =   14295
-         TabIndex        =   149
+         TabIndex        =   144
          Top             =   360
          Width           =   14295
          Begin VB.TextBox Text10 
@@ -2116,7 +2116,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   1800
-            TabIndex        =   153
+            TabIndex        =   148
             Top             =   120
             Width           =   1455
          End
@@ -2133,7 +2133,7 @@ Begin VB.Form caisse
             EndProperty
             Height          =   375
             Left            =   120
-            TabIndex        =   152
+            TabIndex        =   147
             Top             =   120
             Width           =   1575
          End
@@ -2152,7 +2152,7 @@ Begin VB.Form caisse
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   6960
-            TabIndex        =   151
+            TabIndex        =   146
             Top             =   120
             Width           =   3135
          End
@@ -2173,14 +2173,14 @@ Begin VB.Form caisse
             Left            =   11280
             List            =   "caisse.frx":01FA
             Style           =   2  'Dropdown List
-            TabIndex        =   150
+            TabIndex        =   145
             Top             =   120
             Width           =   2295
          End
          Begin MSComCtl2.DTPicker DT15 
             Height          =   375
             Left            =   4920
-            TabIndex        =   154
+            TabIndex        =   149
             Top             =   120
             Width           =   1335
             _ExtentX        =   2355
@@ -2195,7 +2195,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   118423553
+            Format          =   123797505
             CurrentDate     =   41154
          End
          Begin VB.Label Label31 
@@ -2215,7 +2215,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   41
             Left            =   2640
-            TabIndex        =   158
+            TabIndex        =   153
             Top             =   120
             Width           =   2175
          End
@@ -2236,7 +2236,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   40
             Left            =   4800
-            TabIndex        =   157
+            TabIndex        =   152
             Top             =   120
             Width           =   2055
          End
@@ -2257,7 +2257,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   39
             Left            =   9120
-            TabIndex        =   156
+            TabIndex        =   151
             Top             =   120
             Width           =   2055
          End
@@ -2278,7 +2278,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   38
             Left            =   12720
-            TabIndex        =   155
+            TabIndex        =   150
             Top             =   120
             Width           =   1455
          End
@@ -2290,13 +2290,13 @@ Begin VB.Form caisse
          Left            =   120
          ScaleHeight     =   8895
          ScaleWidth      =   14295
-         TabIndex        =   68
+         TabIndex        =   65
          Top             =   360
          Width           =   14295
          Begin TabDlg.SSTab SSTab2 
             Height          =   8655
             Left            =   120
-            TabIndex        =   69
+            TabIndex        =   66
             Top             =   120
             Width           =   14055
             _ExtentX        =   24791
@@ -2335,14 +2335,15 @@ Begin VB.Form caisse
                Left            =   120
                ScaleHeight     =   615
                ScaleWidth      =   13815
-               TabIndex        =   142
+               TabIndex        =   139
                Top             =   360
                Width           =   13815
-               Begin VB.ComboBox Combo1 
+               Begin VB.TextBox Text17 
+                  Alignment       =   1  'Right Justify
                   BackColor       =   &H00000000&
                   BeginProperty Font 
                      Name            =   "Times New Roman"
-                     Size            =   11.25
+                     Size            =   12
                      Charset         =   178
                      Weight          =   700
                      Underline       =   0   'False
@@ -2351,13 +2352,10 @@ Begin VB.Form caisse
                   EndProperty
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
-                  ItemData        =   "caisse.frx":027C
-                  Left            =   11280
-                  List            =   "caisse.frx":0292
-                  Style           =   2  'Dropdown List
-                  TabIndex        =   145
+                  Left            =   11160
+                  TabIndex        =   287
                   Top             =   120
-                  Width           =   1935
+                  Width           =   1815
                End
                Begin VB.TextBox Text3 
                   Alignment       =   1  'Right Justify
@@ -2374,7 +2372,7 @@ Begin VB.Form caisse
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   7920
-                  TabIndex        =   144
+                  TabIndex        =   141
                   Top             =   120
                   Width           =   1455
                End
@@ -2391,14 +2389,14 @@ Begin VB.Form caisse
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   143
+                  TabIndex        =   140
                   Top             =   120
                   Width           =   1455
                End
                Begin MSFlexGridLib.MSFlexGrid grd1 
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   146
+                  TabIndex        =   142
                   Top             =   120
                   Width           =   7695
                   _ExtentX        =   13573
@@ -2428,28 +2426,7 @@ Begin VB.Form caisse
                Begin VB.Label Label31 
                   Alignment       =   1  'Right Justify
                   BackStyle       =   0  'Transparent
-                  Caption         =   " «·ﬂÊœ"
-                  BeginProperty Font 
-                     Name            =   "Times New Roman"
-                     Size            =   12
-                     Charset         =   178
-                     Weight          =   700
-                     Underline       =   0   'False
-                     Italic          =   0   'False
-                     Strikethrough   =   0   'False
-                  EndProperty
-                  ForeColor       =   &H00FFFFFF&
-                  Height          =   375
-                  Index           =   3
-                  Left            =   12240
-                  TabIndex        =   148
-                  Top             =   120
-                  Width           =   1455
-               End
-               Begin VB.Label Label31 
-                  Alignment       =   1  'Right Justify
-                  BackStyle       =   0  'Transparent
-                  Caption         =   "«·—ﬁ„ «· ”·”·Ì ·· ·„Ì–"
+                  Caption         =   "«·Â« ›                                     √Ê «·—ﬁ„ «· ”·”·Ì"
                   BeginProperty Font 
                      Name            =   "Times New Roman"
                      Size            =   12
@@ -2462,10 +2439,10 @@ Begin VB.Form caisse
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Index           =   4
-                  Left            =   9120
-                  TabIndex        =   147
+                  Left            =   9360
+                  TabIndex        =   143
                   Top             =   120
-                  Width           =   2055
+                  Width           =   4335
                End
             End
             Begin VB.PictureBox Picture5 
@@ -2475,7 +2452,7 @@ Begin VB.Form caisse
                Left            =   120
                ScaleHeight     =   7455
                ScaleWidth      =   13815
-               TabIndex        =   100
+               TabIndex        =   97
                Top             =   1080
                Width           =   13815
                Begin VB.PictureBox Picture6 
@@ -2485,10 +2462,27 @@ Begin VB.Form caisse
                   Left            =   0
                   ScaleHeight     =   7455
                   ScaleWidth      =   13815
-                  TabIndex        =   101
+                  TabIndex        =   98
                   Top             =   0
                   Visible         =   0   'False
                   Width           =   13815
+                  Begin VB.CommandButton Command44 
+                     Caption         =   "”Õ»"
+                     BeginProperty Font 
+                        Name            =   "Times New Roman"
+                        Size            =   12
+                        Charset         =   178
+                        Weight          =   700
+                        Underline       =   0   'False
+                        Italic          =   0   'False
+                        Strikethrough   =   0   'False
+                     EndProperty
+                     Height          =   375
+                     Left            =   5040
+                     TabIndex        =   292
+                     Top             =   600
+                     Width           =   1215
+                  End
                   Begin VB.CheckBox Check6 
                      Alignment       =   1  'Right Justify
                      BackColor       =   &H00000000&
@@ -2505,7 +2499,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   285
                      Left            =   11760
-                     TabIndex        =   262
+                     TabIndex        =   257
                      Top             =   6840
                      Value           =   1  'Checked
                      Width           =   255
@@ -2515,23 +2509,65 @@ Begin VB.Form caisse
                      Left            =   120
                      ScaleHeight     =   5955
                      ScaleWidth      =   5955
-                     TabIndex        =   112
+                     TabIndex        =   109
                      Top             =   1080
                      Visible         =   0   'False
                      Width           =   6015
+                     Begin VB.ComboBox Combo7 
+                        BackColor       =   &H00000000&
+                        BeginProperty Font 
+                           Name            =   "Times New Roman"
+                           Size            =   11.25
+                           Charset         =   178
+                           Weight          =   700
+                           Underline       =   0   'False
+                           Italic          =   0   'False
+                           Strikethrough   =   0   'False
+                        EndProperty
+                        ForeColor       =   &H00FFFFFF&
+                        Height          =   375
+                        ItemData        =   "caisse.frx":027C
+                        Left            =   1320
+                        List            =   "caisse.frx":0292
+                        Style           =   2  'Dropdown List
+                        TabIndex        =   289
+                        Top             =   240
+                        Width           =   1935
+                     End
+                     Begin VB.ComboBox Combo1 
+                        BackColor       =   &H00000000&
+                        BeginProperty Font 
+                           Name            =   "Times New Roman"
+                           Size            =   11.25
+                           Charset         =   178
+                           Weight          =   700
+                           Underline       =   0   'False
+                           Italic          =   0   'False
+                           Strikethrough   =   0   'False
+                        EndProperty
+                        ForeColor       =   &H00FFFFFF&
+                        Height          =   375
+                        ItemData        =   "caisse.frx":02DC
+                        Left            =   2880
+                        List            =   "caisse.frx":02F2
+                        Style           =   2  'Dropdown List
+                        TabIndex        =   286
+                        Top             =   840
+                        Width           =   1935
+                     End
                      Begin VB.PictureBox Picture21 
                         Height          =   1455
                         Left            =   3240
                         ScaleHeight     =   1395
                         ScaleWidth      =   1515
-                        TabIndex        =   282
+                        TabIndex        =   277
                         Top             =   120
                         Width           =   1575
                         Begin VB.CommandButton Command40 
                            Caption         =   "«· «·Ì"
                            Height          =   375
                            Left            =   0
-                           TabIndex        =   285
+                           TabIndex        =   280
                            Top             =   480
                            Width           =   615
                         End
@@ -2539,7 +2575,7 @@ Begin VB.Form caisse
                            Caption         =   "Õ›Ÿ"
                            Height          =   375
                            Left            =   960
-                           TabIndex        =   284
+                           TabIndex        =   279
                            Top             =   0
                            Width           =   495
                         End
@@ -2547,7 +2583,7 @@ Begin VB.Form caisse
                            Caption         =   "Ê’· Ê’·"
                            Height          =   375
                            Left            =   480
-                           TabIndex        =   283
+                           TabIndex        =   278
                            Top             =   960
                            Width           =   975
                         End
@@ -2555,7 +2591,7 @@ Begin VB.Form caisse
                            Caption         =   "Label46"
                            Height          =   255
                            Left            =   0
-                           TabIndex        =   287
+                           TabIndex        =   282
                            Top             =   240
                            Width           =   735
                         End
@@ -2563,7 +2599,7 @@ Begin VB.Form caisse
                            Caption         =   "Label47"
                            Height          =   255
                            Left            =   0
-                           TabIndex        =   286
+                           TabIndex        =   281
                            Top             =   0
                            Width           =   855
                         End
@@ -2571,7 +2607,7 @@ Begin VB.Form caisse
                      Begin VB.TextBox Text15 
                         Height          =   285
                         Left            =   2280
-                        TabIndex        =   278
+                        TabIndex        =   273
                         Text            =   "Text15"
                         Top             =   4800
                         Width           =   3495
@@ -2580,14 +2616,14 @@ Begin VB.Form caisse
                         Caption         =   "Command39"
                         Height          =   255
                         Left            =   2280
-                        TabIndex        =   277
+                        TabIndex        =   272
                         Top             =   4560
                         Width           =   1215
                      End
                      Begin VB.TextBox Text16 
                         Height          =   285
                         Left            =   2280
-                        TabIndex        =   276
+                        TabIndex        =   271
                         Text            =   "Text16"
                         Top             =   5040
                         Width           =   3495
@@ -2596,14 +2632,14 @@ Begin VB.Form caisse
                         Caption         =   "Envoer"
                         Height          =   375
                         Left            =   1200
-                        TabIndex        =   273
+                        TabIndex        =   268
                         Top             =   2520
                         Width           =   1095
                      End
                      Begin VB.TextBox Text14 
                         Height          =   375
                         Left            =   2400
-                        TabIndex        =   272
+                        TabIndex        =   267
                         Text            =   "195"
                         Top             =   2520
                         Width           =   855
@@ -2612,14 +2648,14 @@ Begin VB.Form caisse
                         Caption         =   "Command37"
                         Height          =   375
                         Left            =   1920
-                        TabIndex        =   269
+                        TabIndex        =   264
                         Top             =   1440
                         Width           =   1335
                      End
                      Begin MSComctlLib.ProgressBar ProgressBar9 
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   268
+                        TabIndex        =   263
                         Top             =   5400
                         Width           =   3135
                         _ExtentX        =   5530
@@ -2652,11 +2688,11 @@ Begin VB.Form caisse
                         EndProperty
                         ForeColor       =   &H00FFFFFF&
                         Height          =   375
-                        ItemData        =   "caisse.frx":02DC
+                        ItemData        =   "caisse.frx":033C
                         Left            =   1920
-                        List            =   "caisse.frx":02F2
+                        List            =   "caisse.frx":0352
                         Style           =   2  'Dropdown List
-                        TabIndex        =   237
+                        TabIndex        =   232
                         Top             =   960
                         Width           =   1095
                      End
@@ -2694,7 +2730,7 @@ Begin VB.Form caisse
                         Caption         =   "Command4"
                         Height          =   375
                         Left            =   240
-                        TabIndex        =   115
+                        TabIndex        =   112
                         Top             =   600
                         Width           =   1575
                      End
@@ -2723,26 +2759,26 @@ Begin VB.Form caisse
                         EndProperty
                         Height          =   375
                         Left            =   720
-                        TabIndex        =   113
+                        TabIndex        =   110
                         Top             =   1920
                         Width           =   1215
                      End
                      Begin MSComCtl2.DTPicker DT6 
                         Height          =   255
                         Left            =   720
-                        TabIndex        =   114
+                        TabIndex        =   111
                         Top             =   1560
                         Width           =   1215
                         _ExtentX        =   2143
                         _ExtentY        =   450
                         _Version        =   393216
-                        Format          =   118423553
+                        Format          =   123797505
                         CurrentDate     =   41162
                      End
                      Begin MSFlexGridLib.MSFlexGrid grd11 
                         Height          =   5775
                         Left            =   3840
-                        TabIndex        =   281
+                        TabIndex        =   276
                         Top             =   240
                         Width           =   6495
                         _ExtentX        =   11456
@@ -2771,7 +2807,7 @@ Begin VB.Form caisse
                         Caption         =   "Label41"
                         Height          =   255
                         Left            =   1080
-                        TabIndex        =   258
+                        TabIndex        =   253
                         Top             =   5520
                         Width           =   1815
                      End
@@ -2779,7 +2815,7 @@ Begin VB.Form caisse
                         Caption         =   "Label40"
                         Height          =   255
                         Left            =   1680
-                        TabIndex        =   257
+                        TabIndex        =   252
                         Top             =   4680
                         Width           =   1815
                      End
@@ -2787,7 +2823,7 @@ Begin VB.Form caisse
                         Caption         =   "Label39"
                         Height          =   255
                         Left            =   1680
-                        TabIndex        =   256
+                        TabIndex        =   251
                         Top             =   4320
                         Width           =   1815
                      End
@@ -2795,7 +2831,7 @@ Begin VB.Form caisse
                         Caption         =   "Label38"
                         Height          =   255
                         Left            =   1680
-                        TabIndex        =   255
+                        TabIndex        =   250
                         Top             =   3960
                         Width           =   1815
                      End
@@ -2803,7 +2839,7 @@ Begin VB.Form caisse
                         Caption         =   "Label37"
                         Height          =   255
                         Left            =   1680
-                        TabIndex        =   254
+                        TabIndex        =   249
                         Top             =   3600
                         Width           =   1815
                      End
@@ -2811,7 +2847,7 @@ Begin VB.Form caisse
                         Caption         =   "Label29"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   225
+                        TabIndex        =   220
                         Top             =   5520
                         Width           =   1815
                      End
@@ -2819,7 +2855,7 @@ Begin VB.Form caisse
                         Caption         =   "Label28"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   202
+                        TabIndex        =   197
                         Top             =   5160
                         Width           =   1815
                      End
@@ -2827,14 +2863,14 @@ Begin VB.Form caisse
                         Caption         =   "Label27"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   201
+                        TabIndex        =   196
                         Top             =   4800
                         Width           =   1815
                      End
                      Begin VB.Label Label1 
                         Height          =   375
                         Left            =   120
-                        TabIndex        =   122
+                        TabIndex        =   119
                         Top             =   240
                         Width           =   1455
                      End
@@ -2842,7 +2878,7 @@ Begin VB.Form caisse
                         Caption         =   "Label3"
                         Height          =   375
                         Left            =   240
-                        TabIndex        =   121
+                        TabIndex        =   118
                         Top             =   1080
                         Width           =   2175
                      End
@@ -2850,7 +2886,7 @@ Begin VB.Form caisse
                         Caption         =   "Label4"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   120
+                        TabIndex        =   117
                         Top             =   2280
                         Width           =   1335
                      End
@@ -2858,7 +2894,7 @@ Begin VB.Form caisse
                         Caption         =   "Label20"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   119
+                        TabIndex        =   116
                         Top             =   3240
                         Width           =   1695
                      End
@@ -2866,7 +2902,7 @@ Begin VB.Form caisse
                         Caption         =   "Label21"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   118
+                        TabIndex        =   115
                         Top             =   3720
                         Width           =   1815
                      End
@@ -2874,7 +2910,7 @@ Begin VB.Form caisse
                         Caption         =   "Label22"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   117
+                        TabIndex        =   114
                         Top             =   4080
                         Width           =   1695
                      End
@@ -2882,7 +2918,7 @@ Begin VB.Form caisse
                         Caption         =   "Label23"
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   116
+                        TabIndex        =   113
                         Top             =   4440
                         Width           =   1815
                      End
@@ -2899,8 +2935,8 @@ Begin VB.Form caisse
                         Strikethrough   =   0   'False
                      EndProperty
                      Height          =   375
-                     Left            =   6480
-                     TabIndex        =   111
+                     Left            =   6360
+                     TabIndex        =   108
                      Top             =   600
                      Width           =   1335
                   End
@@ -2917,7 +2953,7 @@ Begin VB.Form caisse
                      EndProperty
                      Height          =   375
                      Left            =   6480
-                     TabIndex        =   110
+                     TabIndex        =   107
                      Top             =   6840
                      Width           =   2775
                   End
@@ -2936,7 +2972,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   120
-                     TabIndex        =   109
+                     TabIndex        =   106
                      Top             =   120
                      Width           =   2055
                   End
@@ -2953,11 +2989,11 @@ Begin VB.Form caisse
                      EndProperty
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
-                     ItemData        =   "caisse.frx":033C
+                     ItemData        =   "caisse.frx":039C
                      Left            =   3360
-                     List            =   "caisse.frx":034C
+                     List            =   "caisse.frx":03AC
                      Style           =   2  'Dropdown List
-                     TabIndex        =   108
+                     TabIndex        =   105
                      Top             =   120
                      Width           =   1695
                   End
@@ -2976,7 +3012,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   7320
-                     TabIndex        =   107
+                     TabIndex        =   104
                      Top             =   120
                      Width           =   1815
                   End
@@ -2995,7 +3031,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   10680
-                     TabIndex        =   106
+                     TabIndex        =   103
                      Top             =   120
                      Width           =   1815
                   End
@@ -3012,7 +3048,7 @@ Begin VB.Form caisse
                      EndProperty
                      Height          =   375
                      Left            =   12960
-                     TabIndex        =   105
+                     TabIndex        =   102
                      Top             =   600
                      Width           =   735
                   End
@@ -3030,7 +3066,7 @@ Begin VB.Form caisse
                      EndProperty
                      Height          =   375
                      Left            =   9600
-                     TabIndex        =   104
+                     TabIndex        =   101
                      Top             =   600
                      Width           =   1335
                   End
@@ -3047,11 +3083,11 @@ Begin VB.Form caisse
                      EndProperty
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
-                     ItemData        =   "caisse.frx":037F
+                     ItemData        =   "caisse.frx":03DF
                      Left            =   12120
-                     List            =   "caisse.frx":038F
+                     List            =   "caisse.frx":03EF
                      Style           =   2  'Dropdown List
-                     TabIndex        =   103
+                     TabIndex        =   100
                      Top             =   6840
                      Width           =   1455
                   End
@@ -3068,14 +3104,14 @@ Begin VB.Form caisse
                      EndProperty
                      Height          =   375
                      Left            =   9360
-                     TabIndex        =   102
+                     TabIndex        =   99
                      Top             =   6840
                      Width           =   1335
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar2 
                      Height          =   255
                      Left            =   6480
-                     TabIndex        =   123
+                     TabIndex        =   120
                      Top             =   6480
                      Visible         =   0   'False
                      Width           =   5895
@@ -3087,7 +3123,7 @@ Begin VB.Form caisse
                   Begin MSFlexGridLib.MSFlexGrid grd2 
                      Height          =   4695
                      Left            =   10920
-                     TabIndex        =   124
+                     TabIndex        =   121
                      Top             =   1080
                      Width           =   2775
                      _ExtentX        =   4895
@@ -3117,7 +3153,7 @@ Begin VB.Form caisse
                   Begin MSFlexGridLib.MSFlexGrid grd3 
                      Height          =   4695
                      Left            =   6360
-                     TabIndex        =   125
+                     TabIndex        =   122
                      Top             =   1080
                      Width           =   4575
                      _ExtentX        =   8070
@@ -3147,14 +3183,14 @@ Begin VB.Form caisse
                   Begin MSFlexGridLib.MSFlexGrid grd4 
                      Height          =   4695
                      Left            =   120
-                     TabIndex        =   126
+                     TabIndex        =   123
                      Top             =   1080
                      Width           =   6135
                      _ExtentX        =   10821
                      _ExtentY        =   8281
                      _Version        =   393216
                      Rows            =   1
-                     Cols            =   6
+                     Cols            =   7
                      FixedRows       =   0
                      FixedCols       =   0
                      BackColor       =   0
@@ -3177,7 +3213,7 @@ Begin VB.Form caisse
                   Begin MSComCtl2.DTPicker DT2 
                      Height          =   375
                      Left            =   10920
-                     TabIndex        =   127
+                     TabIndex        =   124
                      Top             =   6000
                      Width           =   1455
                      _ExtentX        =   2566
@@ -3192,13 +3228,13 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   118423553
+                     Format          =   123797505
                      CurrentDate     =   41154
                   End
                   Begin MSFlexGridLib.MSFlexGrid grd5 
                      Height          =   1455
                      Left            =   1560
-                     TabIndex        =   128
+                     TabIndex        =   125
                      Top             =   5880
                      Width           =   4695
                      _ExtentX        =   8281
@@ -3241,8 +3277,8 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   120
-                     TabIndex        =   290
-                     Top             =   600
+                     TabIndex        =   285
+                     Top             =   720
                      Width           =   2055
                   End
                   Begin VB.Label Label31 
@@ -3262,8 +3298,8 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   60
                      Left            =   1080
-                     TabIndex        =   289
-                     Top             =   600
+                     TabIndex        =   284
+                     Top             =   720
                      Width           =   2055
                   End
                   Begin VB.Label Label31 
@@ -3283,7 +3319,7 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   59
                      Left            =   7440
-                     TabIndex        =   280
+                     TabIndex        =   275
                      Top             =   6000
                      Width           =   975
                   End
@@ -3303,7 +3339,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   6360
-                     TabIndex        =   279
+                     TabIndex        =   274
                      Top             =   6000
                      Width           =   1335
                   End
@@ -3323,7 +3359,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   255
                      Left            =   10560
-                     TabIndex        =   263
+                     TabIndex        =   258
                      Top             =   6840
                      Width           =   1095
                   End
@@ -3344,7 +3380,7 @@ Begin VB.Form caisse
                      Height          =   1095
                      Index           =   14
                      Left            =   120
-                     TabIndex        =   141
+                     TabIndex        =   138
                      Top             =   6240
                      Width           =   1335
                   End
@@ -3365,7 +3401,7 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   13
                      Left            =   12240
-                     TabIndex        =   140
+                     TabIndex        =   137
                      Top             =   6480
                      Width           =   1335
                   End
@@ -3385,7 +3421,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   8640
-                     TabIndex        =   139
+                     TabIndex        =   136
                      Top             =   6000
                      Width           =   1215
                   End
@@ -3406,7 +3442,7 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   12
                      Left            =   9840
-                     TabIndex        =   138
+                     TabIndex        =   135
                      Top             =   6000
                      Width           =   975
                   End
@@ -3426,7 +3462,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   12240
-                     TabIndex        =   137
+                     TabIndex        =   134
                      Top             =   6000
                      Width           =   1335
                   End
@@ -3453,7 +3489,7 @@ Begin VB.Form caisse
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   6360
-                     TabIndex        =   136
+                     TabIndex        =   133
                      Top             =   6480
                      Width           =   6015
                   End
@@ -3474,9 +3510,9 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   11
                      Left            =   3240
-                     TabIndex        =   135
+                     TabIndex        =   132
                      Top             =   720
-                     Width           =   3015
+                     Width           =   1815
                   End
                   Begin VB.Label Label31 
                      Alignment       =   2  'Center
@@ -3495,9 +3531,9 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   10
                      Left            =   7320
-                     TabIndex        =   134
+                     TabIndex        =   131
                      Top             =   720
-                     Width           =   3015
+                     Width           =   2775
                   End
                   Begin VB.Label Label31 
                      Alignment       =   1  'Right Justify
@@ -3516,7 +3552,7 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   9
                      Left            =   1080
-                     TabIndex        =   133
+                     TabIndex        =   130
                      Top             =   120
                      Width           =   2055
                   End
@@ -3537,7 +3573,7 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   8
                      Left            =   4560
-                     TabIndex        =   132
+                     TabIndex        =   129
                      Top             =   120
                      Width           =   2535
                   End
@@ -3558,7 +3594,7 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   7
                      Left            =   8520
-                     TabIndex        =   131
+                     TabIndex        =   128
                      Top             =   120
                      Width           =   2055
                   End
@@ -3579,7 +3615,7 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   6
                      Left            =   11640
-                     TabIndex        =   130
+                     TabIndex        =   127
                      Top             =   120
                      Width           =   2055
                   End
@@ -3600,10 +3636,41 @@ Begin VB.Form caisse
                      Height          =   375
                      Index           =   5
                      Left            =   10320
-                     TabIndex        =   129
+                     TabIndex        =   126
                      Top             =   600
                      Width           =   3375
                   End
+               End
+               Begin MSFlexGridLib.MSFlexGrid grd01 
+                  Height          =   4815
+                  Left            =   6480
+                  TabIndex        =   288
+                  Top             =   0
+                  Visible         =   0   'False
+                  Width           =   6615
+                  _ExtentX        =   11668
+                  _ExtentY        =   8493
+                  _Version        =   393216
+                  Rows            =   1
+                  Cols            =   3
+                  FixedRows       =   0
+                  FixedCols       =   0
+                  BackColor       =   0
+                  ForeColor       =   16777215
+                  BackColorFixed  =   0
+                  ForeColorFixed  =   16777215
+                  BackColorBkg    =   0
+                  RightToLeft     =   -1  'True
+                  Appearance      =   0
+                  BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+                     Name            =   "Times New Roman"
+                     Size            =   12
+                     Charset         =   178
+                     Weight          =   700
+                     Underline       =   0   'False
+                     Italic          =   0   'False
+                     Strikethrough   =   0   'False
+                  EndProperty
                End
             End
             Begin VB.PictureBox Picture7 
@@ -3613,13 +3680,13 @@ Begin VB.Form caisse
                Left            =   -74880
                ScaleHeight     =   8175
                ScaleWidth      =   13815
-               TabIndex        =   70
+               TabIndex        =   67
                Top             =   360
                Width           =   13815
                Begin TabDlg.SSTab SSTab3 
                   Height          =   7935
                   Left            =   120
-                  TabIndex        =   71
+                  TabIndex        =   68
                   Top             =   120
                   Width           =   13575
                   _ExtentX        =   23945
@@ -3639,12 +3706,12 @@ Begin VB.Form caisse
                      Strikethrough   =   0   'False
                   EndProperty
                   TabCaption(0)   =   "«·„” Õﬁ«  ⁄·Ï «· ·«„Ì–"
-                  TabPicture(0)   =   "caisse.frx":03C2
+                  TabPicture(0)   =   "caisse.frx":0422
                   Tab(0).ControlEnabled=   0   'False
                   Tab(0).Control(0)=   "Picture9"
                   Tab(0).ControlCount=   1
                   TabCaption(1)   =   "œ›⁄ «·√Ê’«·"
-                  TabPicture(1)   =   "caisse.frx":03DE
+                  TabPicture(1)   =   "caisse.frx":043E
                   Tab(1).ControlEnabled=   -1  'True
                   Tab(1).Control(0)=   "Picture8"
                   Tab(1).Control(0).Enabled=   0   'False
@@ -3656,7 +3723,7 @@ Begin VB.Form caisse
                      Left            =   120
                      ScaleHeight     =   7455
                      ScaleWidth      =   13335
-                     TabIndex        =   81
+                     TabIndex        =   78
                      Top             =   360
                      Width           =   13335
                      Begin VB.CommandButton Command43 
@@ -3672,7 +3739,7 @@ Begin VB.Form caisse
                         EndProperty
                         Height          =   285
                         Left            =   8280
-                        TabIndex        =   288
+                        TabIndex        =   283
                         Top             =   600
                         Width           =   1335
                      End
@@ -3689,14 +3756,14 @@ Begin VB.Form caisse
                         EndProperty
                         Height          =   375
                         Left            =   6720
-                        TabIndex        =   83
+                        TabIndex        =   80
                         Top             =   120
                         Width           =   1455
                      End
                      Begin MSComctlLib.ProgressBar ProgressBar3 
                         Height          =   375
                         Left            =   120
-                        TabIndex        =   82
+                        TabIndex        =   79
                         Top             =   120
                         Width           =   3015
                         _ExtentX        =   5318
@@ -3707,7 +3774,7 @@ Begin VB.Form caisse
                      Begin MSComCtl2.DTPicker DT3 
                         Height          =   375
                         Left            =   11040
-                        TabIndex        =   84
+                        TabIndex        =   81
                         Top             =   120
                         Width           =   1335
                         _ExtentX        =   2355
@@ -3722,13 +3789,13 @@ Begin VB.Form caisse
                            Italic          =   0   'False
                            Strikethrough   =   0   'False
                         EndProperty
-                        Format          =   118423553
+                        Format          =   123797505
                         CurrentDate     =   41154
                      End
                      Begin MSComCtl2.DTPicker DT4 
                         Height          =   375
                         Left            =   8280
-                        TabIndex        =   85
+                        TabIndex        =   82
                         Top             =   120
                         Width           =   1335
                         _ExtentX        =   2355
@@ -3743,13 +3810,13 @@ Begin VB.Form caisse
                            Italic          =   0   'False
                            Strikethrough   =   0   'False
                         EndProperty
-                        Format          =   118423553
+                        Format          =   123797505
                         CurrentDate     =   41154
                      End
                      Begin MSFlexGridLib.MSFlexGrid grd7 
                         Height          =   6135
                         Left            =   8280
-                        TabIndex        =   86
+                        TabIndex        =   83
                         Top             =   960
                         Width           =   4935
                         _ExtentX        =   8705
@@ -3777,7 +3844,7 @@ Begin VB.Form caisse
                      Begin MSFlexGridLib.MSFlexGrid grd8 
                         Height          =   6135
                         Left            =   4200
-                        TabIndex        =   87
+                        TabIndex        =   84
                         Top             =   960
                         Width           =   3975
                         _ExtentX        =   7011
@@ -3805,7 +3872,7 @@ Begin VB.Form caisse
                      Begin MSFlexGridLib.MSFlexGrid grd9 
                         Height          =   6135
                         Left            =   120
-                        TabIndex        =   88
+                        TabIndex        =   85
                         Top             =   960
                         Width           =   3975
                         _ExtentX        =   7011
@@ -3847,7 +3914,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   0
                         Left            =   11880
-                        TabIndex        =   99
+                        TabIndex        =   96
                         Top             =   120
                         Width           =   1335
                      End
@@ -3868,7 +3935,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   1
                         Left            =   9240
-                        TabIndex        =   98
+                        TabIndex        =   95
                         Top             =   120
                         Width           =   1335
                      End
@@ -3889,7 +3956,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   15
                         Left            =   11160
-                        TabIndex        =   97
+                        TabIndex        =   94
                         Top             =   600
                         Width           =   2055
                      End
@@ -3910,7 +3977,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   16
                         Left            =   1920
-                        TabIndex        =   96
+                        TabIndex        =   93
                         Top             =   600
                         Width           =   2055
                      End
@@ -3931,7 +3998,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   17
                         Left            =   6000
-                        TabIndex        =   95
+                        TabIndex        =   92
                         Top             =   600
                         Width           =   2055
                      End
@@ -3952,7 +4019,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   18
                         Left            =   4560
-                        TabIndex        =   94
+                        TabIndex        =   91
                         Top             =   120
                         Width           =   2055
                      End
@@ -3972,7 +4039,7 @@ Begin VB.Form caisse
                         ForeColor       =   &H00FFFFFF&
                         Height          =   255
                         Left            =   3240
-                        TabIndex        =   93
+                        TabIndex        =   90
                         Top             =   120
                         Width           =   1695
                      End
@@ -3992,7 +4059,7 @@ Begin VB.Form caisse
                         ForeColor       =   &H00FFFFFF&
                         Height          =   255
                         Left            =   120
-                        TabIndex        =   92
+                        TabIndex        =   89
                         Top             =   600
                         Width           =   1815
                      End
@@ -4012,7 +4079,7 @@ Begin VB.Form caisse
                         ForeColor       =   &H00FFFFFF&
                         Height          =   255
                         Left            =   4200
-                        TabIndex        =   91
+                        TabIndex        =   88
                         Top             =   600
                         Width           =   1935
                      End
@@ -4032,14 +4099,14 @@ Begin VB.Form caisse
                         ForeColor       =   &H00FFFFFF&
                         Height          =   255
                         Left            =   9720
-                        TabIndex        =   90
+                        TabIndex        =   87
                         Top             =   600
                         Width           =   1575
                      End
                      Begin VB.Label Label31 
                         Alignment       =   2  'Center
                         BackStyle       =   0  'Transparent
-                        Caption         =   $"caisse.frx":03FA
+                        Caption         =   $"caisse.frx":045A
                         BeginProperty Font 
                            Name            =   "Times New Roman"
                            Size            =   12
@@ -4053,7 +4120,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   21
                         Left            =   0
-                        TabIndex        =   89
+                        TabIndex        =   86
                         Top             =   7080
                         Width           =   13335
                      End
@@ -4065,7 +4132,7 @@ Begin VB.Form caisse
                      Left            =   -74880
                      ScaleHeight     =   7455
                      ScaleWidth      =   13335
-                     TabIndex        =   72
+                     TabIndex        =   69
                      Top             =   360
                      Width           =   13335
                      Begin VB.ComboBox Combo4 
@@ -4081,11 +4148,11 @@ Begin VB.Form caisse
                         EndProperty
                         ForeColor       =   &H00FFFFFF&
                         Height          =   375
-                        ItemData        =   "caisse.frx":048D
+                        ItemData        =   "caisse.frx":04ED
                         Left            =   8520
-                        List            =   "caisse.frx":049D
+                        List            =   "caisse.frx":04FD
                         Style           =   2  'Dropdown List
-                        TabIndex        =   76
+                        TabIndex        =   73
                         Top             =   120
                         Width           =   1815
                      End
@@ -4102,7 +4169,7 @@ Begin VB.Form caisse
                         EndProperty
                         Height          =   375
                         Left            =   1680
-                        TabIndex        =   75
+                        TabIndex        =   72
                         Top             =   120
                         Width           =   3135
                      End
@@ -4119,11 +4186,11 @@ Begin VB.Form caisse
                         EndProperty
                         ForeColor       =   &H00FFFFFF&
                         Height          =   375
-                        ItemData        =   "caisse.frx":04D0
+                        ItemData        =   "caisse.frx":0530
                         Left            =   5040
-                        List            =   "caisse.frx":04E0
+                        List            =   "caisse.frx":0540
                         Style           =   2  'Dropdown List
-                        TabIndex        =   74
+                        TabIndex        =   71
                         Top             =   120
                         Width           =   1575
                      End
@@ -4140,14 +4207,14 @@ Begin VB.Form caisse
                         EndProperty
                         Height          =   375
                         Left            =   1920
-                        TabIndex        =   73
+                        TabIndex        =   70
                         Top             =   6960
                         Width           =   3135
                      End
                      Begin MSFlexGridLib.MSFlexGrid grd10 
                         Height          =   6735
                         Left            =   6720
-                        TabIndex        =   77
+                        TabIndex        =   74
                         Top             =   600
                         Width           =   6495
                         _ExtentX        =   11456
@@ -4175,7 +4242,7 @@ Begin VB.Form caisse
                      Begin MSFlexGridLib.MSFlexGrid grd12 
                         Height          =   6255
                         Left            =   120
-                        TabIndex        =   78
+                        TabIndex        =   75
                         Top             =   600
                         Width           =   6495
                         _ExtentX        =   11456
@@ -4217,7 +4284,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   19
                         Left            =   8880
-                        TabIndex        =   80
+                        TabIndex        =   77
                         Top             =   120
                         Width           =   3015
                      End
@@ -4238,7 +4305,7 @@ Begin VB.Form caisse
                         Height          =   375
                         Index           =   20
                         Left            =   6120
-                        TabIndex        =   79
+                        TabIndex        =   76
                         Top             =   120
                         Width           =   2295
                      End
@@ -4280,12 +4347,12 @@ Begin VB.Form caisse
                Strikethrough   =   0   'False
             EndProperty
             TabCaption(0)   =   "—ﬂ‰ «·„ «»⁄…"
-            TabPicture(0)   =   "caisse.frx":0513
+            TabPicture(0)   =   "caisse.frx":0573
             Tab(0).ControlEnabled=   0   'False
             Tab(0).Control(0)=   "Picture14"
             Tab(0).ControlCount=   1
             TabCaption(1)   =   "—ﬂ‰ «·œ›⁄"
-            TabPicture(1)   =   "caisse.frx":052F
+            TabPicture(1)   =   "caisse.frx":058F
             Tab(1).ControlEnabled=   -1  'True
             Tab(1).Control(0)=   "Picture13"
             Tab(1).Control(0).Enabled=   0   'False
@@ -4302,6 +4369,25 @@ Begin VB.Form caisse
                TabIndex        =   60
                Top             =   360
                Width           =   13815
+               Begin VB.TextBox Text18 
+                  Alignment       =   1  'Right Justify
+                  BackColor       =   &H00000000&
+                  BeginProperty Font 
+                     Name            =   "Times New Roman"
+                     Size            =   12
+                     Charset         =   178
+                     Weight          =   700
+                     Underline       =   0   'False
+                     Italic          =   0   'False
+                     Strikethrough   =   0   'False
+                  EndProperty
+                  ForeColor       =   &H00FFFFFF&
+                  Height          =   375
+                  Left            =   11160
+                  TabIndex        =   291
+                  Top             =   120
+                  Width           =   1815
+               End
                Begin VB.CommandButton Command14 
                   Caption         =   "⁄—÷ «·Õ”«»"
                   BeginProperty Font 
@@ -4315,7 +4401,7 @@ Begin VB.Form caisse
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   63
+                  TabIndex        =   62
                   Top             =   120
                   Width           =   1455
                End
@@ -4334,27 +4420,6 @@ Begin VB.Form caisse
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   7320
-                  TabIndex        =   62
-                  Top             =   120
-                  Width           =   1935
-               End
-               Begin VB.ComboBox Combo7 
-                  BackColor       =   &H00000000&
-                  BeginProperty Font 
-                     Name            =   "Times New Roman"
-                     Size            =   11.25
-                     Charset         =   178
-                     Weight          =   700
-                     Underline       =   0   'False
-                     Italic          =   0   'False
-                     Strikethrough   =   0   'False
-                  EndProperty
-                  ForeColor       =   &H00FFFFFF&
-                  Height          =   375
-                  ItemData        =   "caisse.frx":054B
-                  Left            =   11280
-                  List            =   "caisse.frx":0561
-                  Style           =   2  'Dropdown List
                   TabIndex        =   61
                   Top             =   120
                   Width           =   1935
@@ -4362,7 +4427,7 @@ Begin VB.Form caisse
                Begin VB.Label Label31 
                   Alignment       =   1  'Right Justify
                   BackStyle       =   0  'Transparent
-                  Caption         =   "«·—ﬁ„ «· ”·”·Ì ··√” «–"
+                  Caption         =   "«·Â« ›                                     √Ê «·—ﬁ„ «· ”·”·Ì"
                   BeginProperty Font 
                      Name            =   "Times New Roman"
                      Size            =   12
@@ -4374,32 +4439,11 @@ Begin VB.Form caisse
                   EndProperty
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
-                  Index           =   22
-                  Left            =   9120
-                  TabIndex        =   67
+                  Index           =   3
+                  Left            =   9360
+                  TabIndex        =   290
                   Top             =   120
-                  Width           =   2055
-               End
-               Begin VB.Label Label31 
-                  Alignment       =   1  'Right Justify
-                  BackStyle       =   0  'Transparent
-                  Caption         =   " «·ﬂÊœ"
-                  BeginProperty Font 
-                     Name            =   "Times New Roman"
-                     Size            =   12
-                     Charset         =   178
-                     Weight          =   700
-                     Underline       =   0   'False
-                     Italic          =   0   'False
-                     Strikethrough   =   0   'False
-                  EndProperty
-                  ForeColor       =   &H00FFFFFF&
-                  Height          =   375
-                  Index           =   23
-                  Left            =   12240
-                  TabIndex        =   66
-                  Top             =   120
-                  Width           =   1455
+                  Width           =   4335
                End
                Begin VB.Label Label10 
                   Alignment       =   1  'Right Justify
@@ -4416,7 +4460,7 @@ Begin VB.Form caisse
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   3600
-                  TabIndex        =   65
+                  TabIndex        =   64
                   Top             =   120
                   Width           =   3615
                End
@@ -4435,7 +4479,7 @@ Begin VB.Form caisse
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   1680
-                  TabIndex        =   64
+                  TabIndex        =   63
                   Top             =   120
                   Width           =   1815
                End
@@ -4613,7 +4657,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   118423553
+                     Format          =   123797505
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar5 
@@ -4674,7 +4718,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   118423553
+                     Format          =   123797505
                      CurrentDate     =   41154
                   End
                   Begin MSComCtl2.DTPicker DT9 
@@ -4695,7 +4739,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   118423553
+                     Format          =   123797505
                      CurrentDate     =   41154
                   End
                   Begin VB.Label Label31 
@@ -5196,7 +5240,7 @@ Begin VB.Form caisse
                      Italic          =   0   'False
                      Strikethrough   =   0   'False
                   EndProperty
-                  Format          =   118423553
+                  Format          =   123797505
                   CurrentDate     =   41154
                End
                Begin MSComCtl2.DTPicker DT11 
@@ -5217,7 +5261,7 @@ Begin VB.Form caisse
                      Italic          =   0   'False
                      Strikethrough   =   0   'False
                   EndProperty
-                  Format          =   118423553
+                  Format          =   123797505
                   CurrentDate     =   41154
                End
                Begin MSFlexGridLib.MSFlexGrid grd15 
@@ -5341,7 +5385,7 @@ Begin VB.Form caisse
             Left            =   3600
             List            =   "caisse.frx":05C1
             Style           =   2  'Dropdown List
-            TabIndex        =   235
+            TabIndex        =   230
             Top             =   120
             Visible         =   0   'False
             Width           =   1095
@@ -5488,7 +5532,7 @@ Begin VB.Form caisse
             Height          =   375
             Index           =   58
             Left            =   4440
-            TabIndex        =   236
+            TabIndex        =   231
             Top             =   120
             Visible         =   0   'False
             Width           =   1335
@@ -7918,6 +7962,79 @@ Close #1
 Shell "notepad.exe" & " " & App.Path & "\Recus\Recus.txt", vbNormalFocus
 End Sub
 
+Private Sub Command44_Click()
+On Error GoTo u
+Dim i As Double
+Dim j As Double
+Dim n As Double
+Dim k As Double
+Dim d As Double
+Dim sd As Double
+Dim nom As String
+Dim cla As String
+Dim du As Double
+Dim py As Double
+Dim rs As Double
+
+If grd4.Rows < 2 Then
+MsgBox "·«  ÊÃœ »Ì«‰« ", vbCritical
+Exit Sub
+End If
+grd1.row = 0
+grd1.Col = 1
+cla = grd1.Text
+grd1.Col = 3
+nom = grd1.Text
+FileCopy App.Path & "\HC010.xls", App.Path & "\Historique de compte.xls"
+Command44.Enabled = False
+n = grd4.Rows
+Set kb = CreateObject("Excel.application")
+kb.Workbooks.Open (App.Path & "\Historique de compte.xls")
+kb.Visible = True
+du = 0
+py = 0
+rs = 0
+For i = 0 To n - 1
+For j = 1 To 6
+grd4.row = i
+grd4.Col = j
+k = 7 - j
+kb.Workbooks("Historique de compte").Sheets(1).Cells(i + 7, k).Value = grd4.Text
+If k = 5 Then
+du = du + Val(grd4.Text)
+End If
+If k = 4 Then
+py = py + Val(grd4.Text)
+End If
+If k = 3 Then
+rs = rs + Val(grd4.Text)
+End If
+Next j
+Next i
+k = i + 7
+kb.Workbooks("Historique de compte").Sheets(1).Cells(k, 6).Value = "«·„Ã„Ê⁄"
+kb.Workbooks("Historique de compte").Sheets(1).Cells(k, 5).Value = du
+kb.Workbooks("Historique de compte").Sheets(1).Cells(k, 4).Value = py
+kb.Workbooks("Historique de compte").Sheets(1).Cells(k, 3).Value = rs
+
+kb.Workbooks("Historique de compte").Sheets(1).Range("D3").Value = face.SBB1.Panels(13).Text
+kb.Workbooks("Historique de compte").Sheets(1).Range("A3").Value = face.SBB1.Panels(9).Text
+kb.Workbooks("Historique de compte").Sheets(1).Range("D5").Value = nom
+kb.Workbooks("Historique de compte").Sheets(1).Range("A5").Value = cla
+
+'kb.Workbooks("Historique de compte").Sheets(1).Cells(k + 2, 2).Value = "«·≈œ«—…"
+
+'kb.Workbooks("fiche de presences").Sheets(1).Range("B5").Value = DT11.Value
+'Workbooks("Etudiants").Close savechanges:=False
+'Worksheets(1).Activate
+Command44.Enabled = True
+Exit Sub
+u:
+MsgBox "ÌÃ» «€·«ﬁ ’›Õ… «ﬂ”· «‰ ﬂ«‰  „› ÊÕ…", vbExclamation
+Command44.Enabled = True
+
+End Sub
+
 Private Sub Command5_Click()
 On Error Resume Next
 If Text3.Text = "" Then
@@ -7955,12 +8072,16 @@ grd1.Visible = True
 End Sub
 
 Private Sub Command6_Click()
-On Error Resume Next
+'On Error Resume Next
 Dim n As Double
 Dim i As Double
 Dim a As Double
 Dim b As Double
 Dim c As Double
+Dim du1 As Double
+Dim du2 As Double
+Dim py As Double
+Dim rs As Double
 Dim au As Double
 Dim dat1 As Date
 Dim dat2 As Date
@@ -8111,12 +8232,26 @@ ce!rec = Text6.Text
 grd3.row = i
 grd3.Col = 0
 ce!moi = grd3.Text
+If grd3.Text = "«· ”ÃÌ·" Then
+du1 = Text4.Text
+Else
+du1 = Text5.Text
+End If
 grd3.Col = 1
-ce!mon = grd3.Text
+du2 = grd3.Text
 grd3.Col = 2
-ce!pay = grd3.Text
+py = grd3.Text
 grd3.Col = 3
-ce!res = grd3.Text
+rs = grd3.Text
+If du1 = du2 Then
+ce!mon = du2
+ce!pay = py
+ce!res = rs
+Else
+ce!mon = 0
+ce!pay = py
+ce!res = -py
+End If
 grd3.Col = 4
 ce!mois = grd3.Text
 ce!dat = DT2.Value
@@ -8547,6 +8682,20 @@ Loop
 grd6.Rows = i
 grd6.Col = 1
 grd6.Sort = 1
+End Sub
+
+Private Sub grd01_Click()
+Dim r As Double
+Dim c As Double
+r = grd01.row
+c = grd01.Col
+If r > 0 Then
+grd01.row = r
+grd01.Col = 2
+Text3.Text = grd01.Text
+grd01.Visible = False
+Command4_Click
+End If
 End Sub
 
 Private Sub grd13_Click()
@@ -9061,6 +9210,10 @@ Dim c As Double
 Dim d As Double
 Dim n As Double
 Dim m As Double
+Dim du As Double
+Dim py As Double
+Dim dus As Double
+Dim pys As Double
 Text4.Text = Trim(Text4.Text)
 Text5.Text = Trim(Text5.Text)
 r = grd2.row
@@ -9100,14 +9253,19 @@ m = grd2.Text
 tx4 = a
 n = grd4.Rows
 j = 0
+dus = 0
+pys = 0
 For i = 1 To n - 1
 grd4.row = i
 grd4.Col = 1
 tx2 = grd4.Text
 If tx1 = tx2 Then
-grd4.Col = 4
-b = grd4.Text
-'i = n
+grd4.Col = 2
+du = grd4.Text
+dus = dus + du
+grd4.Col = 3
+py = grd4.Text
+pys = pys + py
 j = 1
 End If
 Next i
@@ -9120,7 +9278,7 @@ Exit Sub
 End If
 c = g
 If j = 1 Then
-If c > b Then
+If c > (dus - pys) Then
 MsgBox "Â–« «·‘Â—  „ œ›⁄Â ”«»ﬁ« Ê·«Ì„ﬂ‰ œ›⁄ √ﬂÀ— „„« ÂÊ »«ﬁ ﬂœÌ‰ ›ÌÂ", vbCritical
 Exit Sub
 End If
@@ -10118,6 +10276,142 @@ Next i
 
 End Sub
 
+Private Sub Text17_Change()
+On Error Resume Next
+grd4.Clear
+grd4.Rows = 1
+grd3.Clear
+grd3.Rows = 1
+Label2.Caption = ""
+Label3.Caption = ""
+Label75.Caption = ""
+Picture6.Visible = False
+grd1.Clear
+grd01.Visible = False
+Text3.Text = ""
+End Sub
+
+Private Sub Text17_Click()
+On Error Resume Next
+Text17_Change
+
+End Sub
+
+Private Sub Text17_KeyPress(KeyAscii As Integer)
+On Error Resume Next
+If KeyAscii <> 8 Then
+If KeyAscii < 48 Or KeyAscii > 57 Then
+KeyAscii = 0
+End If
+End If
+
+End Sub
+
+Private Sub Text17_KeyUp(KeyCode As Integer, Shift As Integer)
+'On Error Resume Next
+If Text17.Text <> "" Then
+If KeyCode = 13 Then
+Call chargegrd01
+End If
+End If
+
+End Sub
+Private Sub chargegrd01()
+'On Error Resume Next
+Dim i As Double
+Dim j As Double
+grd01.Clear
+grd01.Rows = 1
+grd01.Cols = 3
+grd01.ColWidth(0) = 700
+grd01.ColWidth(1) = 3000
+grd01.ColWidth(2) = 1500
+grd01.ColAlignment(1) = 1
+grd01.ColAlignment(2) = 1
+grd01.ColAlignment(0) = 1
+grd01.row = 0
+grd01.Col = 0
+grd01.Text = "«·—ﬁ„"
+grd01.Col = 1
+grd01.Text = "«·«”„"
+grd01.Col = 2
+grd01.Text = "«·—ﬁ„ «· ”·”·Ì"
+i = 1
+Call cont
+grd01.Rows = et.RecordCount + 30
+Do While Not et.EOF
+If Text17.Text = et!tel Then
+If Val(et!num) < 1000000 Then
+grd01.row = i
+grd01.Col = 0
+grd01.Text = et!num
+grd01.Col = 1
+grd01.Text = et!nom
+grd01.Col = 2
+grd01.Text = et!ser
+i = i + 1
+End If
+End If
+et.MoveNext
+Loop
+grd01.Rows = i
+If (i > 1) Then
+grd01.Visible = True
+Else
+MsgBox "·« ÌÊÃœ  ·„Ì– „”Ã·  Õ  Â–« «·—ﬁ„", vbExclamation
+Text17.Text = ""
+End If
+End Sub
+
+Private Sub Text18_Change()
+On Error Resume Next
+Label10.Caption = ""
+Label19.Caption = ""
+Label20.Caption = ""
+Text8.Text = ""
+Text7.Text = ""
+Picture12.Visible = False
+
+End Sub
+
+Private Sub Text18_Click()
+Text18_Change
+End Sub
+
+Private Sub Text18_KeyPress(KeyAscii As Integer)
+On Error Resume Next
+If KeyAscii <> 8 Then
+If KeyAscii < 48 Or KeyAscii > 57 Then
+KeyAscii = 0
+End If
+End If
+
+End Sub
+
+Private Sub Text18_KeyUp(KeyCode As Integer, Shift As Integer)
+On Error Resume Next
+If Text18.Text <> "" Then
+If KeyCode = 13 Then
+Call cont
+Do While Not pr.EOF
+If Text18.Text = pr!tel Then
+If pr!act = "1" Then
+Text7.Text = pr!ser
+Label10.Caption = pr!nom
+Label19.Caption = pr!tel
+Label20.Caption = pr!ser
+Exit Sub
+End If
+End If
+pr.MoveNext
+Loop
+MsgBox "—ﬁ„ «·Â« › «·„œŒ· €Ì— „Œ“‰ .. Ì—ÃÏ «· √ﬂœ „‰Â", vbExclamation
+Text18.Text = ""
+Text18.SetFocus
+End If
+End If
+End Sub
+
 Private Sub Text3_Change()
 On Error Resume Next
 grd4.Clear
@@ -10129,6 +10423,7 @@ Label3.Caption = ""
 Label75.Caption = ""
 Picture6.Visible = False
 grd1.Clear
+grd01.Visible = False
 End Sub
 
 Private Sub Text3_Click()
@@ -10558,6 +10853,7 @@ grd4.ColWidth(1) = 1100
 grd4.ColWidth(2) = 1100
 grd4.ColWidth(3) = 1100
 grd4.ColWidth(4) = 1100
+grd4.ColWidth(6) = 0
 grd4.ColAlignment(0) = 1
 grd4.ColAlignment(1) = 1
 grd4.ColAlignment(2) = 1
@@ -10584,6 +10880,8 @@ grd4.Col = 4
 grd4.Text = "«·»«ﬁÌ"
 grd4.Col = 5
 grd4.Text = "—ﬁ„ «·Ê’·"
+grd4.Col = 6
+grd4.Text = "«· «—ÌŒ"
 End Sub
 Private Sub chargegrd4()
 On Error Resume Next
@@ -10621,6 +10919,8 @@ grd4.Col = 4
 grd4.Text = ce!res
 grd4.Col = 5
 grd4.Text = ce!rec
+grd4.Col = 6
+grd4.Text = ce!dat
 i = i + 1
 End If
 ce.MoveNext
@@ -10772,12 +11072,12 @@ sc = c
 End If
 Next j
 cre = sa - sb
-If sc <> 0 Then
+If cre <> 0 Then
 grd5.row = k
 grd5.Col = 0
 grd5.Text = tx1
 grd5.Col = 1
-grd5.Text = sc
+grd5.Text = cre
 k = k + 1
 End If
 Next i

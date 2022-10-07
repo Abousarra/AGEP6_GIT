@@ -1,11 +1,11 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Object = "{8E515444-86DF-11D3-A630-444553540001}#1.0#0"; "barcodex.ocx"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
 Begin VB.Form etudiants 
    BackColor       =   &H00000000&
    BorderStyle     =   4  'Fixed ToolWindow
@@ -461,7 +461,7 @@ Begin VB.Form etudiants
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123928577
+            Format          =   123338753
             CurrentDate     =   41154
          End
          Begin VB.Label Label111 
@@ -1356,8 +1356,8 @@ Begin VB.Form etudiants
             TabCaption(0)   =   "€Ì«»«  «· ·„Ì–"
             TabPicture(0)   =   "etudiants.frx":008C
             Tab(0).ControlEnabled=   0   'False
-            Tab(0).Control(0)=   "Picture13"
-            Tab(0).Control(1)=   "Picture14"
+            Tab(0).Control(0)=   "Picture14"
+            Tab(0).Control(1)=   "Picture13"
             Tab(0).ControlCount=   2
             TabCaption(1)   =   "‰ﬁ«ÿ «· ·„Ì–"
             TabPicture(1)   =   "etudiants.frx":00A8
@@ -1397,6 +1397,23 @@ Begin VB.Form etudiants
                   Top             =   0
                   Visible         =   0   'False
                   Width           =   13815
+                  Begin VB.CommandButton Command45 
+                     Caption         =   "”Õ» ”Ã· «·€Ì«»"
+                     BeginProperty Font 
+                        Name            =   "Times New Roman"
+                        Size            =   12
+                        Charset         =   178
+                        Weight          =   700
+                        Underline       =   0   'False
+                        Italic          =   0   'False
+                        Strikethrough   =   0   'False
+                     EndProperty
+                     Height          =   375
+                     Left            =   9960
+                     TabIndex        =   280
+                     Top             =   720
+                     Width           =   3735
+                  End
                   Begin VB.CommandButton Command25 
                      Caption         =   "Õ–› «·»Ì«‰« "
                      BeginProperty Font 
@@ -1542,7 +1559,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123928577
+                     Format          =   123338753
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar4 
@@ -4461,7 +4478,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123928577
+                     Format          =   123338753
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar1 
@@ -5099,7 +5116,7 @@ Begin VB.Form etudiants
                   Italic          =   0   'False
                   Strikethrough   =   0   'False
                EndProperty
-               Format          =   123928577
+               Format          =   123338753
                CurrentDate     =   41154
             End
             Begin MSComctlLib.ProgressBar ProgressBar2 
@@ -9065,6 +9082,59 @@ kb.Visible = True
 ''data.Visible = True
 'Set data = Nothing
 Command44.Enabled = True
+End Sub
+
+Private Sub Command45_Click()
+On Error GoTo u
+Dim i As Double
+Dim j As Double
+Dim n As Double
+Dim k As Double
+Dim d As Double
+Dim sd As Double
+Dim nom As String
+Dim cla As String
+Dim du As Double
+Dim py As Double
+Dim rs As Double
+
+If grd2.Rows < 2 Then
+MsgBox "·«  ÊÃœ »Ì«‰« ", vbCritical
+Exit Sub
+End If
+cla = Label81.Caption
+nom = Label76.Caption
+FileCopy App.Path & "\Abs010.xls", App.Path & "\Absences.xls"
+Command45.Enabled = False
+n = grd2.Rows
+Set kb = CreateObject("Excel.application")
+kb.Workbooks.Open (App.Path & "\Absences.xls")
+kb.Visible = True
+For i = 0 To n - 1
+For j = 1 To 6
+grd2.row = i
+grd2.Col = j
+k = 7 - j
+kb.Workbooks("Absences").Sheets(1).Cells(i + 7, k).Value = grd2.Text
+Next j
+Next i
+
+kb.Workbooks("Absences").Sheets(1).Range("D3").Value = face.SBB1.Panels(13).Text
+kb.Workbooks("Absences").Sheets(1).Range("A3").Value = face.SBB1.Panels(9).Text
+kb.Workbooks("Absences").Sheets(1).Range("D5").Value = nom
+kb.Workbooks("Absences").Sheets(1).Range("A5").Value = cla
+
+'kb.Workbooks("Historique de compte").Sheets(1).Cells(k + 2, 2).Value = "«·≈œ«—…"
+
+'kb.Workbooks("fiche de presences").Sheets(1).Range("B5").Value = DT11.Value
+'Workbooks("Etudiants").Close savechanges:=False
+'Worksheets(1).Activate
+Command45.Enabled = True
+Exit Sub
+u:
+MsgBox "ÌÃ» «€·«ﬁ ’›Õ… «ﬂ”· «‰ ﬂ«‰  „› ÊÕ…", vbExclamation
+Command45.Enabled = True
+
 End Sub
 
 Private Sub Command5_Click()
