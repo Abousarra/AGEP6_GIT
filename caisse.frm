@@ -222,7 +222,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT22 
@@ -243,7 +243,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin MSFlexGridLib.MSFlexGrid grd22 
@@ -680,7 +680,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin VB.Label Label31 
@@ -860,7 +860,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT20 
@@ -881,7 +881,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar7 
@@ -1319,7 +1319,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar4 
@@ -1409,7 +1409,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT14 
@@ -1430,7 +1430,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin VB.Label Label5 
@@ -1972,7 +1972,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123731969
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT17 
@@ -1993,7 +1993,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar6 
@@ -2195,7 +2195,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123797505
+            Format          =   123666433
             CurrentDate     =   41154
          End
          Begin VB.Label Label31 
@@ -2772,7 +2772,7 @@ Begin VB.Form caisse
                         _ExtentX        =   2143
                         _ExtentY        =   450
                         _Version        =   393216
-                        Format          =   123797505
+                        Format          =   123666433
                         CurrentDate     =   41162
                      End
                      Begin MSFlexGridLib.MSFlexGrid grd11 
@@ -3228,7 +3228,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123797505
+                     Format          =   123666433
                      CurrentDate     =   41154
                   End
                   Begin MSFlexGridLib.MSFlexGrid grd5 
@@ -3789,7 +3789,7 @@ Begin VB.Form caisse
                            Italic          =   0   'False
                            Strikethrough   =   0   'False
                         EndProperty
-                        Format          =   123797505
+                        Format          =   123666433
                         CurrentDate     =   41154
                      End
                      Begin MSComCtl2.DTPicker DT4 
@@ -3810,7 +3810,7 @@ Begin VB.Form caisse
                            Italic          =   0   'False
                            Strikethrough   =   0   'False
                         EndProperty
-                        Format          =   123797505
+                        Format          =   123666433
                         CurrentDate     =   41154
                      End
                      Begin MSFlexGridLib.MSFlexGrid grd7 
@@ -4657,7 +4657,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123797505
+                     Format          =   123666433
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar5 
@@ -4718,7 +4718,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123797505
+                     Format          =   123731969
                      CurrentDate     =   41154
                   End
                   Begin MSComCtl2.DTPicker DT9 
@@ -4739,7 +4739,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123797505
+                     Format          =   123666433
                      CurrentDate     =   41154
                   End
                   Begin VB.Label Label31 
@@ -5240,7 +5240,7 @@ Begin VB.Form caisse
                      Italic          =   0   'False
                      Strikethrough   =   0   'False
                   EndProperty
-                  Format          =   123797505
+                  Format          =   123666433
                   CurrentDate     =   41154
                End
                Begin MSComCtl2.DTPicker DT11 
@@ -5261,7 +5261,7 @@ Begin VB.Form caisse
                      Italic          =   0   'False
                      Strikethrough   =   0   'False
                   EndProperty
-                  Format          =   123797505
+                  Format          =   123666433
                   CurrentDate     =   41154
                End
                Begin MSFlexGridLib.MSFlexGrid grd15 
@@ -5737,7 +5737,7 @@ Do While Not cd.EOF
 If Combo1.Text = cd!cod Then
 Label21.Caption = cd!dec
 Label37.Caption = cd!cas
-Text3.SetFocus
+'Text3.SetFocus
 Exit Sub
 End If
 If Combo1.Text = cd!dec Then
@@ -5909,7 +5909,7 @@ Do While Not cd.EOF
 If Combo7.Text = cd!cod Then
 Label22.Caption = cd!dec
 Label38.Caption = cd!cas
-Text7.SetFocus
+'Text7.SetFocus
 Exit Sub
 End If
 If Combo7.Text = cd!dec Then
@@ -5935,7 +5935,7 @@ Do While Not cd.EOF
 If Combo8.Text = cd!cod Then
 Label23.Caption = cd!dec
 Label40.Caption = cd!cas
-Text9.SetFocus
+'Text9.SetFocus
 Exit Sub
 End If
 If Combo8.Text = cd!dec Then
@@ -8072,7 +8072,7 @@ grd1.Visible = True
 End Sub
 
 Private Sub Command6_Click()
-'On Error Resume Next
+On Error Resume Next
 Dim n As Double
 Dim i As Double
 Dim a As Double
@@ -8581,7 +8581,7 @@ Combo13.AddItem "—√” «·„«·"
 End Sub
 
 Private Sub chargegrd6()
-'On Error Resume Next
+On Error Resume Next
 Dim i As Double
 Dim k As Integer
 grd6.Clear
@@ -8634,7 +8634,7 @@ If k = 1 Then
 If cd!cas = "Õ”«» «· ·«„Ì–" Then
 Combo1.AddItem cd!cod
 Combo1.Text = cd!cod
-Text3.SetFocus
+'Text3.SetFocus
 End If
 If cd!cas = "Õ”«» «·√”« –…" Then
 Combo7.AddItem cd!cod
@@ -10308,7 +10308,7 @@ End If
 End Sub
 
 Private Sub Text17_KeyUp(KeyCode As Integer, Shift As Integer)
-'On Error Resume Next
+On Error Resume Next
 If Text17.Text <> "" Then
 If KeyCode = 13 Then
 Call chargegrd01
@@ -10317,7 +10317,7 @@ End If
 
 End Sub
 Private Sub chargegrd01()
-'On Error Resume Next
+On Error Resume Next
 Dim i As Double
 Dim j As Double
 grd01.Clear
