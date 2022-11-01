@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Begin VB.Form start 
    BorderStyle     =   4  'Fixed ToolWindow
@@ -277,10 +277,10 @@ Begin VB.Form start
          EndProperty
          ForeColor       =   &H00FFFFFF&
          Height          =   375
-         Left            =   480
+         Left            =   0
          TabIndex        =   19
          Top             =   480
-         Width           =   3255
+         Width           =   3735
       End
       Begin VB.Label Label11 
          BackStyle       =   0  'Transparent
