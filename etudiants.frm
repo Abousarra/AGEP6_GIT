@@ -44,15 +44,15 @@ Begin VB.Form etudiants
       TabCaption(0)   =   "»ÕÀ ⁄«„"
       TabPicture(0)   =   "etudiants.frx":0000
       Tab(0).ControlEnabled=   0   'False
-      Tab(0).Control(0)=   "Picture21"
+      Tab(0).Control(0)=   "Skin1"
       Tab(0).Control(1)=   "Picture22"
-      Tab(0).Control(2)=   "Skin1"
+      Tab(0).Control(2)=   "Picture21"
       Tab(0).ControlCount=   3
       TabCaption(1)   =   "ﬁ”„ „⁄Ì‰"
       TabPicture(1)   =   "etudiants.frx":001C
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Picture16"
-      Tab(1).Control(1)=   "Picture15"
+      Tab(1).Control(0)=   "Picture15"
+      Tab(1).Control(1)=   "Picture16"
       Tab(1).ControlCount=   2
       TabCaption(2)   =   " ·„Ì– „⁄Ì‰"
       TabPicture(2)   =   "etudiants.frx":0038
@@ -461,7 +461,7 @@ Begin VB.Form etudiants
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123338753
+            Format          =   123273217
             CurrentDate     =   41154
          End
          Begin VB.Label Label111 
@@ -605,9 +605,9 @@ Begin VB.Form etudiants
             TabCaption(0)   =   "‰ﬁ«ÿ  ·«„Ì– «·ﬁ”„"
             TabPicture(0)   =   "etudiants.frx":0054
             Tab(0).ControlEnabled=   0   'False
-            Tab(0).Control(0)=   "Picture20"
+            Tab(0).Control(0)=   "grd8"
             Tab(0).Control(1)=   "Picture19"
-            Tab(0).Control(2)=   "grd8"
+            Tab(0).Control(2)=   "Picture20"
             Tab(0).ControlCount=   3
             TabCaption(1)   =   "»Ì«‰«   ·«„Ì– «·ﬁ”„"
             TabPicture(1)   =   "etudiants.frx":0070
@@ -1356,19 +1356,21 @@ Begin VB.Form etudiants
             TabCaption(0)   =   "€Ì«»«  «· ·„Ì–"
             TabPicture(0)   =   "etudiants.frx":008C
             Tab(0).ControlEnabled=   0   'False
-            Tab(0).Control(0)=   "Picture14"
-            Tab(0).Control(1)=   "Picture13"
+            Tab(0).Control(0)=   "Picture13"
+            Tab(0).Control(0).Enabled=   0   'False
+            Tab(0).Control(1)=   "Picture14"
+            Tab(0).Control(1).Enabled=   0   'False
             Tab(0).ControlCount=   2
             TabCaption(1)   =   "‰ﬁ«ÿ «· ·„Ì–"
             TabPicture(1)   =   "etudiants.frx":00A8
             Tab(1).ControlEnabled=   0   'False
-            Tab(1).Control(0)=   "Picture11"
-            Tab(1).Control(1)=   "Picture10"
-            Tab(1).Control(2)=   "Picture9"
+            Tab(1).Control(0)=   "Line1"
+            Tab(1).Control(1)=   "Line2"
+            Tab(1).Control(2)=   "grd1"
             Tab(1).Control(3)=   "Picture8"
-            Tab(1).Control(4)=   "grd1"
-            Tab(1).Control(5)=   "Line2"
-            Tab(1).Control(6)=   "Line1"
+            Tab(1).Control(4)=   "Picture9"
+            Tab(1).Control(5)=   "Picture10"
+            Tab(1).Control(6)=   "Picture11"
             Tab(1).ControlCount=   7
             TabCaption(2)   =   "»Ì«‰«  «· ·„Ì–"
             TabPicture(2)   =   "etudiants.frx":00C4
@@ -1559,7 +1561,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123338753
+                     Format          =   123273217
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar4 
@@ -4478,7 +4480,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123338753
+                     Format          =   123273217
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar1 
@@ -5116,7 +5118,7 @@ Begin VB.Form etudiants
                   Italic          =   0   'False
                   Strikethrough   =   0   'False
                EndProperty
-               Format          =   123338753
+               Format          =   123273217
                CurrentDate     =   41154
             End
             Begin MSComctlLib.ProgressBar ProgressBar2 
@@ -9085,7 +9087,7 @@ Command44.Enabled = True
 End Sub
 
 Private Sub Command45_Click()
-On Error GoTo u
+'On Error GoTo u
 Dim i As Double
 Dim j As Double
 Dim n As Double
