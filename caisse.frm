@@ -44,26 +44,25 @@ Begin VB.Form caisse
       TabCaption(0)   =   "«·√ﬂÊ«œ"
       TabPicture(0)   =   "caisse.frx":0000
       Tab(0).ControlEnabled=   0   'False
-      Tab(0).Control(0)=   "grd6"
-      Tab(0).Control(1)=   "Picture1"
+      Tab(0).Control(0)=   "Picture1"
+      Tab(0).Control(1)=   "grd6"
       Tab(0).ControlCount=   2
       TabCaption(1)   =   "Õ—ﬂ… «·’‰œÊﬁ"
       TabPicture(1)   =   "caisse.frx":001C
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "Picture20"
-      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).ControlCount=   1
       TabCaption(2)   =   "Õ”«» «·»‰ﬂ"
       TabPicture(2)   =   "caisse.frx":0038
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "Picture19"
-      Tab(2).Control(1)=   "Picture18"
+      Tab(2).Control(0)=   "Picture18"
+      Tab(2).Control(1)=   "Picture19"
       Tab(2).ControlCount=   2
       TabCaption(3)   =   "Õ”«» «·„’—Ê›« "
       TabPicture(3)   =   "caisse.frx":0054
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "Picture15"
-      Tab(3).Control(1)=   "Picture16"
+      Tab(3).Control(0)=   "Picture16"
+      Tab(3).Control(1)=   "Picture15"
       Tab(3).ControlCount=   2
       TabCaption(4)   =   "Õ”«» «·‘—ﬂ«¡"
       TabPicture(4)   =   "caisse.frx":0070
@@ -223,7 +222,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT22 
@@ -244,7 +243,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSFlexGridLib.MSFlexGrid grd22 
@@ -681,7 +680,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin VB.Label Label31 
@@ -861,7 +860,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT20 
@@ -882,7 +881,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar7 
@@ -1320,7 +1319,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar4 
@@ -1410,7 +1409,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT14 
@@ -1431,7 +1430,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin VB.Label Label5 
@@ -1973,7 +1972,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSComCtl2.DTPicker DT17 
@@ -1994,7 +1993,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin MSComctlLib.ProgressBar ProgressBar6 
@@ -2196,7 +2195,7 @@ Begin VB.Form caisse
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   122486785
+            Format          =   123928577
             CurrentDate     =   41154
          End
          Begin VB.Label Label31 
@@ -2354,7 +2353,7 @@ Begin VB.Form caisse
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   11160
-                  TabIndex        =   287
+                  TabIndex        =   285
                   Top             =   120
                   Width           =   1815
                End
@@ -2467,6 +2466,25 @@ Begin VB.Form caisse
                   Top             =   0
                   Visible         =   0   'False
                   Width           =   13815
+                  Begin VB.TextBox Text19 
+                     Alignment       =   1  'Right Justify
+                     BackColor       =   &H00000000&
+                     BeginProperty Font 
+                        Name            =   "Times New Roman"
+                        Size            =   12
+                        Charset         =   178
+                        Weight          =   700
+                        Underline       =   0   'False
+                        Italic          =   0   'False
+                        Strikethrough   =   0   'False
+                     EndProperty
+                     ForeColor       =   &H00FFFFFF&
+                     Height          =   375
+                     Left            =   120
+                     TabIndex        =   293
+                     Top             =   600
+                     Width           =   3135
+                  End
                   Begin VB.CommandButton Command44 
                      Caption         =   "”Õ»"
                      BeginProperty Font 
@@ -2480,7 +2498,7 @@ Begin VB.Form caisse
                      EndProperty
                      Height          =   375
                      Left            =   5040
-                     TabIndex        =   292
+                     TabIndex        =   290
                      Top             =   600
                      Width           =   1215
                   End
@@ -2531,7 +2549,7 @@ Begin VB.Form caisse
                         Left            =   1320
                         List            =   "caisse.frx":0292
                         Style           =   2  'Dropdown List
-                        TabIndex        =   289
+                        TabIndex        =   287
                         Top             =   240
                         Width           =   1935
                      End
@@ -2552,17 +2570,17 @@ Begin VB.Form caisse
                         Left            =   2880
                         List            =   "caisse.frx":02F2
                         Style           =   2  'Dropdown List
-                        TabIndex        =   286
+                        TabIndex        =   284
                         Top             =   840
                         Width           =   1935
                      End
                      Begin VB.PictureBox Picture21 
                         Height          =   1455
-                        Left            =   3240
+                        Left            =   3960
                         ScaleHeight     =   1395
                         ScaleWidth      =   1515
                         TabIndex        =   277
-                        Top             =   120
+                        Top             =   720
                         Width           =   1575
                         Begin VB.CommandButton Command40 
                            Caption         =   "«· «·Ì"
@@ -2773,7 +2791,7 @@ Begin VB.Form caisse
                         _ExtentX        =   2143
                         _ExtentY        =   450
                         _Version        =   393216
-                        Format          =   122486785
+                        Format          =   123928577
                         CurrentDate     =   41162
                      End
                      Begin MSFlexGridLib.MSFlexGrid grd11 
@@ -2803,6 +2821,47 @@ Begin VB.Form caisse
                            Italic          =   0   'False
                            Strikethrough   =   0   'False
                         EndProperty
+                     End
+                     Begin VB.Label Label31 
+                        Alignment       =   1  'Right Justify
+                        BackStyle       =   0  'Transparent
+                        Caption         =   "—ﬁ„ «·Â« ›"
+                        BeginProperty Font 
+                           Name            =   "Times New Roman"
+                           Size            =   12
+                           Charset         =   178
+                           Weight          =   700
+                           Underline       =   0   'False
+                           Italic          =   0   'False
+                           Strikethrough   =   0   'False
+                        EndProperty
+                        ForeColor       =   &H00000000&
+                        Height          =   375
+                        Index           =   60
+                        Left            =   3720
+                        TabIndex        =   292
+                        Top             =   0
+                        Width           =   2055
+                     End
+                     Begin VB.Label Label48 
+                        Alignment       =   1  'Right Justify
+                        BackStyle       =   0  'Transparent
+                        Caption         =   "0"
+                        BeginProperty Font 
+                           Name            =   "Times New Roman"
+                           Size            =   12
+                           Charset         =   178
+                           Weight          =   700
+                           Underline       =   0   'False
+                           Italic          =   0   'False
+                           Strikethrough   =   0   'False
+                        EndProperty
+                        ForeColor       =   &H00000000&
+                        Height          =   375
+                        Left            =   2760
+                        TabIndex        =   291
+                        Top             =   0
+                        Width           =   2055
                      End
                      Begin VB.Label Label41 
                         Caption         =   "Label41"
@@ -3229,7 +3288,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   122486785
+                     Format          =   123928577
                      CurrentDate     =   41154
                   End
                   Begin MSFlexGridLib.MSFlexGrid grd5 
@@ -3261,47 +3320,6 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                  End
-                  Begin VB.Label Label48 
-                     Alignment       =   1  'Right Justify
-                     BackStyle       =   0  'Transparent
-                     Caption         =   "0"
-                     BeginProperty Font 
-                        Name            =   "Times New Roman"
-                        Size            =   12
-                        Charset         =   178
-                        Weight          =   700
-                        Underline       =   0   'False
-                        Italic          =   0   'False
-                        Strikethrough   =   0   'False
-                     EndProperty
-                     ForeColor       =   &H00FFFFFF&
-                     Height          =   375
-                     Left            =   120
-                     TabIndex        =   285
-                     Top             =   720
-                     Width           =   2055
-                  End
-                  Begin VB.Label Label31 
-                     Alignment       =   1  'Right Justify
-                     BackStyle       =   0  'Transparent
-                     Caption         =   "—ﬁ„ «·Â« ›"
-                     BeginProperty Font 
-                        Name            =   "Times New Roman"
-                        Size            =   12
-                        Charset         =   178
-                        Weight          =   700
-                        Underline       =   0   'False
-                        Italic          =   0   'False
-                        Strikethrough   =   0   'False
-                     EndProperty
-                     ForeColor       =   &H00FFFFFF&
-                     Height          =   375
-                     Index           =   60
-                     Left            =   1080
-                     TabIndex        =   284
-                     Top             =   720
-                     Width           =   2055
                   End
                   Begin VB.Label Label31 
                      Alignment       =   1  'Right Justify
@@ -3512,7 +3530,7 @@ Begin VB.Form caisse
                      Index           =   11
                      Left            =   3240
                      TabIndex        =   132
-                     Top             =   720
+                     Top             =   600
                      Width           =   1815
                   End
                   Begin VB.Label Label31 
@@ -3533,7 +3551,7 @@ Begin VB.Form caisse
                      Index           =   10
                      Left            =   7320
                      TabIndex        =   131
-                     Top             =   720
+                     Top             =   600
                      Width           =   2775
                   End
                   Begin VB.Label Label31 
@@ -3645,7 +3663,7 @@ Begin VB.Form caisse
                Begin MSFlexGridLib.MSFlexGrid grd01 
                   Height          =   4815
                   Left            =   6480
-                  TabIndex        =   288
+                  TabIndex        =   286
                   Top             =   0
                   Visible         =   0   'False
                   Width           =   6615
@@ -3790,7 +3808,7 @@ Begin VB.Form caisse
                            Italic          =   0   'False
                            Strikethrough   =   0   'False
                         EndProperty
-                        Format          =   122486785
+                        Format          =   123928577
                         CurrentDate     =   41154
                      End
                      Begin MSComCtl2.DTPicker DT4 
@@ -3811,7 +3829,7 @@ Begin VB.Form caisse
                            Italic          =   0   'False
                            Strikethrough   =   0   'False
                         EndProperty
-                        Format          =   122486785
+                        Format          =   123928577
                         CurrentDate     =   41154
                      End
                      Begin MSFlexGridLib.MSFlexGrid grd7 
@@ -4385,7 +4403,7 @@ Begin VB.Form caisse
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   11160
-                  TabIndex        =   291
+                  TabIndex        =   289
                   Top             =   120
                   Width           =   1815
                End
@@ -4442,7 +4460,7 @@ Begin VB.Form caisse
                   Height          =   375
                   Index           =   3
                   Left            =   9360
-                  TabIndex        =   290
+                  TabIndex        =   288
                   Top             =   120
                   Width           =   4335
                End
@@ -4658,7 +4676,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   122486785
+                     Format          =   123928577
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar5 
@@ -4719,7 +4737,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   122486785
+                     Format          =   123928577
                      CurrentDate     =   41154
                   End
                   Begin MSComCtl2.DTPicker DT9 
@@ -4740,7 +4758,7 @@ Begin VB.Form caisse
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   122486785
+                     Format          =   123928577
                      CurrentDate     =   41154
                   End
                   Begin VB.Label Label31 
@@ -5241,7 +5259,7 @@ Begin VB.Form caisse
                      Italic          =   0   'False
                      Strikethrough   =   0   'False
                   EndProperty
-                  Format          =   122486785
+                  Format          =   123928577
                   CurrentDate     =   41154
                End
                Begin MSComCtl2.DTPicker DT11 
@@ -5262,7 +5280,7 @@ Begin VB.Form caisse
                      Italic          =   0   'False
                      Strikethrough   =   0   'False
                   EndProperty
-                  Format          =   122486785
+                  Format          =   123928577
                   CurrentDate     =   41154
                End
                Begin MSFlexGridLib.MSFlexGrid grd15 
@@ -8070,6 +8088,16 @@ grd4.Visible = True
 grd5.Visible = True
 Picture6.Visible = True
 grd1.Visible = True
+Text19.Text = ""
+Call cont2
+Do While Not ru.EOF
+If Text3.Text = ru!ser Or Val(ru!ser) = Text3.Text Then
+Text19.Text = ru!obs
+'Exit Sub
+End If
+ru.MoveNext
+Loop
+
 End Sub
 
 Private Sub Command6_Click()
@@ -8278,6 +8306,7 @@ ru!ann = face.SBB1.Panels(9).Text
 ru!eco = face.SBB1.Panels(13).Text
 ru!res = Label45.Caption
 ru!tel = face.SBB1.Panels(11).Text
+ru!obs = Text19.Text
 ru.Update
 Text6.Text = Val(Text6.Text) + 1
 Command6.Enabled = True
