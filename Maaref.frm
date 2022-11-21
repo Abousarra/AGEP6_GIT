@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
-Begin VB.Form Maaref 
+Begin VB.Form Moustaghbel 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   5790
    ClientLeft      =   15
@@ -32,14 +32,14 @@ Begin VB.Form Maaref
          Left            =   120
          ScaleHeight     =   1695
          ScaleWidth      =   7335
-         TabIndex        =   22
+         TabIndex        =   21
          Top             =   5520
          Width           =   7335
       End
       Begin VB.TextBox Text12 
          Height          =   285
          Left            =   1800
-         TabIndex        =   20
+         TabIndex        =   19
          Text            =   "Text12"
          Top             =   6840
          Visible         =   0   'False
@@ -48,7 +48,7 @@ Begin VB.Form Maaref
       Begin VB.TextBox Text11 
          Height          =   285
          Left            =   1800
-         TabIndex        =   19
+         TabIndex        =   18
          Text            =   "Text11"
          Top             =   6480
          Visible         =   0   'False
@@ -57,7 +57,7 @@ Begin VB.Form Maaref
       Begin VB.TextBox Text10 
          Height          =   285
          Left            =   120
-         TabIndex        =   18
+         TabIndex        =   17
          Text            =   "Text10"
          Top             =   6840
          Visible         =   0   'False
@@ -66,7 +66,7 @@ Begin VB.Form Maaref
       Begin VB.TextBox Text9 
          Height          =   285
          Left            =   120
-         TabIndex        =   17
+         TabIndex        =   16
          Text            =   "Text9"
          Top             =   6120
          Visible         =   0   'False
@@ -87,7 +87,7 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   4920
-         TabIndex        =   16
+         TabIndex        =   15
          Text            =   "1HEA"
          Top             =   5640
          Visible         =   0   'False
@@ -108,7 +108,7 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   3840
-         TabIndex        =   15
+         TabIndex        =   14
          Text            =   "WX4R"
          Top             =   5640
          Visible         =   0   'False
@@ -129,7 +129,7 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   2760
-         TabIndex        =   14
+         TabIndex        =   13
          Text            =   "UJ6V"
          Top             =   5640
          Visible         =   0   'False
@@ -150,7 +150,7 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   1680
-         TabIndex        =   13
+         TabIndex        =   12
          Text            =   "K90T"
          Top             =   5640
          Visible         =   0   'False
@@ -163,7 +163,7 @@ Begin VB.Form Maaref
          Picture         =   "Maaref.frx":0000
          ScaleHeight     =   930
          ScaleWidth      =   6375
-         TabIndex        =   12
+         TabIndex        =   11
          Top             =   1800
          Width           =   6375
       End
@@ -294,10 +294,49 @@ Begin VB.Form Maaref
          Top             =   3360
          Width           =   975
       End
+      Begin VB.Label Label11 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Â–Â «·‰”Œ… Œ«’… »„Ã„⁄ „œ«—” "
+         BeginProperty Font 
+            Name            =   "Times New Roman"
+            Size            =   11.25
+            Charset         =   178
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   375
+         Left            =   3600
+         TabIndex        =   23
+         Top             =   720
+         Width           =   3495
+      End
+      Begin VB.Label Label3 
+         Alignment       =   1  'Right Justify
+         BackStyle       =   0  'Transparent
+         Caption         =   "«·„” ﬁ»· «·Ê«⁄œ"
+         BeginProperty Font 
+            Name            =   "Times New Roman"
+            Size            =   11.25
+            Charset         =   178
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   375
+         Left            =   0
+         TabIndex        =   22
+         Top             =   720
+         Width           =   3495
+      End
       Begin VB.Label Label2 
          Alignment       =   2  'Center
          BackStyle       =   0  'Transparent
-         Caption         =   "El_Maaref"
+         Caption         =   "El Moustaghbel El Waed"
          BeginProperty Font 
             Name            =   "Times New Roman"
             Size            =   11.25
@@ -310,7 +349,7 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   1680
-         TabIndex        =   21
+         TabIndex        =   20
          Top             =   5160
          Width           =   4215
       End
@@ -338,7 +377,7 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   1200
-         TabIndex        =   11
+         TabIndex        =   10
          Top             =   2880
          Width           =   5175
       End
@@ -358,7 +397,7 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   1080
-         TabIndex        =   10
+         TabIndex        =   9
          Top             =   360
          Width           =   5415
       End
@@ -378,29 +417,9 @@ Begin VB.Form Maaref
          ForeColor       =   &H00FFFFFF&
          Height          =   615
          Left            =   1320
-         TabIndex        =   9
+         TabIndex        =   8
          Top             =   1080
          Width           =   4935
-      End
-      Begin VB.Label Label11 
-         Alignment       =   2  'Center
-         BackStyle       =   0  'Transparent
-         Caption         =   "Â–Â «·‰”Œ… Œ«’… »„Ã„⁄ „œ«—” «·„⁄«—› «·Õ—… » ›—€ “Ì‰…"
-         BeginProperty Font 
-            Name            =   "Times New Roman"
-            Size            =   11.25
-            Charset         =   178
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H00FFFFFF&
-         Height          =   375
-         Left            =   120
-         TabIndex        =   8
-         Top             =   720
-         Width           =   7335
       End
       Begin VB.Shape Shape1 
          BorderColor     =   &H00FFFFFF&
@@ -412,11 +431,11 @@ Begin VB.Form Maaref
    End
    Begin ACTIVESKINLibCtl.Skin Skin1 
       Left            =   840
-      OleObjectBlob   =   "Maaref.frx":147B2
+      OleObjectBlob   =   "Maaref.frx":1402E
       Top             =   1560
    End
 End
-Attribute VB_Name = "Maaref"
+Attribute VB_Name = "Moustaghbel"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
