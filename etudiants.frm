@@ -51,8 +51,10 @@ Begin VB.Form etudiants
       TabCaption(1)   =   "ﬁ”„ „⁄Ì‰"
       TabPicture(1)   =   "etudiants.frx":001C
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Picture16"
-      Tab(1).Control(1)=   "Picture15"
+      Tab(1).Control(0)=   "Picture15"
+      Tab(1).Control(0).Enabled=   0   'False
+      Tab(1).Control(1)=   "Picture16"
+      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).ControlCount=   2
       TabCaption(2)   =   " ·„Ì– „⁄Ì‰"
       TabPicture(2)   =   "etudiants.frx":0038
@@ -71,13 +73,13 @@ Begin VB.Form etudiants
          Left            =   -74880
          ScaleHeight     =   8055
          ScaleWidth      =   14295
-         TabIndex        =   212
+         TabIndex        =   208
          Top             =   1080
          Width           =   14295
          Begin MSFlexGridLib.MSFlexGrid grd10 
             Height          =   6735
             Left            =   6600
-            TabIndex        =   213
+            TabIndex        =   209
             Top             =   600
             Width           =   7575
             _ExtentX        =   13361
@@ -160,7 +162,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   12240
-            TabIndex        =   224
+            TabIndex        =   220
             Top             =   120
             Width           =   1935
          End
@@ -180,7 +182,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   9720
-            TabIndex        =   223
+            TabIndex        =   219
             Top             =   120
             Width           =   3255
          End
@@ -208,7 +210,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   1920
-            TabIndex        =   222
+            TabIndex        =   218
             Top             =   1320
             Width           =   3255
          End
@@ -228,7 +230,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   5280
-            TabIndex        =   221
+            TabIndex        =   217
             Top             =   1320
             Width           =   1095
          End
@@ -248,7 +250,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   2040
-            TabIndex        =   220
+            TabIndex        =   216
             Top             =   960
             Width           =   3735
          End
@@ -268,7 +270,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   5280
-            TabIndex        =   219
+            TabIndex        =   215
             Top             =   960
             Width           =   1095
          End
@@ -288,7 +290,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   4560
-            TabIndex        =   218
+            TabIndex        =   214
             Top             =   600
             Width           =   1215
          End
@@ -308,7 +310,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   5040
-            TabIndex        =   217
+            TabIndex        =   213
             Top             =   600
             Width           =   1335
          End
@@ -328,7 +330,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   4560
-            TabIndex        =   216
+            TabIndex        =   212
             Top             =   240
             Width           =   1215
          End
@@ -348,7 +350,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   5040
-            TabIndex        =   215
+            TabIndex        =   211
             Top             =   240
             Width           =   1335
          End
@@ -360,7 +362,7 @@ Begin VB.Form etudiants
          Left            =   -74880
          ScaleHeight     =   615
          ScaleWidth      =   14295
-         TabIndex        =   207
+         TabIndex        =   203
          Top             =   360
          Width           =   14295
          Begin VB.TextBox Text11 
@@ -379,7 +381,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   3
             Left            =   3120
-            TabIndex        =   227
+            TabIndex        =   223
             Top             =   120
             Width           =   1695
          End
@@ -399,7 +401,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   2
             Left            =   6000
-            TabIndex        =   226
+            TabIndex        =   222
             Top             =   120
             Width           =   1455
          End
@@ -419,7 +421,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   1
             Left            =   8880
-            TabIndex        =   225
+            TabIndex        =   221
             Top             =   120
             Width           =   1095
          End
@@ -439,14 +441,14 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   0
             Left            =   11280
-            TabIndex        =   209
+            TabIndex        =   205
             Top             =   120
             Width           =   2415
          End
          Begin MSComCtl2.DTPicker DT4 
             Height          =   375
             Left            =   240
-            TabIndex        =   210
+            TabIndex        =   206
             Top             =   120
             Width           =   1455
             _ExtentX        =   2566
@@ -461,7 +463,7 @@ Begin VB.Form etudiants
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   123600897
+            Format          =   126615553
             CurrentDate     =   41154
          End
          Begin VB.Label Label111 
@@ -481,7 +483,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   4
             Left            =   12240
-            TabIndex        =   256
+            TabIndex        =   252
             Top             =   120
             Width           =   1935
          End
@@ -502,7 +504,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   3
             Left            =   9240
-            TabIndex        =   254
+            TabIndex        =   250
             Top             =   120
             Width           =   1935
          End
@@ -523,7 +525,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   2
             Left            =   6840
-            TabIndex        =   253
+            TabIndex        =   249
             Top             =   120
             Width           =   1935
          End
@@ -544,7 +546,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   1
             Left            =   1080
-            TabIndex        =   252
+            TabIndex        =   248
             Top             =   120
             Width           =   1935
          End
@@ -565,7 +567,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   0
             Left            =   3960
-            TabIndex        =   208
+            TabIndex        =   204
             Top             =   120
             Width           =   1935
          End
@@ -577,13 +579,13 @@ Begin VB.Form etudiants
          Left            =   -74880
          ScaleHeight     =   8055
          ScaleWidth      =   14295
-         TabIndex        =   174
+         TabIndex        =   170
          Top             =   1080
          Width           =   14295
          Begin TabDlg.SSTab SSTab3 
             Height          =   7815
             Left            =   120
-            TabIndex        =   175
+            TabIndex        =   171
             Top             =   120
             Width           =   14055
             _ExtentX        =   24791
@@ -605,9 +607,12 @@ Begin VB.Form etudiants
             TabCaption(0)   =   "‰ﬁ«ÿ  ·«„Ì– «·ﬁ”„"
             TabPicture(0)   =   "etudiants.frx":0054
             Tab(0).ControlEnabled=   0   'False
-            Tab(0).Control(0)=   "Picture20"
+            Tab(0).Control(0)=   "grd8"
+            Tab(0).Control(0).Enabled=   0   'False
             Tab(0).Control(1)=   "Picture19"
-            Tab(0).Control(2)=   "grd8"
+            Tab(0).Control(1).Enabled=   0   'False
+            Tab(0).Control(2)=   "Picture20"
+            Tab(0).Control(2).Enabled=   0   'False
             Tab(0).ControlCount=   3
             TabCaption(1)   =   "»Ì«‰«   ·«„Ì– «·ﬁ”„"
             TabPicture(1)   =   "etudiants.frx":0070
@@ -624,7 +629,7 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   615
                ScaleWidth      =   13815
-               TabIndex        =   199
+               TabIndex        =   195
                Top             =   7080
                Width           =   13815
                Begin VB.CommandButton Command41 
@@ -640,7 +645,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   255
+                  TabIndex        =   251
                   Top             =   120
                   Visible         =   0   'False
                   Width           =   1935
@@ -658,7 +663,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   2280
-                  TabIndex        =   202
+                  TabIndex        =   198
                   Top             =   120
                   Width           =   3855
                End
@@ -678,7 +683,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   285
                   Left            =   11760
-                  TabIndex        =   201
+                  TabIndex        =   197
                   Top             =   120
                   Value           =   1  'Checked
                   Width           =   255
@@ -699,7 +704,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   285
                   Left            =   12960
-                  TabIndex        =   200
+                  TabIndex        =   196
                   Top             =   120
                   Value           =   1  'Checked
                   Width           =   255
@@ -720,7 +725,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   13200
-                  TabIndex        =   204
+                  TabIndex        =   200
                   Top             =   135
                   Width           =   495
                End
@@ -740,7 +745,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   12000
-                  TabIndex        =   203
+                  TabIndex        =   199
                   Top             =   135
                   Width           =   615
                End
@@ -752,7 +757,7 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   615
                ScaleWidth      =   13815
-               TabIndex        =   192
+               TabIndex        =   188
                Top             =   360
                Width           =   13815
                Begin VB.CommandButton Command2 
@@ -768,7 +773,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   2160
-                  TabIndex        =   230
+                  TabIndex        =   226
                   Top             =   120
                   Width           =   1575
                End
@@ -787,7 +792,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   3840
-                  TabIndex        =   229
+                  TabIndex        =   225
                   Top             =   120
                   Width           =   2655
                End
@@ -806,7 +811,7 @@ Begin VB.Form etudiants
                   Height          =   375
                   Left            =   10800
                   Style           =   2  'Dropdown List
-                  TabIndex        =   195
+                  TabIndex        =   191
                   Top             =   120
                   Width           =   1695
                End
@@ -823,14 +828,14 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   9000
-                  TabIndex        =   193
+                  TabIndex        =   189
                   Top             =   120
                   Width           =   1695
                End
                Begin MSFlexGridLib.MSFlexGrid grd30 
                   Height          =   285
                   Left            =   7560
-                  TabIndex        =   238
+                  TabIndex        =   234
                   Top             =   120
                   Width           =   1365
                   _ExtentX        =   2408
@@ -875,7 +880,7 @@ Begin VB.Form etudiants
                   Height          =   375
                   Index           =   1
                   Left            =   5520
-                  TabIndex        =   228
+                  TabIndex        =   224
                   Top             =   120
                   Width           =   1935
                End
@@ -904,7 +909,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   12240
-                  TabIndex        =   194
+                  TabIndex        =   190
                   Top             =   120
                   Width           =   1215
                End
@@ -916,7 +921,7 @@ Begin VB.Form etudiants
                Left            =   120
                ScaleHeight     =   7335
                ScaleWidth      =   13815
-               TabIndex        =   189
+               TabIndex        =   185
                Top             =   360
                Width           =   13815
             End
@@ -927,7 +932,7 @@ Begin VB.Form etudiants
                Left            =   120
                ScaleHeight     =   7335
                ScaleWidth      =   13815
-               TabIndex        =   176
+               TabIndex        =   172
                Top             =   360
                Width           =   13815
                Begin VB.CheckBox Check1 
@@ -947,7 +952,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Left            =   6480
                   MaskColor       =   &H00000000&
-                  TabIndex        =   190
+                  TabIndex        =   186
                   Top             =   1080
                   Width           =   255
                End
@@ -964,7 +969,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   360
-                  TabIndex        =   186
+                  TabIndex        =   182
                   Top             =   6840
                   Width           =   2175
                End
@@ -981,7 +986,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   2760
-                  TabIndex        =   185
+                  TabIndex        =   181
                   Top             =   6840
                   Width           =   3735
                End
@@ -998,7 +1003,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   2280
-                  TabIndex        =   183
+                  TabIndex        =   179
                   Top             =   1560
                   Width           =   4575
                End
@@ -1015,7 +1020,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   9000
-                  TabIndex        =   180
+                  TabIndex        =   176
                   Top             =   6840
                   Visible         =   0   'False
                   Width           =   3735
@@ -1023,7 +1028,7 @@ Begin VB.Form etudiants
                Begin MSFlexGridLib.MSFlexGrid grd6 
                   Height          =   6615
                   Left            =   7080
-                  TabIndex        =   179
+                  TabIndex        =   175
                   Top             =   120
                   Width           =   6615
                   _ExtentX        =   11668
@@ -1052,7 +1057,7 @@ Begin VB.Form etudiants
                Begin MSFlexGridLib.MSFlexGrid grd7 
                   Height          =   3975
                   Left            =   120
-                  TabIndex        =   184
+                  TabIndex        =   180
                   Top             =   2280
                   Width           =   6735
                   _ExtentX        =   11880
@@ -1091,7 +1096,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   2280
-                  TabIndex        =   214
+                  TabIndex        =   210
                   Top             =   240
                   Width           =   2175
                End
@@ -1111,7 +1116,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   4800
-                  TabIndex        =   191
+                  TabIndex        =   187
                   Top             =   1080
                   Width           =   1575
                End
@@ -1147,7 +1152,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   2280
-                  TabIndex        =   182
+                  TabIndex        =   178
                   Top             =   600
                   Width           =   3975
                End
@@ -1166,7 +1171,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   4680
-                  TabIndex        =   181
+                  TabIndex        =   177
                   Top             =   240
                   Width           =   1575
                End
@@ -1186,7 +1191,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   4920
-                  TabIndex        =   178
+                  TabIndex        =   174
                   Top             =   600
                   Width           =   1935
                End
@@ -1206,7 +1211,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   5760
-                  TabIndex        =   177
+                  TabIndex        =   173
                   Top             =   240
                   Width           =   1095
                End
@@ -1214,7 +1219,7 @@ Begin VB.Form etudiants
             Begin MSFlexGridLib.MSFlexGrid grd8 
                Height          =   5895
                Left            =   -74880
-               TabIndex        =   196
+               TabIndex        =   192
                Top             =   1080
                Width           =   13815
                _ExtentX        =   24368
@@ -1249,7 +1254,7 @@ Begin VB.Form etudiants
          Left            =   -74880
          ScaleHeight     =   615
          ScaleWidth      =   14295
-         TabIndex        =   171
+         TabIndex        =   167
          Top             =   360
          Width           =   14295
          Begin VB.CommandButton Command40 
@@ -1265,7 +1270,7 @@ Begin VB.Form etudiants
             EndProperty
             Height          =   375
             Left            =   120
-            TabIndex        =   263
+            TabIndex        =   258
             Top             =   120
             Visible         =   0   'False
             Width           =   1935
@@ -1285,14 +1290,14 @@ Begin VB.Form etudiants
             Height          =   375
             Left            =   7200
             Style           =   2  'Dropdown List
-            TabIndex        =   172
+            TabIndex        =   168
             Top             =   120
             Width           =   1695
          End
          Begin MSComctlLib.ProgressBar ProgressBar5 
             Height          =   375
             Left            =   2280
-            TabIndex        =   243
+            TabIndex        =   239
             Top             =   120
             Width           =   4815
             _ExtentX        =   8493
@@ -1317,7 +1322,7 @@ Begin VB.Form etudiants
             Height          =   375
             Index           =   0
             Left            =   7560
-            TabIndex        =   173
+            TabIndex        =   169
             Top             =   120
             Width           =   1935
          End
@@ -1329,13 +1334,13 @@ Begin VB.Form etudiants
          Left            =   120
          ScaleHeight     =   8055
          ScaleWidth      =   14295
-         TabIndex        =   23
+         TabIndex        =   21
          Top             =   1080
          Width           =   14295
          Begin TabDlg.SSTab SSTab2 
             Height          =   7815
             Left            =   120
-            TabIndex        =   24
+            TabIndex        =   22
             Top             =   120
             Visible         =   0   'False
             Width           =   14055
@@ -1383,7 +1388,7 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   6615
                ScaleWidth      =   13815
-               TabIndex        =   151
+               TabIndex        =   147
                Top             =   1080
                Width           =   13815
                Begin VB.PictureBox Picture12 
@@ -1393,7 +1398,7 @@ Begin VB.Form etudiants
                   Left            =   0
                   ScaleHeight     =   6615
                   ScaleWidth      =   13815
-                  TabIndex        =   152
+                  TabIndex        =   148
                   Top             =   0
                   Visible         =   0   'False
                   Width           =   13815
@@ -1410,7 +1415,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   9960
-                     TabIndex        =   280
+                     TabIndex        =   275
                      Top             =   720
                      Width           =   3735
                   End
@@ -1427,7 +1432,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   1080
-                     TabIndex        =   168
+                     TabIndex        =   164
                      Top             =   720
                      Width           =   1335
                   End
@@ -1446,7 +1451,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   9000
                      Style           =   2  'Dropdown List
-                     TabIndex        =   158
+                     TabIndex        =   154
                      Top             =   120
                      Width           =   855
                   End
@@ -1465,7 +1470,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   6960
                      Style           =   2  'Dropdown List
-                     TabIndex        =   157
+                     TabIndex        =   153
                      Top             =   120
                      Width           =   855
                   End
@@ -1484,7 +1489,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   4680
                      Style           =   2  'Dropdown List
-                     TabIndex        =   156
+                     TabIndex        =   152
                      Top             =   120
                      Width           =   1335
                   End
@@ -1503,7 +1508,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   120
-                     TabIndex        =   155
+                     TabIndex        =   151
                      Top             =   120
                      Width           =   3615
                   End
@@ -1520,7 +1525,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   2520
-                     TabIndex        =   154
+                     TabIndex        =   150
                      Top             =   720
                      Width           =   2055
                   End
@@ -1537,14 +1542,14 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   120
-                     TabIndex        =   153
+                     TabIndex        =   149
                      Top             =   720
                      Width           =   855
                   End
                   Begin MSComCtl2.DTPicker DT3 
                      Height          =   375
                      Left            =   11040
-                     TabIndex        =   159
+                     TabIndex        =   155
                      Top             =   120
                      Width           =   1455
                      _ExtentX        =   2566
@@ -1559,13 +1564,13 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123600897
+                     Format          =   126615553
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar4 
                      Height          =   375
                      Left            =   4680
-                     TabIndex        =   160
+                     TabIndex        =   156
                      Top             =   720
                      Width           =   5175
                      _ExtentX        =   9128
@@ -1576,7 +1581,7 @@ Begin VB.Form etudiants
                   Begin MSFlexGridLib.MSFlexGrid grd2 
                      Height          =   5175
                      Left            =   120
-                     TabIndex        =   161
+                     TabIndex        =   157
                      Top             =   1320
                      Width           =   13575
                      _ExtentX        =   23945
@@ -1618,7 +1623,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   12360
-                     TabIndex        =   166
+                     TabIndex        =   162
                      Top             =   120
                      Width           =   1335
                   End
@@ -1638,7 +1643,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   9480
-                     TabIndex        =   165
+                     TabIndex        =   161
                      Top             =   120
                      Width           =   1335
                   End
@@ -1658,7 +1663,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   7560
-                     TabIndex        =   164
+                     TabIndex        =   160
                      Top             =   120
                      Width           =   1335
                   End
@@ -1678,7 +1683,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   5400
-                     TabIndex        =   163
+                     TabIndex        =   159
                      Top             =   120
                      Width           =   1335
                   End
@@ -1698,7 +1703,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   3120
-                     TabIndex        =   162
+                     TabIndex        =   158
                      Top             =   120
                      Width           =   1335
                   End
@@ -1711,7 +1716,7 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   615
                ScaleWidth      =   13815
-               TabIndex        =   141
+               TabIndex        =   137
                Top             =   360
                Width           =   13815
                Begin VB.CommandButton Command24 
@@ -1727,7 +1732,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   150
+                  TabIndex        =   146
                   Top             =   120
                   Width           =   2895
                End
@@ -1746,7 +1751,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   11640
-                  TabIndex        =   149
+                  TabIndex        =   145
                   Top             =   120
                   Width           =   1455
                End
@@ -1765,7 +1770,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   9720
-                  TabIndex        =   148
+                  TabIndex        =   144
                   Top             =   120
                   Width           =   1335
                End
@@ -1785,7 +1790,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   12600
-                  TabIndex        =   147
+                  TabIndex        =   143
                   Top             =   120
                   Width           =   975
                End
@@ -1805,7 +1810,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   10680
-                  TabIndex        =   146
+                  TabIndex        =   142
                   Top             =   120
                   Width           =   855
                End
@@ -1825,7 +1830,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   7560
-                  TabIndex        =   145
+                  TabIndex        =   141
                   Top             =   120
                   Width           =   1935
                End
@@ -1844,7 +1849,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   5040
-                  TabIndex        =   144
+                  TabIndex        =   140
                   Top             =   120
                   Width           =   3855
                End
@@ -1873,7 +1878,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   3600
-                  TabIndex        =   143
+                  TabIndex        =   139
                   Top             =   120
                   Width           =   1215
                End
@@ -1893,7 +1898,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   3120
-                  TabIndex        =   142
+                  TabIndex        =   138
                   Top             =   120
                   Width           =   1095
                End
@@ -1905,7 +1910,7 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   6615
                ScaleWidth      =   5415
-               TabIndex        =   75
+               TabIndex        =   71
                Top             =   1080
                Visible         =   0   'False
                Width           =   5415
@@ -1925,7 +1930,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   0
                   Left            =   2640
-                  TabIndex        =   106
+                  TabIndex        =   102
                   Top             =   1440
                   Width           =   1815
                End
@@ -1945,7 +1950,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   0
                   Left            =   2640
-                  TabIndex        =   105
+                  TabIndex        =   101
                   Top             =   360
                   Width           =   495
                End
@@ -1965,7 +1970,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   1
                   Left            =   480
-                  TabIndex        =   104
+                  TabIndex        =   100
                   Top             =   360
                   Width           =   495
                End
@@ -1985,7 +1990,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   2
                   Left            =   2640
-                  TabIndex        =   103
+                  TabIndex        =   99
                   Top             =   720
                   Width           =   495
                End
@@ -2005,7 +2010,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   3
                   Left            =   480
-                  TabIndex        =   102
+                  TabIndex        =   98
                   Top             =   720
                   Width           =   495
                End
@@ -2026,7 +2031,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   4
                   Left            =   2640
-                  TabIndex        =   101
+                  TabIndex        =   97
                   Top             =   1080
                   Width           =   1815
                End
@@ -2046,7 +2051,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   5
                   Left            =   480
-                  TabIndex        =   100
+                  TabIndex        =   96
                   Top             =   1080
                   Width           =   1815
                End
@@ -2067,7 +2072,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   6
                   Left            =   2640
-                  TabIndex        =   99
+                  TabIndex        =   95
                   Top             =   1800
                   Width           =   1815
                End
@@ -2087,7 +2092,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   7
                   Left            =   480
-                  TabIndex        =   98
+                  TabIndex        =   94
                   Top             =   1800
                   Width           =   1815
                End
@@ -2108,7 +2113,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   8
                   Left            =   2640
-                  TabIndex        =   97
+                  TabIndex        =   93
                   Top             =   2520
                   Width           =   1815
                End
@@ -2128,7 +2133,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   9
                   Left            =   480
-                  TabIndex        =   96
+                  TabIndex        =   92
                   Top             =   2520
                   Width           =   1815
                End
@@ -2149,7 +2154,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   10
                   Left            =   2640
-                  TabIndex        =   95
+                  TabIndex        =   91
                   Top             =   3240
                   Width           =   1815
                End
@@ -2169,7 +2174,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   11
                   Left            =   480
-                  TabIndex        =   94
+                  TabIndex        =   90
                   Top             =   3240
                   Width           =   1815
                End
@@ -2186,7 +2191,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   2640
-                  TabIndex        =   93
+                  TabIndex        =   89
                   Top             =   5520
                   Width           =   2415
                End
@@ -2207,7 +2212,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   12
                   Left            =   2640
-                  TabIndex        =   92
+                  TabIndex        =   88
                   Top             =   3960
                   Width           =   1815
                End
@@ -2227,7 +2232,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   13
                   Left            =   480
-                  TabIndex        =   91
+                  TabIndex        =   87
                   Top             =   3960
                   Width           =   1815
                End
@@ -2248,7 +2253,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   14
                   Left            =   2640
-                  TabIndex        =   90
+                  TabIndex        =   86
                   Top             =   4680
                   Width           =   1815
                End
@@ -2269,7 +2274,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   15
                   Left            =   480
-                  TabIndex        =   89
+                  TabIndex        =   85
                   Top             =   4680
                   Width           =   1815
                End
@@ -2289,7 +2294,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   1
                   Left            =   2640
-                  TabIndex        =   88
+                  TabIndex        =   84
                   Top             =   2160
                   Width           =   1815
                End
@@ -2309,7 +2314,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   2
                   Left            =   2640
-                  TabIndex        =   87
+                  TabIndex        =   83
                   Top             =   2880
                   Width           =   1815
                End
@@ -2329,7 +2334,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   3
                   Left            =   2640
-                  TabIndex        =   86
+                  TabIndex        =   82
                   Top             =   3600
                   Width           =   1815
                End
@@ -2349,7 +2354,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   4
                   Left            =   2640
-                  TabIndex        =   85
+                  TabIndex        =   81
                   Top             =   4320
                   Width           =   1815
                End
@@ -2369,7 +2374,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   5
                   Left            =   2640
-                  TabIndex        =   84
+                  TabIndex        =   80
                   Top             =   5040
                   Width           =   1815
                End
@@ -2388,7 +2393,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   6
                   Left            =   480
-                  TabIndex        =   83
+                  TabIndex        =   79
                   Top             =   1440
                   Width           =   1815
                End
@@ -2407,7 +2412,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   7
                   Left            =   480
-                  TabIndex        =   82
+                  TabIndex        =   78
                   Top             =   2160
                   Width           =   1815
                End
@@ -2426,7 +2431,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   8
                   Left            =   480
-                  TabIndex        =   81
+                  TabIndex        =   77
                   Top             =   2880
                   Width           =   1815
                End
@@ -2445,7 +2450,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   9
                   Left            =   480
-                  TabIndex        =   80
+                  TabIndex        =   76
                   Top             =   3600
                   Width           =   1815
                End
@@ -2464,7 +2469,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   10
                   Left            =   480
-                  TabIndex        =   79
+                  TabIndex        =   75
                   Top             =   4320
                   Width           =   1815
                End
@@ -2483,7 +2488,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Index           =   11
                   Left            =   480
-                  TabIndex        =   78
+                  TabIndex        =   74
                   Top             =   5040
                   Width           =   1815
                End
@@ -2500,7 +2505,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   1320
-                  TabIndex        =   77
+                  TabIndex        =   73
                   Top             =   5520
                   Width           =   1215
                End
@@ -2517,14 +2522,14 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   76
+                  TabIndex        =   72
                   Top             =   5520
                   Width           =   1095
                End
                Begin MSFlexGridLib.MSFlexGrid grd22 
                   Height          =   5895
                   Left            =   5640
-                  TabIndex        =   244
+                  TabIndex        =   240
                   Top             =   120
                   Width           =   4335
                   _ExtentX        =   7646
@@ -2554,7 +2559,7 @@ Begin VB.Form etudiants
                Begin MSFlexGridLib.MSFlexGrid grd23 
                   Height          =   615
                   Left            =   120
-                  TabIndex        =   245
+                  TabIndex        =   241
                   Top             =   6000
                   Width           =   4935
                   _ExtentX        =   8705
@@ -2598,7 +2603,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   5
                   Left            =   2640
-                  TabIndex        =   251
+                  TabIndex        =   247
                   Top             =   5040
                   Width           =   2295
                End
@@ -2619,7 +2624,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   4
                   Left            =   2640
-                  TabIndex        =   250
+                  TabIndex        =   246
                   Top             =   4320
                   Width           =   2295
                End
@@ -2640,7 +2645,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   3
                   Left            =   2640
-                  TabIndex        =   249
+                  TabIndex        =   245
                   Top             =   3600
                   Width           =   2295
                End
@@ -2661,7 +2666,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   2
                   Left            =   2640
-                  TabIndex        =   248
+                  TabIndex        =   244
                   Top             =   2880
                   Width           =   2295
                End
@@ -2682,7 +2687,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   0
                   Left            =   2640
-                  TabIndex        =   247
+                  TabIndex        =   243
                   Top             =   2160
                   Width           =   2295
                End
@@ -2703,7 +2708,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   1
                   Left            =   2640
-                  TabIndex        =   246
+                  TabIndex        =   242
                   Top             =   1440
                   Width           =   2295
                End
@@ -2723,7 +2728,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   3120
-                  TabIndex        =   123
+                  TabIndex        =   119
                   Top             =   360
                   Width           =   1815
                End
@@ -2743,7 +2748,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   600
-                  TabIndex        =   122
+                  TabIndex        =   118
                   Top             =   360
                   Width           =   1935
                End
@@ -2763,7 +2768,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   2880
-                  TabIndex        =   121
+                  TabIndex        =   117
                   Top             =   720
                   Width           =   2055
                End
@@ -2783,7 +2788,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   600
-                  TabIndex        =   120
+                  TabIndex        =   116
                   Top             =   720
                   Width           =   1935
                End
@@ -2803,7 +2808,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   4440
-                  TabIndex        =   119
+                  TabIndex        =   115
                   Top             =   1080
                   Width           =   495
                End
@@ -2823,7 +2828,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   2040
-                  TabIndex        =   118
+                  TabIndex        =   114
                   Top             =   1080
                   Width           =   855
                End
@@ -2843,7 +2848,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   4440
-                  TabIndex        =   117
+                  TabIndex        =   113
                   Top             =   1800
                   Width           =   495
                End
@@ -2863,7 +2868,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   2040
-                  TabIndex        =   116
+                  TabIndex        =   112
                   Top             =   1800
                   Width           =   855
                End
@@ -2883,7 +2888,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   4440
-                  TabIndex        =   115
+                  TabIndex        =   111
                   Top             =   3240
                   Width           =   495
                End
@@ -2903,7 +2908,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   2040
-                  TabIndex        =   114
+                  TabIndex        =   110
                   Top             =   2520
                   Width           =   855
                End
@@ -2923,7 +2928,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   4440
-                  TabIndex        =   113
+                  TabIndex        =   109
                   Top             =   2520
                   Width           =   495
                End
@@ -2943,7 +2948,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   2040
-                  TabIndex        =   112
+                  TabIndex        =   108
                   Top             =   3240
                   Width           =   855
                End
@@ -2963,7 +2968,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   4440
-                  TabIndex        =   111
+                  TabIndex        =   107
                   Top             =   4680
                   Width           =   495
                End
@@ -2983,7 +2988,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   2040
-                  TabIndex        =   110
+                  TabIndex        =   106
                   Top             =   3960
                   Width           =   855
                End
@@ -3003,7 +3008,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   4440
-                  TabIndex        =   109
+                  TabIndex        =   105
                   Top             =   3960
                   Width           =   495
                End
@@ -3023,7 +3028,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   2040
-                  TabIndex        =   108
+                  TabIndex        =   104
                   Top             =   4680
                   Width           =   855
                End
@@ -3043,7 +3048,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   480
-                  TabIndex        =   107
+                  TabIndex        =   103
                   Top             =   0
                   Width           =   4455
                End
@@ -3055,7 +3060,7 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   615
                ScaleWidth      =   13815
-               TabIndex        =   69
+               TabIndex        =   65
                Top             =   5280
                Width           =   13815
                Begin VB.CommandButton Command42 
@@ -3071,7 +3076,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   258
+                  TabIndex        =   254
                   Top             =   120
                   Width           =   2175
                End
@@ -3091,7 +3096,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   285
                   Left            =   4560
-                  TabIndex        =   133
+                  TabIndex        =   129
                   Top             =   140
                   Value           =   1  'Checked
                   Width           =   255
@@ -3113,7 +3118,7 @@ Begin VB.Form etudiants
                   Height          =   285
                   Left            =   5400
                   MaskColor       =   &H00000000&
-                  TabIndex        =   132
+                  TabIndex        =   128
                   Top             =   140
                   Value           =   1  'Checked
                   Width           =   255
@@ -3134,7 +3139,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   285
                   Left            =   2760
-                  TabIndex        =   131
+                  TabIndex        =   127
                   Top             =   120
                   Value           =   1  'Checked
                   Width           =   255
@@ -3155,7 +3160,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   285
                   Left            =   3600
-                  TabIndex        =   130
+                  TabIndex        =   126
                   Top             =   140
                   Value           =   1  'Checked
                   Width           =   255
@@ -3173,7 +3178,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   7800
-                  TabIndex        =   125
+                  TabIndex        =   121
                   Top             =   120
                   Width           =   735
                End
@@ -3193,7 +3198,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   3000
-                  TabIndex        =   138
+                  TabIndex        =   134
                   Top             =   135
                   Width           =   495
                End
@@ -3213,7 +3218,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   3840
-                  TabIndex        =   137
+                  TabIndex        =   133
                   Top             =   135
                   Width           =   615
                End
@@ -3233,7 +3238,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   4800
-                  TabIndex        =   136
+                  TabIndex        =   132
                   Top             =   135
                   Width           =   495
                End
@@ -3253,7 +3258,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   255
                   Left            =   5760
-                  TabIndex        =   135
+                  TabIndex        =   131
                   Top             =   140
                   Width           =   495
                End
@@ -3280,7 +3285,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   8760
-                  TabIndex        =   124
+                  TabIndex        =   120
                   Top             =   120
                   Visible         =   0   'False
                   Width           =   2535
@@ -3301,7 +3306,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   6840
-                  TabIndex        =   74
+                  TabIndex        =   70
                   Top             =   120
                   Width           =   855
                End
@@ -3321,7 +3326,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   8760
-                  TabIndex        =   73
+                  TabIndex        =   69
                   Top             =   120
                   Width           =   2535
                End
@@ -3341,7 +3346,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   10680
-                  TabIndex        =   72
+                  TabIndex        =   68
                   Top             =   120
                   Width           =   1215
                End
@@ -3361,7 +3366,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   12000
-                  TabIndex        =   71
+                  TabIndex        =   67
                   Top             =   120
                   Width           =   735
                End
@@ -3381,7 +3386,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   11760
-                  TabIndex        =   70
+                  TabIndex        =   66
                   Top             =   120
                   Width           =   1935
                End
@@ -3393,12 +3398,13 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   615
                ScaleWidth      =   13815
-               TabIndex        =   61
+               TabIndex        =   57
                Top             =   360
                Width           =   13815
                Begin VB.TextBox Text17 
                   Alignment       =   1  'Right Justify
                   BackColor       =   &H00000000&
+                  Enabled         =   0   'False
                   BeginProperty Font 
                      Name            =   "Times New Roman"
                      Size            =   12
@@ -3412,7 +3418,7 @@ Begin VB.Form etudiants
                   Height          =   375
                   Left            =   5520
                   ScrollBars      =   2  'Vertical
-                  TabIndex        =   278
+                  TabIndex        =   273
                   Top             =   120
                   Width           =   1455
                End
@@ -3429,7 +3435,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   134
+                  TabIndex        =   130
                   Top             =   120
                   Width           =   1455
                End
@@ -3446,7 +3452,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   1680
-                  TabIndex        =   68
+                  TabIndex        =   64
                   Top             =   120
                   Width           =   1335
                End
@@ -3467,7 +3473,7 @@ Begin VB.Form etudiants
                   Height          =   375
                   Index           =   8
                   Left            =   4920
-                  TabIndex        =   277
+                  TabIndex        =   272
                   Top             =   150
                   Width           =   615
                End
@@ -3487,7 +3493,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   3120
-                  TabIndex        =   140
+                  TabIndex        =   136
                   Top             =   120
                   Width           =   1095
                End
@@ -3507,7 +3513,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   3600
-                  TabIndex        =   139
+                  TabIndex        =   135
                   Top             =   120
                   Width           =   1215
                End
@@ -3535,7 +3541,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   6960
-                  TabIndex        =   67
+                  TabIndex        =   63
                   Top             =   120
                   Width           =   2775
                End
@@ -3555,7 +3561,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   9600
-                  TabIndex        =   66
+                  TabIndex        =   62
                   Top             =   120
                   Width           =   735
                End
@@ -3575,7 +3581,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   11040
-                  TabIndex        =   65
+                  TabIndex        =   61
                   Top             =   120
                   Width           =   495
                End
@@ -3595,7 +3601,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   12600
-                  TabIndex        =   64
+                  TabIndex        =   60
                   Top             =   120
                   Width           =   975
                End
@@ -3614,7 +3620,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   10320
-                  TabIndex        =   63
+                  TabIndex        =   59
                   Top             =   120
                   Width           =   735
                End
@@ -3633,7 +3639,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   11640
-                  TabIndex        =   62
+                  TabIndex        =   58
                   Top             =   120
                   Width           =   1455
                End
@@ -3645,7 +3651,7 @@ Begin VB.Form etudiants
                Left            =   -74880
                ScaleHeight     =   1695
                ScaleWidth      =   13815
-               TabIndex        =   48
+               TabIndex        =   44
                Top             =   6000
                Width           =   13815
                Begin VB.CommandButton Command16 
@@ -3661,7 +3667,7 @@ Begin VB.Form etudiants
                   EndProperty
                   Height          =   375
                   Left            =   120
-                  TabIndex        =   257
+                  TabIndex        =   253
                   Top             =   120
                   Width           =   2175
                End
@@ -3681,7 +3687,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   7200
-                  TabIndex        =   57
+                  TabIndex        =   53
                   Top             =   0
                   Width           =   735
                End
@@ -3701,7 +3707,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   8760
-                  TabIndex        =   56
+                  TabIndex        =   52
                   Top             =   0
                   Width           =   735
                End
@@ -3721,7 +3727,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   10320
-                  TabIndex        =   55
+                  TabIndex        =   51
                   Top             =   0
                   Width           =   735
                End
@@ -3741,7 +3747,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   375
                   Left            =   11880
-                  TabIndex        =   54
+                  TabIndex        =   50
                   Top             =   0
                   Width           =   735
                End
@@ -3762,7 +3768,7 @@ Begin VB.Form etudiants
                   Height          =   495
                   Index           =   5
                   Left            =   0
-                  TabIndex        =   53
+                  TabIndex        =   49
                   Top             =   1200
                   Width           =   12975
                End
@@ -3783,7 +3789,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   4
                   Left            =   7200
-                  TabIndex        =   52
+                  TabIndex        =   48
                   Top             =   120
                   Width           =   6495
                End
@@ -3804,7 +3810,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   0
                   Left            =   5280
-                  TabIndex        =   51
+                  TabIndex        =   47
                   Top             =   480
                   Width           =   7695
                End
@@ -3825,7 +3831,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   1
                   Left            =   -600
-                  TabIndex        =   50
+                  TabIndex        =   46
                   Top             =   720
                   Width           =   13575
                End
@@ -3846,7 +3852,7 @@ Begin VB.Form etudiants
                   Height          =   255
                   Index           =   3
                   Left            =   4560
-                  TabIndex        =   49
+                  TabIndex        =   45
                   Top             =   960
                   Width           =   8415
                End
@@ -3858,35 +3864,18 @@ Begin VB.Form etudiants
                Left            =   120
                ScaleHeight     =   7335
                ScaleWidth      =   13815
-               TabIndex        =   26
+               TabIndex        =   24
                Top             =   360
                Width           =   13815
                Begin VB.PictureBox Picture5 
                   Height          =   6255
-                  Left            =   720
+                  Left            =   360
                   ScaleHeight     =   6195
                   ScaleWidth      =   12435
-                  TabIndex        =   41
+                  TabIndex        =   38
                   Top             =   600
                   Visible         =   0   'False
                   Width           =   12495
-                  Begin VB.CommandButton Command38 
-                     Caption         =   "ﬂ‘› «·œ—Ã«  ··›’· «·√Ê·"
-                     BeginProperty Font 
-                        Name            =   "Times New Roman"
-                        Size            =   12
-                        Charset         =   178
-                        Weight          =   700
-                        Underline       =   0   'False
-                        Italic          =   0   'False
-                        Strikethrough   =   0   'False
-                     EndProperty
-                     Height          =   375
-                     Left            =   9600
-                     TabIndex        =   262
-                     Top             =   5160
-                     Width           =   2655
-                  End
                   Begin VB.CommandButton Command39 
                      Caption         =   "ﬂ‘› «·œ—Ã«  ··›’· «·À«‰Ì"
                      BeginProperty Font 
@@ -3900,7 +3889,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   6840
-                     TabIndex        =   261
+                     TabIndex        =   257
                      Top             =   5160
                      Width           =   2655
                   End
@@ -3917,7 +3906,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   720
-                     TabIndex        =   260
+                     TabIndex        =   256
                      Top             =   5400
                      Width           =   2415
                   End
@@ -3934,7 +3923,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   3240
-                     TabIndex        =   259
+                     TabIndex        =   255
                      Top             =   5400
                      Width           =   2415
                   End
@@ -3953,7 +3942,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   1080
                      Style           =   2  'Dropdown List
-                     TabIndex        =   239
+                     TabIndex        =   235
                      Top             =   4200
                      Width           =   1575
                   End
@@ -3961,7 +3950,7 @@ Begin VB.Form etudiants
                      Caption         =   "Command36"
                      Height          =   495
                      Left            =   240
-                     TabIndex        =   211
+                     TabIndex        =   207
                      Top             =   1800
                      Width           =   1335
                   End
@@ -3978,14 +3967,14 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   1200
-                     TabIndex        =   206
+                     TabIndex        =   202
                      Top             =   3600
                      Width           =   1935
                   End
                   Begin MSFlexGridLib.MSFlexGrid grd9 
                      Height          =   4575
                      Left            =   3840
-                     TabIndex        =   198
+                     TabIndex        =   194
                      Top             =   600
                      Width           =   2895
                      _ExtentX        =   5106
@@ -4013,7 +4002,7 @@ Begin VB.Form etudiants
                   Begin MSFlexGridLib.MSFlexGrid grd5 
                      Height          =   4815
                      Left            =   7080
-                     TabIndex        =   127
+                     TabIndex        =   123
                      Top             =   240
                      Width           =   5295
                      _ExtentX        =   9340
@@ -4025,7 +4014,7 @@ Begin VB.Form etudiants
                      Caption         =   "Command8"
                      Height          =   375
                      Left            =   840
-                     TabIndex        =   60
+                     TabIndex        =   56
                      Top             =   840
                      Width           =   1695
                   End
@@ -4056,7 +4045,7 @@ Begin VB.Form etudiants
                   Begin MSComctlLib.ProgressBar ProgressBar3 
                      Height          =   375
                      Left            =   0
-                     TabIndex        =   126
+                     TabIndex        =   122
                      Top             =   2760
                      Width           =   3735
                      _ExtentX        =   6588
@@ -4080,7 +4069,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H000000FF&
                      Height          =   375
                      Left            =   2400
-                     TabIndex        =   276
+                     TabIndex        =   271
                      Top             =   720
                      Visible         =   0   'False
                      Width           =   1095
@@ -4101,7 +4090,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H000000FF&
                      Height          =   375
                      Left            =   2400
-                     TabIndex        =   275
+                     TabIndex        =   270
                      Top             =   120
                      Visible         =   0   'False
                      Width           =   1095
@@ -4122,7 +4111,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H000000FF&
                      Height          =   375
                      Left            =   2400
-                     TabIndex        =   274
+                     TabIndex        =   269
                      Top             =   360
                      Visible         =   0   'False
                      Width           =   1095
@@ -4131,7 +4120,7 @@ Begin VB.Form etudiants
                      Caption         =   "Label106"
                      Height          =   255
                      Left            =   240
-                     TabIndex        =   205
+                     TabIndex        =   201
                      Top             =   4560
                      Width           =   1575
                   End
@@ -4151,7 +4140,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   120
-                     TabIndex        =   197
+                     TabIndex        =   193
                      Top             =   4560
                      Width           =   1215
                   End
@@ -4159,21 +4148,21 @@ Begin VB.Form etudiants
                      Caption         =   "Label100"
                      Height          =   255
                      Left            =   120
-                     TabIndex        =   187
+                     TabIndex        =   183
                      Top             =   4200
                      Width           =   1575
                   End
                   Begin VB.Label Label88 
                      Height          =   255
                      Left            =   120
-                     TabIndex        =   170
+                     TabIndex        =   166
                      Top             =   4080
                      Width           =   2295
                   End
                   Begin VB.Label Label87 
                      Height          =   255
                      Left            =   120
-                     TabIndex        =   167
+                     TabIndex        =   163
                      Top             =   3720
                      Width           =   1455
                   End
@@ -4181,7 +4170,7 @@ Begin VB.Form etudiants
                      Caption         =   "Label67"
                      Height          =   255
                      Left            =   120
-                     TabIndex        =   129
+                     TabIndex        =   125
                      Top             =   3480
                      Width           =   2295
                   End
@@ -4189,7 +4178,7 @@ Begin VB.Form etudiants
                      Caption         =   "Label41"
                      Height          =   375
                      Left            =   120
-                     TabIndex        =   128
+                     TabIndex        =   124
                      Top             =   3240
                      Width           =   1095
                   End
@@ -4197,7 +4186,7 @@ Begin VB.Form etudiants
                      Caption         =   "Label21"
                      Height          =   255
                      Left            =   0
-                     TabIndex        =   43
+                     TabIndex        =   40
                      Top             =   1200
                      Width           =   1815
                   End
@@ -4205,7 +4194,7 @@ Begin VB.Form etudiants
                      Caption         =   "Label11"
                      Height          =   375
                      Left            =   0
-                     TabIndex        =   42
+                     TabIndex        =   39
                      Top             =   960
                      Width           =   1215
                   End
@@ -4217,9 +4206,48 @@ Begin VB.Form etudiants
                   Left            =   3000
                   ScaleHeight     =   4695
                   ScaleWidth      =   7335
-                  TabIndex        =   27
+                  TabIndex        =   25
                   Top             =   960
                   Width           =   7335
+                  Begin VB.TextBox Text21 
+                     Alignment       =   1  'Right Justify
+                     BackColor       =   &H00000000&
+                     BeginProperty Font 
+                        Name            =   "Times New Roman"
+                        Size            =   12
+                        Charset         =   178
+                        Weight          =   700
+                        Underline       =   0   'False
+                        Italic          =   0   'False
+                        Strikethrough   =   0   'False
+                     EndProperty
+                     ForeColor       =   &H00FFFFFF&
+                     Height          =   375
+                     Left            =   4080
+                     ScrollBars      =   2  'Vertical
+                     TabIndex        =   282
+                     Top             =   2160
+                     Width           =   1935
+                  End
+                  Begin VB.TextBox Text18 
+                     Alignment       =   1  'Right Justify
+                     BackColor       =   &H00000000&
+                     BeginProperty Font 
+                        Name            =   "Times New Roman"
+                        Size            =   12
+                        Charset         =   178
+                        Weight          =   700
+                        Underline       =   0   'False
+                        Italic          =   0   'False
+                        Strikethrough   =   0   'False
+                     EndProperty
+                     ForeColor       =   &H00FFFFFF&
+                     Height          =   375
+                     Left            =   240
+                     TabIndex        =   276
+                     Top             =   1200
+                     Width           =   2775
+                  End
                   Begin VB.TextBox Text16 
                      Alignment       =   1  'Right Justify
                      BackColor       =   &H00000000&
@@ -4236,7 +4264,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   4440
                      ScrollBars      =   2  'Vertical
-                     TabIndex        =   272
+                     TabIndex        =   267
                      Top             =   720
                      Width           =   1575
                   End
@@ -4256,7 +4284,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   240
                      ScrollBars      =   2  'Vertical
-                     TabIndex        =   265
+                     TabIndex        =   260
                      Top             =   240
                      Width           =   3015
                   End
@@ -4273,7 +4301,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   240
-                     TabIndex        =   169
+                     TabIndex        =   165
                      Top             =   3960
                      Width           =   1695
                   End
@@ -4292,7 +4320,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   4080
                      Style           =   2  'Dropdown List
-                     TabIndex        =   44
+                     TabIndex        =   41
                      Top             =   1680
                      Width           =   1935
                   End
@@ -4311,7 +4339,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   2160
                      Style           =   2  'Dropdown List
-                     TabIndex        =   36
+                     TabIndex        =   33
                      Top             =   720
                      Width           =   1575
                   End
@@ -4330,7 +4358,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   240
-                     TabIndex        =   35
+                     TabIndex        =   32
                      Top             =   720
                      Width           =   1215
                   End
@@ -4347,7 +4375,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   375
                      Left            =   4080
-                     TabIndex        =   34
+                     TabIndex        =   31
                      Top             =   3960
                      Width           =   3015
                   End
@@ -4365,10 +4393,10 @@ Begin VB.Form etudiants
                      EndProperty
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
-                     Left            =   240
-                     TabIndex        =   33
+                     Left            =   3240
+                     TabIndex        =   30
                      Top             =   1200
-                     Width           =   5775
+                     Width           =   2775
                   End
                   Begin VB.TextBox Text8 
                      Alignment       =   1  'Right Justify
@@ -4385,7 +4413,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   375
                      Left            =   240
-                     TabIndex        =   32
+                     TabIndex        =   29
                      Top             =   1680
                      Width           =   2535
                   End
@@ -4405,7 +4433,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Left            =   4440
                      ScrollBars      =   2  'Vertical
-                     TabIndex        =   31
+                     TabIndex        =   28
                      Top             =   240
                      Width           =   1575
                   End
@@ -4422,7 +4450,7 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   405
                      Left            =   6120
-                     TabIndex        =   30
+                     TabIndex        =   27
                      Top             =   2640
                      Width           =   975
                   End
@@ -4439,31 +4467,14 @@ Begin VB.Form etudiants
                      EndProperty
                      Height          =   405
                      Left            =   6120
-                     TabIndex        =   29
+                     TabIndex        =   26
                      Top             =   3240
                      Width           =   975
-                  End
-                  Begin VB.CommandButton Command15 
-                     Caption         =   "»ÿ«ﬁ… «·œŒÊ·"
-                     BeginProperty Font 
-                        Name            =   "Times New Roman"
-                        Size            =   12
-                        Charset         =   178
-                        Weight          =   700
-                        Underline       =   0   'False
-                        Italic          =   0   'False
-                        Strikethrough   =   0   'False
-                     EndProperty
-                     Height          =   375
-                     Left            =   2040
-                     TabIndex        =   28
-                     Top             =   3960
-                     Width           =   1935
                   End
                   Begin MSComCtl2.DTPicker DT2 
                      Height          =   375
                      Left            =   240
-                     TabIndex        =   37
+                     TabIndex        =   34
                      Top             =   2160
                      Width           =   2535
                      _ExtentX        =   4471
@@ -4478,13 +4489,13 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   123600897
+                     Format          =   126615553
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar1 
                      Height          =   255
                      Left            =   240
-                     TabIndex        =   38
+                     TabIndex        =   35
                      Top             =   3600
                      Width           =   3735
                      _ExtentX        =   6588
@@ -4526,6 +4537,27 @@ Begin VB.Form etudiants
                      BarcodeType     =   6
                   End
                   Begin VB.Label Label6 
+                     Alignment       =   2  'Center
+                     BackStyle       =   0  'Transparent
+                     Caption         =   "ﬂÊœ «· ·„Ì–"
+                     BeginProperty Font 
+                        Name            =   "Times New Roman"
+                        Size            =   12
+                        Charset         =   178
+                        Weight          =   700
+                        Underline       =   0   'False
+                        Italic          =   0   'False
+                        Strikethrough   =   0   'False
+                     EndProperty
+                     ForeColor       =   &H00FFFFFF&
+                     Height          =   375
+                     Index           =   3
+                     Left            =   1200
+                     TabIndex        =   283
+                     Top             =   2640
+                     Width           =   1935
+                  End
+                  Begin VB.Label Label6 
                      Alignment       =   1  'Right Justify
                      BackStyle       =   0  'Transparent
                      Caption         =   "«·«”„"
@@ -4542,7 +4574,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Index           =   1
                      Left            =   5160
-                     TabIndex        =   279
+                     TabIndex        =   274
                      Top             =   1200
                      Width           =   1935
                   End
@@ -4563,7 +4595,7 @@ Begin VB.Form etudiants
                      Height          =   375
                      Index           =   5
                      Left            =   240
-                     TabIndex        =   269
+                     TabIndex        =   264
                      Top             =   1680
                      Width           =   6855
                   End
@@ -4584,14 +4616,14 @@ Begin VB.Form etudiants
                      Height          =   375
                      Index           =   2
                      Left            =   120
-                     TabIndex        =   264
+                     TabIndex        =   259
                      Top             =   240
                      Width           =   6975
                   End
                   Begin VB.Label Label15 
                      Alignment       =   1  'Right Justify
                      BackStyle       =   0  'Transparent
-                     Caption         =   " «—ÌŒ «·„Ì·«œ                              «·ﬁ”„                                «·—ﬁ„"
+                     Caption         =   "” … «·„Ì·«œ                               «·ﬁ”„                                «·—ﬁ„"
                      BeginProperty Font 
                         Name            =   "Times New Roman"
                         Size            =   12
@@ -4605,14 +4637,14 @@ Begin VB.Form etudiants
                      Height          =   375
                      Index           =   1
                      Left            =   240
-                     TabIndex        =   241
+                     TabIndex        =   237
                      Top             =   720
                      Width           =   6855
                   End
                   Begin VB.Label Label15 
                      Alignment       =   1  'Right Justify
                      BackStyle       =   0  'Transparent
-                     Caption         =   " «—ÌŒ «· ”ÃÌ·"
+                     Caption         =   " «—ÌŒ «· ”ÃÌ·                                          RIM"
                      BeginProperty Font 
                         Name            =   "Times New Roman"
                         Size            =   12
@@ -4626,9 +4658,9 @@ Begin VB.Form etudiants
                      Height          =   375
                      Index           =   0
                      Left            =   2640
-                     TabIndex        =   40
+                     TabIndex        =   37
                      Top             =   2160
-                     Width           =   1335
+                     Width           =   4335
                   End
                   Begin VB.Image Image2 
                      Appearance      =   0  'Flat
@@ -4669,7 +4701,7 @@ Begin VB.Form etudiants
                      ForeColor       =   &H00FFFFFF&
                      Height          =   1095
                      Left            =   4080
-                     TabIndex        =   39
+                     TabIndex        =   36
                      Top             =   2760
                      Width           =   1935
                   End
@@ -4697,7 +4729,7 @@ Begin VB.Form etudiants
                   ForeColor       =   &H00FFFFFF&
                   Height          =   975
                   Left            =   3120
-                  TabIndex        =   240
+                  TabIndex        =   236
                   Top             =   5640
                   Width           =   7695
                End
@@ -4705,7 +4737,7 @@ Begin VB.Form etudiants
             Begin MSFlexGridLib.MSFlexGrid grd1 
                Height          =   4095
                Left            =   -74880
-               TabIndex        =   47
+               TabIndex        =   43
                Top             =   1080
                Width           =   13815
                _ExtentX        =   24368
@@ -4771,7 +4803,7 @@ Begin VB.Form etudiants
             EndProperty
             Height          =   375
             Left            =   7200
-            TabIndex        =   273
+            TabIndex        =   268
             Top             =   7560
             Visible         =   0   'False
             Width           =   2055
@@ -4789,7 +4821,7 @@ Begin VB.Form etudiants
             EndProperty
             Height          =   375
             Left            =   9480
-            TabIndex        =   270
+            TabIndex        =   265
             Top             =   7560
             Visible         =   0   'False
             Width           =   2175
@@ -4807,7 +4839,7 @@ Begin VB.Form etudiants
             EndProperty
             Height          =   375
             Left            =   11880
-            TabIndex        =   242
+            TabIndex        =   238
             Top             =   7560
             Visible         =   0   'False
             Width           =   2295
@@ -4823,6 +4855,44 @@ Begin VB.Form etudiants
             Top             =   1320
             Visible         =   0   'False
             Width           =   7335
+            Begin VB.TextBox Text20 
+               Alignment       =   1  'Right Justify
+               BackColor       =   &H00000000&
+               BeginProperty Font 
+                  Name            =   "Times New Roman"
+                  Size            =   12
+                  Charset         =   178
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               ForeColor       =   &H00FFFFFF&
+               Height          =   375
+               Left            =   4080
+               ScrollBars      =   2  'Vertical
+               TabIndex        =   279
+               Top             =   2160
+               Width           =   1935
+            End
+            Begin VB.TextBox Text19 
+               BackColor       =   &H00000000&
+               BeginProperty Font 
+                  Name            =   "Times New Roman"
+                  Size            =   12
+                  Charset         =   178
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               ForeColor       =   &H00FFFFFF&
+               Height          =   375
+               Left            =   240
+               TabIndex        =   277
+               Top             =   1200
+               Width           =   2895
+            End
             Begin VB.TextBox Text14 
                Alignment       =   1  'Right Justify
                BackColor       =   &H00000000&
@@ -4839,7 +4909,7 @@ Begin VB.Form etudiants
                Height          =   375
                Left            =   4440
                ScrollBars      =   2  'Vertical
-               TabIndex        =   271
+               TabIndex        =   266
                Top             =   720
                Width           =   1575
             End
@@ -4859,7 +4929,7 @@ Begin VB.Form etudiants
                Height          =   375
                Left            =   240
                ScrollBars      =   2  'Vertical
-               TabIndex        =   268
+               TabIndex        =   263
                Top             =   240
                Width           =   3015
             End
@@ -4876,7 +4946,7 @@ Begin VB.Form etudiants
                EndProperty
                Height          =   375
                Left            =   1920
-               TabIndex        =   188
+               TabIndex        =   184
                Top             =   3960
                Width           =   735
             End
@@ -4895,7 +4965,7 @@ Begin VB.Form etudiants
                Height          =   375
                Left            =   4080
                Style           =   2  'Dropdown List
-               TabIndex        =   45
+               TabIndex        =   42
                Top             =   1680
                Width           =   1935
             End
@@ -4913,7 +4983,7 @@ Begin VB.Form etudiants
                EndProperty
                Height          =   375
                Left            =   2760
-               TabIndex        =   25
+               TabIndex        =   23
                Top             =   3960
                Width           =   1215
             End
@@ -5003,10 +5073,10 @@ Begin VB.Form etudiants
                EndProperty
                ForeColor       =   &H00FFFFFF&
                Height          =   375
-               Left            =   240
+               Left            =   3240
                TabIndex        =   12
                Top             =   1200
-               Width           =   5775
+               Width           =   2775
             End
             Begin VB.TextBox Text4 
                Alignment       =   1  'Right Justify
@@ -5116,7 +5186,7 @@ Begin VB.Form etudiants
                   Italic          =   0   'False
                   Strikethrough   =   0   'False
                EndProperty
-               Format          =   123600897
+               Format          =   126615553
                CurrentDate     =   41154
             End
             Begin MSComctlLib.ProgressBar ProgressBar2 
@@ -5163,6 +5233,69 @@ Begin VB.Form etudiants
                hasText         =   -1
                BarcodeType     =   6
             End
+            Begin VB.Label Label6 
+               Alignment       =   1  'Right Justify
+               BackStyle       =   0  'Transparent
+               Caption         =   "ﬂÊœ «· ·„Ì–"
+               BeginProperty Font 
+                  Name            =   "Times New Roman"
+                  Size            =   12
+                  Charset         =   178
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               ForeColor       =   &H00FFFFFF&
+               Height          =   375
+               Index           =   2
+               Left            =   1200
+               TabIndex        =   281
+               Top             =   2640
+               Width           =   1575
+            End
+            Begin VB.Label Label15 
+               Alignment       =   1  'Right Justify
+               BackStyle       =   0  'Transparent
+               Caption         =   "«·Ã‰”                                               —ﬁ„ «·Â« ›"
+               BeginProperty Font 
+                  Name            =   "Times New Roman"
+                  Size            =   12
+                  Charset         =   178
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               ForeColor       =   &H00FFFFFF&
+               Height          =   375
+               Index           =   7
+               Left            =   2880
+               TabIndex        =   280
+               Top             =   1680
+               Width           =   4215
+            End
+            Begin VB.Label Label15 
+               Alignment       =   1  'Right Justify
+               BackStyle       =   0  'Transparent
+               Caption         =   " «—ÌŒ «· ”ÃÌ·                                        RIM     "
+               BeginProperty Font 
+                  Name            =   "Times New Roman"
+                  Size            =   12
+                  Charset         =   178
+                  Weight          =   700
+                  Underline       =   0   'False
+                  Italic          =   0   'False
+                  Strikethrough   =   0   'False
+               EndProperty
+               ForeColor       =   &H00FFFFFF&
+               Height          =   375
+               Index           =   6
+               Left            =   2880
+               TabIndex        =   278
+               Top             =   2160
+               Width           =   4215
+            End
             Begin VB.Label Label15 
                Alignment       =   1  'Right Justify
                BackStyle       =   0  'Transparent
@@ -5180,14 +5313,14 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   4
                Left            =   120
-               TabIndex        =   267
+               TabIndex        =   262
                Top             =   240
                Width           =   6975
             End
             Begin VB.Label Label15 
                Alignment       =   1  'Right Justify
                BackStyle       =   0  'Transparent
-               Caption         =   " «—ÌŒ «·„Ì·«œ                              «·ﬁ”„                                «·—ﬁ„"
+               Caption         =   "”‰… «·„Ì·«œ                               «·ﬁ”„                                «·—ﬁ„"
                BeginProperty Font 
                   Name            =   "Times New Roman"
                   Size            =   12
@@ -5201,7 +5334,7 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   3
                Left            =   240
-               TabIndex        =   266
+               TabIndex        =   261
                Top             =   720
                Width           =   6855
             End
@@ -5229,7 +5362,7 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   7
                Left            =   240
-               TabIndex        =   236
+               TabIndex        =   232
                Top             =   4560
                Width           =   1095
             End
@@ -5250,7 +5383,7 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   6
                Left            =   1200
-               TabIndex        =   235
+               TabIndex        =   231
                Top             =   4560
                Width           =   855
             End
@@ -5270,7 +5403,7 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   5
                Left            =   2280
-               TabIndex        =   234
+               TabIndex        =   230
                Top             =   4560
                Width           =   1095
             End
@@ -5291,7 +5424,7 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   4
                Left            =   3240
-               TabIndex        =   233
+               TabIndex        =   229
                Top             =   4560
                Width           =   855
             End
@@ -5311,7 +5444,7 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   3
                Left            =   4320
-               TabIndex        =   232
+               TabIndex        =   228
                Top             =   4560
                Width           =   1335
             End
@@ -5332,29 +5465,9 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   2
                Left            =   5160
-               TabIndex        =   231
+               TabIndex        =   227
                Top             =   4560
                Width           =   1935
-            End
-            Begin VB.Label Label23 
-               Alignment       =   1  'Right Justify
-               BackStyle       =   0  'Transparent
-               Caption         =   "Ã‰” «· ·„Ì–"
-               BeginProperty Font 
-                  Name            =   "Times New Roman"
-                  Size            =   12
-                  Charset         =   178
-                  Weight          =   700
-                  Underline       =   0   'False
-                  Italic          =   0   'False
-                  Strikethrough   =   0   'False
-               EndProperty
-               ForeColor       =   &H00FFFFFF&
-               Height          =   375
-               Left            =   6000
-               TabIndex        =   46
-               Top             =   1680
-               Width           =   1095
             End
             Begin VB.Label Label6 
                Alignment       =   1  'Right Justify
@@ -5373,49 +5486,9 @@ Begin VB.Form etudiants
                Height          =   375
                Index           =   0
                Left            =   5160
-               TabIndex        =   22
+               TabIndex        =   20
                Top             =   1200
                Width           =   1935
-            End
-            Begin VB.Label Label1 
-               Alignment       =   1  'Right Justify
-               BackStyle       =   0  'Transparent
-               Caption         =   " «—ÌŒ «· ”ÃÌ·"
-               BeginProperty Font 
-                  Name            =   "Times New Roman"
-                  Size            =   12
-                  Charset         =   178
-                  Weight          =   700
-                  Underline       =   0   'False
-                  Italic          =   0   'False
-                  Strikethrough   =   0   'False
-               EndProperty
-               ForeColor       =   &H00FFFFFF&
-               Height          =   375
-               Left            =   2640
-               TabIndex        =   21
-               Top             =   2160
-               Width           =   1335
-            End
-            Begin VB.Label Label3 
-               Alignment       =   1  'Right Justify
-               BackStyle       =   0  'Transparent
-               Caption         =   "Â« › «·ÊﬂÌ·"
-               BeginProperty Font 
-                  Name            =   "Times New Roman"
-                  Size            =   12
-                  Charset         =   178
-                  Weight          =   700
-                  Underline       =   0   'False
-                  Italic          =   0   'False
-                  Strikethrough   =   0   'False
-               EndProperty
-               ForeColor       =   &H00FFFFFF&
-               Height          =   375
-               Left            =   2880
-               TabIndex        =   20
-               Top             =   1680
-               Width           =   1095
             End
             Begin VB.Image Image1 
                Appearance      =   0  'Flat
@@ -5464,7 +5537,7 @@ Begin VB.Form etudiants
          Begin MSFlexGridLib.MSFlexGrid grd25 
             Height          =   7335
             Left            =   7200
-            TabIndex        =   237
+            TabIndex        =   233
             Top             =   120
             Width           =   6975
             _ExtentX        =   12303
@@ -5516,7 +5589,7 @@ Begin VB.Form etudiants
             Height          =   375
             Left            =   7200
             Style           =   2  'Dropdown List
-            TabIndex        =   59
+            TabIndex        =   55
             Top             =   120
             Width           =   1695
          End
@@ -5572,7 +5645,7 @@ Begin VB.Form etudiants
             ForeColor       =   &H00FFFFFF&
             Height          =   375
             Left            =   7560
-            TabIndex        =   58
+            TabIndex        =   54
             Top             =   120
             Width           =   1935
          End
@@ -5996,6 +6069,8 @@ PicFilev = ""
 Text5.Text = ""
 Text15.Text = ""
 Text2.Text = ""
+Text20.Text = ""
+Text19.Text = ""
 Text3.Text = ""
 Text4.Text = ""
 Text1.Text = ""
@@ -6012,6 +6087,8 @@ Command14.Enabled = False
 Combo1.Enabled = True
 Combo4.Enabled = True
 Text2.Enabled = True
+Text20.Enabled = True
+Text19.Enabled = True
 Text3.Enabled = True
 Text4.Enabled = True
 Text5.Enabled = True
@@ -6073,6 +6150,8 @@ On Error GoTo p
 Dim clnm As String
 Text6.Text = Trim(Text6.Text)
 Text7.Text = Trim(Text7.Text)
+Text18.Text = Trim(Text18.Text)
+Text21.Text = Trim(Text21.Text)
 Text8.Text = Trim(Text8.Text)
 Text9.Text = Trim(Text9.Text)
 If Combo2.Text = "" Then
@@ -6555,8 +6634,8 @@ nm!cla = Combo11.Text
 nm!mat = Combo10.Text
 nm!pro = Text12.Text
 grd8.row = i
-grd8.Col = 0
-nm!num = grd8.Text
+grd8.Col = 19
+nm!num = Val(grd8.Text)
 grd8.Col = 1
 nm!nom = grd8.Text
 grd8.Col = 2
@@ -7132,6 +7211,8 @@ Private Sub Command3_Click()
 On Error GoTo p
 Dim clnm As String
 Text2.Text = Trim(Text2.Text)
+Text20.Text = Trim(Text20.Text)
+Text19.Text = Trim(Text19.Text)
 Text3.Text = Trim(Text3.Text)
 Text4.Text = Trim(Text4.Text)
 Text5.Text = Trim(Text5.Text)
@@ -7209,6 +7290,8 @@ Label11.Caption = ""
 PicFilev = ""
 Text5.Text = ""
 Text2.Text = ""
+Text20.Text = ""
+Text19.Text = ""
 Text3.Text = ""
 Text4.Text = ""
 Text1.Text = ""
@@ -7219,6 +7302,8 @@ PicFilev = ""
 Label11.Caption = ""
 Image1.Picture = LoadPicture(PicFilev) 'Afficher l'image
 Text2.Enabled = True
+Text20.Enabled = True
+Text19.Enabled = True
 Call numsetu
 Text2.SetFocus
 Call serial
@@ -8793,6 +8878,8 @@ Private Sub Command4_Click()
 On Error Resume Next
 Text5.Text = ""
 Text2.Text = ""
+Text20.Text = ""
+Text19.Text = ""
 Text3.Text = ""
 Text4.Text = ""
 Label11.Caption = ""
@@ -9085,7 +9172,7 @@ Command44.Enabled = True
 End Sub
 
 Private Sub Command45_Click()
-'On Error GoTo u
+On Error GoTo u
 Dim i As Double
 Dim j As Double
 Dim n As Double
@@ -9143,9 +9230,11 @@ Dim a As Double
 'Dim nni As Double
 'Dim md As Double
 Text2.Text = Trim(Text2.Text)
+Text20.Text = Trim(Text20.Text)
 Text3.Text = Trim(Text3.Text)
 Text4.Text = Trim(Text4.Text)
 Text5.Text = Trim(Text5.Text)
+Text19.Text = Trim(Text19.Text)
 If Combo1.Text = "" Then
 MsgBox "ﬁ„ »«Œ Ì«— «·ﬁ”„", vbCritical
 Exit Sub
@@ -9199,8 +9288,8 @@ End If
 et.MoveNext
 Loop
 If Label11.Caption = "" Then
-'g = MsgBox("·„ Ì „ «—›«ﬁ ’Ê—… ·· ·„Ì– , Â·  —Ìœ «·«” „—«—ø", vbInformation + vbYesNo, "Pressing")
-'If g = vbYes Then
+g = MsgBox("·„ Ì „ «—›«ﬁ ’Ê—… ·· ·„Ì– , Â·  —Ìœ «·«” „—«—ø", vbInformation + vbYesNo, "Pressing")
+If g = vbYes Then
 Label11.Caption = "01"
 If Combo4.Text = "√‰ÀÏ" Then
 PicFilev = App.Path & "\nophotof.jpg"
@@ -9211,12 +9300,14 @@ Image1.Picture = LoadPicture(PicFilev)
 fName = PicFilev
 Else
 Exit Sub
-'End If
+End If
 End If
 Combo1.Enabled = False
 Combo4.Enabled = False
 Text3.Enabled = False
 Text2.Enabled = False
+Text20.Enabled = False
+Text19.Enabled = False
 Text4.Enabled = False
 Text5.Enabled = False
 Command3.Enabled = False
@@ -9229,6 +9320,8 @@ et!cla = Combo1.Text
 et!num = Text3.Text
 et!dat = DT1.Value
 et!nom = Text2.Text
+et!nof = Text19.Text
+et!rim = Text20.Text
 et!sex = Combo4.Text
 et!pho = "01"
 et!tel = Text4.Text
@@ -9250,6 +9343,8 @@ nn!cla = Combo1.Text
 nn!num = Text3.Text
 nn!dti = DT1.Value
 nn!nom = Text2.Text
+nn!nof = Text19.Text
+nn!rim = Text20.Text
 nn!sex = Combo4.Text
 nn!tel = Text4.Text
 nn!tel = Text4.Text
@@ -9288,6 +9383,9 @@ If Text1.Text = et!ser Or Val(Text1.Text) = Val(et!ser) Then
 a = 1
 Label21.Caption = et!aut
 Text7.Text = et!nom
+Text18.Text = et!nof
+Text21.Text = et!rim
+Text17.Text = et!rim
 Label36.Caption = et!cla
 Label37.Caption = et!num
 Label38.Caption = et!nom
@@ -9336,10 +9434,13 @@ End Sub
 Private Sub Command9_Click()
 On Error Resume Next
 Dim a As Double
+Dim x As Double
 'Dim nni As Double
 'Dim md As Double
 Text6.Text = Trim(Text6.Text)
 Text7.Text = Trim(Text7.Text)
+Text21.Text = Trim(Text21.Text)
+Text18.Text = Trim(Text18.Text)
 Text8.Text = Trim(Text8.Text)
 Text9.Text = Trim(Text9.Text)
 If Combo2.Text = "" Then
@@ -9394,8 +9495,8 @@ End If
 et.MoveNext
 Loop
 If Label11.Caption = "" Then
-'g = MsgBox("·„ Ì „ «—›«ﬁ ’Ê—… ·· ·„Ì– , Â·  —Ìœ «·«” „—«—ø", vbInformation + vbYesNo, "Pressing")
-'If g = vbYes Then
+g = MsgBox("·„ Ì „ «—›«ﬁ ’Ê—… ·· ·„Ì– , Â·  —Ìœ «·«” „—«—ø", vbInformation + vbYesNo, "Pressing")
+If g = vbYes Then
 Label11.Caption = "01"
 If Combo3.Text = "√‰ÀÏ" Then
 PicFilev = App.Path & "\nophotof.jpg"
@@ -9405,9 +9506,10 @@ End If
 fName = PicFilev
 Image2.Picture = LoadPicture(PicFilev) 'Afficher l'image
 Else
-'Exit Sub
-'End If
+Exit Sub
 End If
+End If
+x = 0
 Call cont2
 Do While Not nn.EOF
 If BarcodeX2.Caption = nn!ser Then
@@ -9418,14 +9520,34 @@ nn!cla = Combo2.Text
 nn!num = Text6.Text
 nn!dti = DT2.Value
 nn!nom = Text7.Text
+nn!nof = Text18.Text
+nn!rim = Text21.Text
 nn!sex = Combo3.Text
 nn!tel = Text8.Text
 nn!ncla = Label5.Caption
 nn.Update
 nn.MoveLast
+x = 1
 End If
 nn.MoveNext
 Loop
+If x = 0 Then
+nn.AddNew
+nn!ser = BarcodeX2.Caption
+nn!nni = Text9.Text
+nn!liu = Text13.Text
+nn!dat = Text16.Text
+nn!cla = Combo2.Text
+nn!num = Text6.Text
+nn!dti = DT2.Value
+nn!nom = Text7.Text
+nn!nof = Text18.Text
+nn!rim = Text21.Text
+nn!sex = Combo3.Text
+nn!tel = Text8.Text
+nn!ncla = Label5.Caption
+nn.Update
+End If
 Call cont
 Do While Not et.EOF
 If BarcodeX2.Caption = et!ser Then
@@ -9433,6 +9555,8 @@ et!cla = Combo2.Text
 et!num = Text6.Text
 et!dat = DT2.Value
 et!nom = Text7.Text
+et!nof = Text18.Text
+et!rim = Text21.Text
 et!sex = Combo3.Text
 If Label11.Caption = "" Then
 et!pho = "01"
@@ -9446,6 +9570,7 @@ Label38.Caption = Text7.Text
 Label81.Caption = Combo2.Text
 Label80.Caption = Text6.Text
 Label76.Caption = Text7.Text
+Text17.Text = Text21.Text
 grd1.Clear
 grd1.Rows = 1
 Timer1.Enabled = True
@@ -12340,7 +12465,7 @@ Command36_Click
 End If
 End Sub
 Private Sub Text1_Change()
-'On Error Resume Next
+On Error Resume Next
 Picture4.Visible = False
 Picture6.Visible = False
 SSTab2.Visible = False
@@ -12522,7 +12647,7 @@ End If
 
 End Sub
 Private Sub chargegrd1()
-'On Error Resume Next
+On Error Resume Next
 Dim i As Double
 Dim tx1 As String
 grd1.Cols = 19
@@ -12646,14 +12771,14 @@ End If
 Next i
 nt.MoveNext
 Loop
-Call cont2
-Do While Not be.EOF
-If be!cla = Label36.Caption And be!mtr = Label37.Caption Then
-Text17.Text = be!obs19
-Exit Sub
-End If
-be.MoveNext
-Loop
+'Call cont2
+'Do While Not be.EOF
+'If be!cla = Label36.Caption And be!mtr = Label37.Caption Then
+'Text17.Text = be!obs19
+'Exit Sub
+'End If
+'be.MoveNext
+'Loop
 
 End Sub
 Private Sub chargegrd8()

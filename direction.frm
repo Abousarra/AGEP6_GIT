@@ -378,7 +378,7 @@ Begin VB.Form direction
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   124649473
+            Format          =   126287873
             CurrentDate     =   41183
          End
          Begin MSFlexGridLib.MSFlexGrid grd12 
@@ -902,7 +902,7 @@ Begin VB.Form direction
                _ExtentX        =   3201
                _ExtentY        =   661
                _Version        =   393216
-               Format          =   124649473
+               Format          =   126287873
                CurrentDate     =   71615
             End
             Begin VB.Label Label6 
@@ -1060,7 +1060,7 @@ Begin VB.Form direction
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   124649473
+            Format          =   126287873
             CurrentDate     =   41183
          End
          Begin MSComCtl2.DTPicker DT2 
@@ -1081,7 +1081,7 @@ Begin VB.Form direction
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   124649473
+            Format          =   126287873
             CurrentDate     =   41547
          End
          Begin VB.Label Label331 
@@ -1270,6 +1270,23 @@ Begin VB.Form direction
          TabIndex        =   43
          Top             =   360
          Width           =   14295
+         Begin VB.CommandButton Command8 
+            Caption         =   "”Õ»"
+            BeginProperty Font 
+               Name            =   "Times New Roman"
+               Size            =   12
+               Charset         =   178
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   375
+            Left            =   3600
+            TabIndex        =   117
+            Top             =   1080
+            Width           =   1935
+         End
          Begin VB.TextBox Text13 
             Alignment       =   2  'Center
             BackColor       =   &H00000000&
@@ -1324,9 +1341,10 @@ Begin VB.Form direction
                Strikethrough   =   0   'False
             EndProperty
             Height          =   375
-            Left            =   3600
+            Left            =   240
             TabIndex        =   110
             Top             =   1080
+            Visible         =   0   'False
             Width           =   1935
          End
          Begin VB.CommandButton Command9 
@@ -1399,7 +1417,7 @@ Begin VB.Form direction
             ForeColorFixed  =   16777215
             ForeColorSel    =   8388608
             BackColorBkg    =   0
-            RightToLeft     =   -1  'True
+            AllowBigSelection=   0   'False
             BorderStyle     =   0
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "Times New Roman"
@@ -2355,6 +2373,7 @@ Public co2 As ADODB.Connection
 Public cr2 As ADODB.Recordset
 Public be As ADODB.Recordset
 Public ce As ADODB.Recordset
+Public nn As ADODB.Recordset
 Dim anes As String
 Dim data As New Access.Application
 Function cont2()
@@ -2362,6 +2381,7 @@ Set co2 = New ADODB.Connection
 Set cr2 = New ADODB.Recordset
 Set be = New ADODB.Recordset
 Set ce = New ADODB.Recordset
+Set nn = New ADODB.Recordset
 co2.Provider = "microsoft.jet.oledb.4.0; jet oledb:database password=7346804"
 anes = "C" + face.SBB1.Panels(9).Text
 co2.ConnectionString = App.Path & "\" & anes & ".mdb"
@@ -2369,6 +2389,7 @@ co2.Open
 cr2.Open "select*from Tcarts", co2, adOpenKeyset, adLockOptimistic
 be.Open "select*from Tbulletin", co2, adOpenKeyset, adLockOptimistic
 ce.Open "select*from Tcartes", co2, adOpenKeyset, adLockOptimistic
+nn.Open "select*from Tnni order by aut ASC", co2, adOpenKeyset, adLockOptimistic
 End Function
 Public Sub chargec1()
 On Error Resume Next
@@ -3171,6 +3192,47 @@ Set data = Nothing
 
 End Sub
 
+Private Sub Command8_Click()
+'On Error GoTo u
+Dim i As Double
+Dim j As Double
+Dim n As Double
+Dim k As Double
+Dim d As Double
+Dim sd As Double
+If Combo5.Text = "" Then
+MsgBox "ﬁ„ »«Œ Ì«— «·ﬁ”„", vbCritical
+Exit Sub
+End If
+If grd3.Rows < 2 Then
+MsgBox "·«  ÊÃœ »Ì«‰« ", vbCritical
+Exit Sub
+End If
+FileCopy App.Path & "\RIM010.xls", App.Path & "\RIM.xls"
+Command8.Enabled = False
+n = grd3.Rows
+Set kb = CreateObject("Excel.application")
+kb.Workbooks.Open (App.Path & "\RIM.xls")
+kb.Visible = True
+For i = 1 To n - 1
+For j = 0 To 6
+grd3.row = i
+grd3.Col = j
+k = j + 1
+kb.Workbooks("RIM").Sheets(1).Cells(i + 7, k).Value = grd3.Text
+Next j
+Next i
+kb.Workbooks("RIM").Sheets(1).Range("D3").Value = face.SBB1.Panels(9).Text
+kb.Workbooks("RIM").Sheets(1).Range("B3").Value = face.SBB1.Panels(13).Text
+kb.Workbooks("RIM").Sheets(1).Range("C5").Value = Combo5.Text
+Command8.Enabled = True
+Exit Sub
+u:
+MsgBox "ÌÃ» «€·«ﬁ ’›Õ… «ﬂ”· «‰ ﬂ«‰  „› ÊÕ…", vbExclamation
+Command8.Enabled = True
+
+End Sub
+
 Private Sub Command9_Click()
 On Error Resume Next
 Dim i As Double
@@ -3184,134 +3246,62 @@ Exit Sub
 End If
 grd3.Visible = False
 grd3.Clear
-grd3.Cols = 22
+grd3.Cols = 7
 grd3.Rows = 1
-grd3.ColWidth(0) = 2000
+grd3.ColWidth(0) = 1000
+grd3.ColWidth(1) = 3500
+grd3.ColWidth(2) = 3500
+grd3.ColWidth(3) = 1500
+grd3.ColWidth(4) = 1500
+grd3.ColWidth(5) = 1300
+grd3.ColWidth(6) = 1300
 grd3.ColAlignment(0) = 1
-For i = 1 To 21
-grd3.ColWidth(i) = 800
-grd3.ColAlignment(i) = 1
-Next i
-grd3.ColWidth(21) = 1500
-i = 0
-j = 1
+grd3.ColAlignment(1) = 1
+grd3.ColAlignment(2) = 6
+grd3.ColAlignment(3) = 3
+grd3.ColAlignment(4) = 3
+grd3.ColAlignment(5) = 3
+grd3.ColAlignment(6) = 3
+grd3.row = 0
+grd3.Col = 0
+grd3.Text = "Code"
+grd3.Col = 1
+grd3.Text = "Nom"
+grd3.Col = 2
+grd3.Text = "«·«”„"
+grd3.Col = 3
+grd3.Text = "NNI"
+grd3.Col = 4
+grd3.Text = "RIM"
+grd3.Col = 5
+grd3.Text = "LDN"
+grd3.Col = 6
+grd3.Text = "ADN"
+i = 1
 Call cont2
-grd3.Rows = be.RecordCount + 10
-be.Filter = "[cla]" & "Like '*" & Combo5 & "*'"
-Do While Not be.EOF
-If be!cla = Combo5.Text Then
-If i = 0 Then
+grd3.Rows = nn.RecordCount + 10
+Do While Not nn.EOF
+If nn!cla = Combo5.Text Then
 grd3.row = i
 grd3.Col = 0
-grd3.Text = "«·≈”„"
+grd3.Text = Val(nn!ser)
 grd3.Col = 1
-grd3.Text = be!mat1
+grd3.Text = nn!nof
 grd3.Col = 2
-grd3.Text = be!mat2
+grd3.Text = nn!nom
 grd3.Col = 3
-grd3.Text = be!mat3
+grd3.Text = nn!nni
 grd3.Col = 4
-grd3.Text = be!mat4
+grd3.Text = nn!rim
 grd3.Col = 5
-grd3.Text = be!mat5
+grd3.Text = nn!liu
 grd3.Col = 6
-grd3.Text = be!mat6
-grd3.Col = 7
-grd3.Text = be!mat7
-grd3.Col = 8
-grd3.Text = be!mat8
-grd3.Col = 9
-grd3.Text = be!mat9
-grd3.Col = 10
-grd3.Text = be!mat10
-grd3.Col = 11
-grd3.Text = be!mat11
-grd3.Col = 12
-grd3.Text = be!mat12
-grd3.Col = 13
-grd3.Text = be!mat13
-grd3.Col = 14
-grd3.Text = be!mat14
-grd3.Col = 15
-grd3.Text = be!mat15
-grd3.Col = 16
-grd3.Text = be!mat16
-grd3.Col = 17
-grd3.Text = be!mat17
-grd3.Col = 18
-grd3.Text = be!mat18
-grd3.Col = 19
-grd3.Text = be!mat19
-grd3.Col = 20
-grd3.Text = be!mat20
-grd3.Col = 21
-grd3.Text = "«·„⁄œ· «·⁄«„"
-i = i + 1
-be.MoveFirst
-Else
-grd3.row = i
-grd3.Col = 0
-grd3.Text = be!nom
-grd3.Col = 1
-grd3.Text = be!mm1
-grd3.Col = 2
-grd3.Text = be!mm2
-grd3.Col = 3
-grd3.Text = be!mm3
-grd3.Col = 4
-grd3.Text = be!mm4
-grd3.Col = 5
-grd3.Text = be!mm5
-grd3.Col = 6
-grd3.Text = be!mm6
-grd3.Col = 7
-grd3.Text = be!mm7
-grd3.Col = 8
-grd3.Text = be!mm8
-grd3.Col = 9
-grd3.Text = be!mm9
-grd3.Col = 10
-grd3.Text = be!mm10
-grd3.Col = 11
-grd3.Text = be!mm11
-grd3.Col = 12
-grd3.Text = be!mm12
-grd3.Col = 13
-grd3.Text = be!mm13
-grd3.Col = 14
-grd3.Text = be!mm14
-grd3.Col = 15
-grd3.Text = be!mm15
-grd3.Col = 16
-grd3.Text = be!mm16
-grd3.Col = 17
-grd3.Text = be!mm17
-grd3.Col = 18
-grd3.Text = be!mm18
-grd3.Col = 19
-grd3.Text = be!mm19
-grd3.Col = 20
-grd3.Text = be!mm20
-grd3.Col = 21
-grd3.Text = be!moy
+grd3.Text = nn!dat
 i = i + 1
 End If
-If i > 1 Then
-be.MoveNext
-End If
-End If
+nn.MoveNext
 Loop
 grd3.Rows = i
-tx = ""
-n = grd3.Cols
-For i = 1 To n - 2
-grd3.Col = i
-grd3.row = 0
-tx = grd3.Text
-If tx = "" Then
-grd3.ColWidth(i) = 0
-End If
-Next i
 grd3.Visible = True
 End Sub
 
