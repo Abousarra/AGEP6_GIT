@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
-Begin VB.Form Ourwa 
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
+Begin VB.Form Noubalaa 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   5775
    ClientLeft      =   15
@@ -25,6 +25,17 @@ Begin VB.Form Ourwa
       TabIndex        =   1
       Top             =   120
       Width           =   7575
+      Begin VB.PictureBox Picture2 
+         BorderStyle     =   0  'None
+         Height          =   930
+         Left            =   360
+         Picture         =   "Ourwa.frx":0000
+         ScaleHeight     =   930
+         ScaleWidth      =   6855
+         TabIndex        =   22
+         Top             =   1800
+         Width           =   6855
+      End
       Begin VB.PictureBox Picture3 
          BackColor       =   &H00000000&
          BorderStyle     =   0  'None
@@ -32,14 +43,14 @@ Begin VB.Form Ourwa
          Left            =   120
          ScaleHeight     =   1695
          ScaleWidth      =   7335
-         TabIndex        =   22
+         TabIndex        =   21
          Top             =   5520
          Width           =   7335
       End
       Begin VB.TextBox Text12 
          Height          =   285
          Left            =   1800
-         TabIndex        =   20
+         TabIndex        =   19
          Text            =   "Text12"
          Top             =   6840
          Visible         =   0   'False
@@ -48,7 +59,7 @@ Begin VB.Form Ourwa
       Begin VB.TextBox Text11 
          Height          =   285
          Left            =   1800
-         TabIndex        =   19
+         TabIndex        =   18
          Text            =   "Text11"
          Top             =   6480
          Visible         =   0   'False
@@ -57,7 +68,7 @@ Begin VB.Form Ourwa
       Begin VB.TextBox Text10 
          Height          =   285
          Left            =   120
-         TabIndex        =   18
+         TabIndex        =   17
          Text            =   "Text10"
          Top             =   6840
          Visible         =   0   'False
@@ -66,7 +77,7 @@ Begin VB.Form Ourwa
       Begin VB.TextBox Text9 
          Height          =   285
          Left            =   120
-         TabIndex        =   17
+         TabIndex        =   16
          Text            =   "Text9"
          Top             =   6120
          Visible         =   0   'False
@@ -87,7 +98,7 @@ Begin VB.Form Ourwa
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   4920
-         TabIndex        =   16
+         TabIndex        =   15
          Text            =   "SO63"
          Top             =   5640
          Visible         =   0   'False
@@ -108,7 +119,7 @@ Begin VB.Form Ourwa
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   3840
-         TabIndex        =   15
+         TabIndex        =   14
          Text            =   "ZM9Y"
          Top             =   5640
          Visible         =   0   'False
@@ -129,7 +140,7 @@ Begin VB.Form Ourwa
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   2760
-         TabIndex        =   14
+         TabIndex        =   13
          Text            =   "ED78"
          Top             =   5640
          Visible         =   0   'False
@@ -150,22 +161,11 @@ Begin VB.Form Ourwa
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   1680
-         TabIndex        =   13
+         TabIndex        =   12
          Text            =   "K1U5"
          Top             =   5640
          Visible         =   0   'False
          Width           =   975
-      End
-      Begin VB.PictureBox Picture2 
-         BorderStyle     =   0  'None
-         Height          =   930
-         Left            =   600
-         Picture         =   "Ourwa.frx":0000
-         ScaleHeight     =   930
-         ScaleWidth      =   6375
-         TabIndex        =   12
-         Top             =   1800
-         Width           =   6375
       End
       Begin VB.CommandButton Command3 
          Caption         =   "«·Œ—ÊÃ „‰ «·»—‰«Ã"
@@ -310,7 +310,7 @@ Begin VB.Form Ourwa
          ForeColor       =   &H00FFFFFF&
          Height          =   375
          Left            =   1680
-         TabIndex        =   21
+         TabIndex        =   20
          Top             =   5160
          Width           =   4215
       End
@@ -412,11 +412,11 @@ Begin VB.Form Ourwa
    End
    Begin ACTIVESKINLibCtl.Skin Skin1 
       Left            =   840
-      OleObjectBlob   =   "Ourwa.frx":1304E
+      OleObjectBlob   =   "Ourwa.frx":14E7A
       Top             =   1560
    End
 End
-Attribute VB_Name = "Ourwa"
+Attribute VB_Name = "Noubalaa"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
