@@ -1,11 +1,11 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
-Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "tabctl32.ocx"
-Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
+Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomct2.ocx"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.ocx"
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFlxGrd.ocx"
 Object = "{8E515444-86DF-11D3-A630-444553540001}#1.0#0"; "barcodex.ocx"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "ComDlg32.ocx"
 Begin VB.Form etudiants 
    BackColor       =   &H00000000&
    BorderStyle     =   4  'Fixed ToolWindow
@@ -44,17 +44,15 @@ Begin VB.Form etudiants
       TabCaption(0)   =   "»ÕÀ ⁄«„"
       TabPicture(0)   =   "etudiants.frx":0000
       Tab(0).ControlEnabled=   0   'False
-      Tab(0).Control(0)=   "Picture21"
+      Tab(0).Control(0)=   "Skin1"
       Tab(0).Control(1)=   "Picture22"
-      Tab(0).Control(2)=   "Skin1"
+      Tab(0).Control(2)=   "Picture21"
       Tab(0).ControlCount=   3
       TabCaption(1)   =   "ﬁ”„ „⁄Ì‰"
       TabPicture(1)   =   "etudiants.frx":001C
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Picture15"
-      Tab(1).Control(0).Enabled=   0   'False
-      Tab(1).Control(1)=   "Picture16"
-      Tab(1).Control(1).Enabled=   0   'False
+      Tab(1).Control(0)=   "Picture16"
+      Tab(1).Control(1)=   "Picture15"
       Tab(1).ControlCount=   2
       TabCaption(2)   =   " ·„Ì– „⁄Ì‰"
       TabPicture(2)   =   "etudiants.frx":0038
@@ -463,7 +461,7 @@ Begin VB.Form etudiants
                Italic          =   0   'False
                Strikethrough   =   0   'False
             EndProperty
-            Format          =   126615553
+            Format          =   124518401
             CurrentDate     =   41154
          End
          Begin VB.Label Label111 
@@ -607,12 +605,9 @@ Begin VB.Form etudiants
             TabCaption(0)   =   "‰ﬁ«ÿ  ·«„Ì– «·ﬁ”„"
             TabPicture(0)   =   "etudiants.frx":0054
             Tab(0).ControlEnabled=   0   'False
-            Tab(0).Control(0)=   "grd8"
-            Tab(0).Control(0).Enabled=   0   'False
+            Tab(0).Control(0)=   "Picture20"
             Tab(0).Control(1)=   "Picture19"
-            Tab(0).Control(1).Enabled=   0   'False
-            Tab(0).Control(2)=   "Picture20"
-            Tab(0).Control(2).Enabled=   0   'False
+            Tab(0).Control(2)=   "grd8"
             Tab(0).ControlCount=   3
             TabCaption(1)   =   "»Ì«‰«   ·«„Ì– «·ﬁ”„"
             TabPicture(1)   =   "etudiants.frx":0070
@@ -1361,19 +1356,19 @@ Begin VB.Form etudiants
             TabCaption(0)   =   "€Ì«»«  «· ·„Ì–"
             TabPicture(0)   =   "etudiants.frx":008C
             Tab(0).ControlEnabled=   0   'False
-            Tab(0).Control(0)=   "Picture14"
-            Tab(0).Control(1)=   "Picture13"
+            Tab(0).Control(0)=   "Picture13"
+            Tab(0).Control(1)=   "Picture14"
             Tab(0).ControlCount=   2
             TabCaption(1)   =   "‰ﬁ«ÿ «· ·„Ì–"
             TabPicture(1)   =   "etudiants.frx":00A8
             Tab(1).ControlEnabled=   0   'False
-            Tab(1).Control(0)=   "Picture11"
-            Tab(1).Control(1)=   "Picture10"
-            Tab(1).Control(2)=   "Picture9"
+            Tab(1).Control(0)=   "Line1"
+            Tab(1).Control(1)=   "Line2"
+            Tab(1).Control(2)=   "grd1"
             Tab(1).Control(3)=   "Picture8"
-            Tab(1).Control(4)=   "grd1"
-            Tab(1).Control(5)=   "Line2"
-            Tab(1).Control(6)=   "Line1"
+            Tab(1).Control(4)=   "Picture9"
+            Tab(1).Control(5)=   "Picture10"
+            Tab(1).Control(6)=   "Picture11"
             Tab(1).ControlCount=   7
             TabCaption(2)   =   "»Ì«‰«  «· ·„Ì–"
             TabPicture(2)   =   "etudiants.frx":00C4
@@ -1564,7 +1559,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   126615553
+                     Format          =   124518401
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar4 
@@ -3869,11 +3864,11 @@ Begin VB.Form etudiants
                Width           =   13815
                Begin VB.PictureBox Picture5 
                   Height          =   6255
-                  Left            =   360
+                  Left            =   600
                   ScaleHeight     =   6195
                   ScaleWidth      =   12435
                   TabIndex        =   38
-                  Top             =   600
+                  Top             =   360
                   Visible         =   0   'False
                   Width           =   12495
                   Begin VB.CommandButton Command39 
@@ -4489,7 +4484,7 @@ Begin VB.Form etudiants
                         Italic          =   0   'False
                         Strikethrough   =   0   'False
                      EndProperty
-                     Format          =   126615553
+                     Format          =   124518401
                      CurrentDate     =   41154
                   End
                   Begin MSComctlLib.ProgressBar ProgressBar1 
@@ -4728,7 +4723,7 @@ Begin VB.Form etudiants
                   EndProperty
                   ForeColor       =   &H00FFFFFF&
                   Height          =   975
-                  Left            =   3120
+                  Left            =   2760
                   TabIndex        =   236
                   Top             =   5640
                   Width           =   7695
@@ -5186,7 +5181,7 @@ Begin VB.Form etudiants
                   Italic          =   0   'False
                   Strikethrough   =   0   'False
                EndProperty
-               Format          =   126615553
+               Format          =   124518401
                CurrentDate     =   41154
             End
             Begin MSComctlLib.ProgressBar ProgressBar2 
@@ -5698,6 +5693,7 @@ Public ce As ADODB.Recordset
 Public oe As ADODB.Recordset
 Public nm As ADODB.Recordset
 Public nn As ADODB.Recordset
+Public ru As ADODB.Recordset
 Dim anes As String
 Dim tim As Double
 Dim data As New Access.Application
@@ -5709,6 +5705,7 @@ Set ce = New ADODB.Recordset
 Set oe = New ADODB.Recordset
 Set nm = New ADODB.Recordset
 Set nn = New ADODB.Recordset
+Set ru = New ADODB.Recordset
 co2.Provider = "microsoft.jet.oledb.4.0; jet oledb:database password=7346804"
 anes = "C" + face.SBB1.Panels(9).Text
 co2.ConnectionString = App.Path & "\" & anes & ".mdb"
@@ -5719,6 +5716,7 @@ ce.Open "select*from Tcartes", co2, adOpenKeyset, adLockOptimistic
 oe.Open "select*from Tetudiants", co2, adOpenKeyset, adLockOptimistic
 nm.Open "select*from Tnotesmat order by num ASC", co2, adOpenKeyset, adLockOptimistic
 nn.Open "select*from Tnni order by aut ASC", co2, adOpenKeyset, adLockOptimistic
+ru.Open "select*from Trecus", co2, adOpenKeyset, adLockOptimistic
 End Function
  Public Function SavePictureToDB(sFileName As String)
 On Error Resume Next
@@ -9509,6 +9507,34 @@ Else
 Exit Sub
 End If
 End If
+'bulltin
+Call cont2
+Do While Not be.EOF
+If BarcodeX2.Caption = be!ser Then
+be!cla = Combo2.Text
+be!mtr = Text6.Text
+be!nom = Text7.Text
+be!obs19 = Text21.Text
+be!ann = face.SBB1.Panels(9).Text
+be!eco = face.SBB1.Panels(13).Text
+be.Update
+End If
+be.MoveNext
+Loop
+'Recu
+Call cont2
+Do While Not ru.EOF
+If BarcodeX2.Caption = ru!ser Then
+ru!cla = Combo2.Text
+ru!num = Text6.Text
+ru!nom = Text7.Text
+ru!ann = face.SBB1.Panels(9).Text
+ru!eco = face.SBB1.Panels(13).Text
+ru.Update
+End If
+ru.MoveNext
+Loop
+'nni
 x = 0
 Call cont2
 Do While Not nn.EOF
