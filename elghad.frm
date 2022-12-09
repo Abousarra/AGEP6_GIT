@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "ActiveSkin.ocx"
+Object = "{90F3D7B3-92E7-44BA-B444-6A8E2A3BC375}#1.0#0"; "actskin4.ocx"
 Begin VB.Form Tous 
    BorderStyle     =   4  'Fixed ToolWindow
    ClientHeight    =   5745
@@ -302,7 +302,7 @@ Begin VB.Form Tous
       Begin VB.Label Label3 
          Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
-         Caption         =   "«·‰»·«¡ «·Õ—…"
+         Caption         =   "«·‰Ì·«¡ «·Õ—…"
          BeginProperty Font 
             Name            =   "Times New Roman"
             Size            =   11.25
